@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.8)  8 JUN 2022 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.8)  9 JUN 2022 10:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -431,7 +431,7 @@ Package hyperref Info: Link coloring OFF on input line 69.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 69.
-<images/logo.png, id=150, 102.3825pt x 102.3825pt>
+<images/logo.png, id=163, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 70.
@@ -488,195 +488,95 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Chapter 2.
 [6
 
-] [7]
+] [7] [8] [9]
 Chapter 3.
-<images/decisiontreeoverview1.png, id=283, 690.58pt x 344.28625pt>
-File: images/decisiontreeoverview1.png Graphic file (type png)
-<use images/decisiontreeoverview1.png>
-Package pdftex.def Info: images/decisiontreeoverview1.png  used on input line 350.
-(pdftex.def)             Requested size: 455.24408pt x 226.9617pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 350--352
- [][] 
- []
-
-[8
-
-] [9 <./images/decisiontreeoverview1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 379--384
-
- []
-
-[10]
-<images/import library.png, id=311, 416.15475pt x 104.18925pt>
-File: images/import library.png Graphic file (type png)
-<use images/import library.png>
-Package pdftex.def Info: images/import library.png  used on input line 424.
-(pdftex.def)             Requested size: 455.24408pt x 113.98213pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 424--426
- [][] 
- []
-
-[11]
-<images/intdata.png, id=316, 624.53325pt x 224.63925pt>
-File: images/intdata.png Graphic file (type png)
-<use images/intdata.png>
-Package pdftex.def Info: images/intdata.png  used on input line 432.
-(pdftex.def)             Requested size: 455.24408pt x 163.74533pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 432--434
- [][] 
- []
-
-<images/feature.png, id=317, 629.9535pt x 138.5175pt>
-File: images/feature.png Graphic file (type png)
-<use images/feature.png>
-Package pdftex.def Info: images/feature.png  used on input line 439.
-(pdftex.def)             Requested size: 455.24408pt x 100.10239pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 439--441
- [][] 
- []
-
-[12 <./images/import library.png> <./images/intdata.png>]
-<images/fit.png, id=326, 642.60075pt x 175.25475pt>
-File: images/fit.png Graphic file (type png)
-<use images/fit.png>
-Package pdftex.def Info: images/fit.png  used on input line 446.
-(pdftex.def)             Requested size: 455.24408pt x 124.15628pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 446--448
- [][] 
- []
-
-<images/predict.png, id=327, 435.42674pt x 130.68825pt>
-File: images/predict.png Graphic file (type png)
-<use images/predict.png>
-Package pdftex.def Info: images/predict.png  used on input line 454.
-(pdftex.def)             Requested size: 455.24408pt x 136.64041pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 454--456
- [][] 
- []
-
-<images/visualize.png, id=328, 774.895pt x 530.98375pt>
-File: images/visualize.png Graphic file (type png)
-<use images/visualize.png>
-Package pdftex.def Info: images/visualize.png  used on input line 462.
-(pdftex.def)             Requested size: 455.24408pt x 311.94893pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 462--464
- [][] 
- []
-
-[13 <./images/feature.png> <./images/fit.png> <./images/predict.png>]
-<images/incremental model.png, id=339, 690.58pt x 457.71pt>
-File: images/incremental model.png Graphic file (type png)
-<use images/incremental model.png>
-Package pdftex.def Info: images/incremental model.png  used on input line 472.
-(pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 472--473
- [][] 
- []
-
-[14 <./images/visualize.png>] [15 <./images/incremental model.png>]
-<images/blockdiagram.png, id=351, 447.92343pt x 468.24937pt>
-File: images/blockdiagram.png Graphic file (type png)
-<use images/blockdiagram.png>
-Package pdftex.def Info: images/blockdiagram.png  used on input line 503.
-(pdftex.def)             Requested size: 455.24408pt x 475.91469pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 503--504
- [][] 
- []
-
-[16]
-<images/usecase.png, id=357, 451.6875pt x 496.10344pt>
-File: images/usecase.png Graphic file (type png)
-<use images/usecase.png>
-Package pdftex.def Info: images/usecase.png  used on input line 511.
-(pdftex.def)             Requested size: 455.24408pt x 500.03857pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 511--512
- [][] 
- []
-
-[17 <./images/blockdiagram.png>] [18 <./images/usecase.png>]
-Chapter 4.
-<images/DecisionTree_1.png, id=368, 289.08pt x 289.08pt>
-File: images/DecisionTree_1.png Graphic file (type png)
-<use images/DecisionTree_1.png>
-Package pdftex.def Info: images/DecisionTree_1.png  used on input line 535.
-(pdftex.def)             Requested size: 398.33858pt x 398.35739pt.
-[19
+[10
 
 ]
-<images/accuracy.png, id=373, 867.24pt x 433.62pt>
-File: images/accuracy.png Graphic file (type png)
-<use images/accuracy.png>
-Package pdftex.def Info: images/accuracy.png  used on input line 543.
-(pdftex.def)             Requested size: 455.24408pt x 227.62082pt.
+<images/rsa algo.png, id=316, 456.5055pt x 266.1945pt>
+File: images/rsa algo.png Graphic file (type png)
+<use images/rsa algo.png>
+Package pdftex.def Info: images/rsa algo.png  used on input line 366.
+(pdftex.def)             Requested size: 455.24408pt x 265.45865pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 543--544
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 366--367
  [][] 
  []
 
-[20 <./images/DecisionTree_1.png>]
-<images/error.png, id=379, 433.62pt x 289.08pt>
-File: images/error.png Graphic file (type png)
-<use images/error.png>
-Package pdftex.def Info: images/error.png  used on input line 551.
-(pdftex.def)             Requested size: 398.33858pt x 265.57306pt.
-<images/signup.png, id=380, 666.49pt x 672.5125pt>
-File: images/signup.png Graphic file (type png)
-<use images/signup.png>
-Package pdftex.def Info: images/signup.png  used on input line 561.
-(pdftex.def)             Requested size: 266.59128pt x 269.00023pt.
- [21 <./images/accuracy.png> <./images/error.png>]
-<images/login.png, id=387, 537.00626pt x 465.74pt>
-File: images/login.png Graphic file (type png)
-<use images/login.png>
-Package pdftex.def Info: images/login.png  used on input line 568.
-(pdftex.def)             Requested size: 268.50247pt x 232.86943pt.
-<images/output1.png, id=388, 1445.4pt x 746.03719pt>
-File: images/output1.png Graphic file (type png)
-<use images/output1.png>
-Package pdftex.def Info: images/output1.png  used on input line 575.
-(pdftex.def)             Requested size: 341.43306pt x 176.22945pt.
- [22 <./images/signup.png> <./images/login.png>]
-<images/output2.png, id=396, 1445.4pt x 751.30687pt>
-File: images/output2.png Graphic file (type png)
-<use images/output2.png>
-Package pdftex.def Info: images/output2.png  used on input line 583.
-(pdftex.def)             Requested size: 341.43306pt x 177.47426pt.
- [23 <./images/output1.png> <./images/output2.png>]
-Chapter 5.
+[11 <./images/rsa algo.png>] [12]
+<images/incremental model.png, id=328, 690.58pt x 457.71pt>
+File: images/incremental model.png Graphic file (type png)
+<use images/incremental model.png>
+Package pdftex.def Info: images/incremental model.png  used on input line 400.
+(pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 596.
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
 
-(KECReport.bbl [24
+[13 <./images/incremental model.png>] [14]
+<images/Block Diagram.png, id=338, 708.6475pt x 325.215pt>
+File: images/Block Diagram.png Graphic file (type png)
+<use images/Block Diagram.png>
+Package pdftex.def Info: images/Block Diagram.png  used on input line 431.
+(pdftex.def)             Requested size: 483.70134pt x 455.27805pt.
 
-]) [25
+Overfull \hbox (66.86845pt too wide) in paragraph at lines 431--432
+ [][] 
+ []
+
+<images/UseCaseDiagram1.png, id=339, 1155.31625pt x 915.42pt>
+File: images/UseCaseDiagram1.png Graphic file (type png)
+<use images/UseCaseDiagram1.png>
+Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 439.
+(pdftex.def)             Requested size: 512.14853pt x 512.17076pt.
+
+Overfull \hbox (95.31564pt too wide) in paragraph at lines 439--440
+ [][] 
+ []
+
+[15 <./images/Block Diagram.png>] [16 <./images/UseCaseDiagram1.png>]
+Chapter 4.
+
+Overfull \hbox (10.68619pt too wide) in paragraph at lines 453--454
+\OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
+ []
+
+<images/ganttchart.png, id=351, 677.62839pt x 346.54771pt>
+File: images/ganttchart.png Graphic file (type png)
+<use images/ganttchart.png>
+Package pdftex.def Info: images/ganttchart.png  used on input line 457.
+(pdftex.def)             Requested size: 455.24408pt x 232.81502pt.
+
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 457--458
+ [][] 
+ []
+
+(KECReport.bbl [17
+
+ <./images/ganttchart.png>]
+Underfull \hbox (badness 2158) in paragraph at lines 64--67
+[]\OT1/ptm/m/n/12 ``Telegram faq.'' [On-line]. Avail-able: []$https : / / telegram . org / faq #
+ []
+
+) [18
 
 ] (KECReport.aux)
 Package rerunfilecheck Info: File `KECReport.out' has not changed.
-(rerunfilecheck)             Checksum: 09865D8E536631B23606A0BFFBB972FE;5290.
+(rerunfilecheck)             Checksum: A71E0E85F2B3130C84DB29352DF69740;5452.
  ) 
 Here is how much of TeX's memory you used:
- 16728 strings out of 478614
- 325272 string characters out of 2842651
- 601898 words of memory out of 3000000
- 34566 multiletter control sequences out of 15000+600000
- 493043 words of font info for 74 fonts, out of 8000000 for 9000
+ 16624 strings out of 478614
+ 323145 string characters out of 2842651
+ 600984 words of memory out of 3000000
+ 34490 multiletter control sequences out of 15000+600000
+ 491352 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,7n,82p,1102b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on KECReport.pdf (34 pages, 568140 bytes).
+ 79i,7n,82p,1434b,483s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on KECReport.pdf (27 pages, 462578 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 387 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 

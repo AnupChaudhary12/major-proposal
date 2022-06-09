@@ -80,39 +80,39 @@
 
 \chapter*{Abstract} % The summary of your report
 \addcontentsline{toc}{chapter}{Abstract}%to include this chapter in TOC 
-Data security is a crucial concern that ought to be managed to help protect vital data. Cryptography is one of the 
-conventional approaches for securing data and is generally considered a fundamental data security component that 
+Data security is a crucial concern that ought to be managed to help protect vital data. Cryptography is one of the
+conventional approaches for securing data and is generally considered a fundamental data security component that
 provides privacy, integrity, confidentiality, and authentication.
 
-In the current world where communication has been made easy such that you could talk to a person on the other side of the world with a press of the button. With the increase in availability of internet service you can send texts, photos ,files through the internet in a matter of seconds and for far less cheaper. This is achieved through different chat applications. With the increased usage of such chat applications the contents of such messages contains more that just simple messages to friends and families but also very important information and files which on the wrong hands could cause a huge catastrophe. As such End-to-End security is needed to safely exchange private information with each other without worrying about data. With this project we aim to provide an End-to-End encrypted chat apps with file compression feature. List of requirements to make such application are provided in this paper.
+In the current world where communication has been made easy such that you could talk to a person on the other side of the world with a press of the button. With the increase in availability of internet service you can send texts, photos ,files through the internet in a matter of seconds and for far less cheaper. This is achieved through different chat applications. With the increased usage of such chat applications the contents of such messages contains more that just simple messages to friends and families but also very important information and files which on the wrong hands could cause a huge catastrophe. As such End-to-End security is needed to safely exchange private information with each other without worrying about data. With this project we aim to provide an End-to-End encrypted chat apps with file compression feature. List of requirements to make such application are provided in this paper.\cite{Chauhan2016}
 
 This project approach End-to-end encryption method to provide  secure communication that prevents third parties from accessing data while it's transferred from one end system or device to another.
 The end-to-end encryption method is implemented using the Asymmetric key encryption algorithm (RSA). We compressed the message using huffman Encoding algorithm. Then used RSA to encrypt that encoded data. The login system is also secured because we used AES library to secure the password.
 
-In this way we can maintain the data more securely. 
-Since we used huffman to compress the data and RSA algorithm for securing the data. 
- 
+In this way we can maintain the data more securely.
+Since we used huffman to compress the data and RSA algorithm for securing the data.\cite{sa}
+
 \par
 \textbf{\textit{Keywords$-$}} RSA, Huffman
 
 \chapter*{Acknowledgment}
 \addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-We would like to express our gratitude and appreciation to all those who 
-gave us the possibility to complete this report. Special thanks is due to our project 
-supervisor Mr. Bishal Thapa sir whose help, stimulating suggestions 
-and encouragement helped us in all time of fabrication process and in writing 
-this report. We also sincerely thanks for the time spent proofreading and correcting 
+We would like to express our gratitude and appreciation to all those who
+gave us the possibility to complete this report. Special thanks is due to our project
+supervisor Mr. Bishal Thapa sir whose help, stimulating suggestions
+and encouragement helped us in all time of fabrication process and in writing
+this report. We also sincerely thanks for the time spent proofreading and correcting
 our many mistakes\par
-Many thanks go to the all lecturer and supervisors who have given their 
-full effort in guiding the team in achieving the goal as well as their 
-encouragement to maintain our progress in track. Our profound thanks go to all 
-classmates, especially to my friends for spending their time in helping and 
+Many thanks go to the all lecturer and supervisors who have given their
+full effort in guiding the team in achieving the goal as well as their
+encouragement to maintain our progress in track. Our profound thanks go to all
+classmates, especially to my friends for spending their time in helping and
 giving support whenever we need it in fabricating my project\par
 %to display members name under Acknowledgement
 \begin{flushright}
-\vskip -20pt
-\setstretch{1.2}
-\submittedBy
+	\vskip -20pt
+	\setstretch{1.2}
+	\submittedBy
 \end{flushright}
 
 %to adjust spacings for TOC, LOF, LOT
@@ -123,14 +123,14 @@ giving support whenever we need it in fabricating my project\par
 \makeatletter
 % to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
 \def\@makeschapterhead#1{%
-  %\vspace*{50\p@}% Remove the vertical space
-  {\newpage \parindent \z@ \raggedright
-    \normalfont
-    \interlinepenalty\@M
-    \center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
-    \vskip 18\p@ % adjust space after heading 18pt
-  }}
-\makeatother 
+	%\vspace*{50\p@}% Remove the vertical space
+	{\newpage \parindent \z@ \raggedright
+			\normalfont
+			\interlinepenalty\@M
+			\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
+			\vskip 18\p@ % adjust space after heading 18pt
+		}}
+\makeatother
 
 \tableofcontents % prints table of contents
 \listoffigures % prints list of figures
@@ -150,49 +150,49 @@ giving support whenever we need it in fabricating my project\par
 
 \chapter{Introduction}
 \section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in your document.
-With the rapid development of mobile devices, computers and accessibility to the internet there is growing users of different chat applications. The attracting or more so important features of any social media has become the chat feature. Such chat features provide real time messaging, file sharing which may include different photos, videos, documents, etc. Chatting has been such an important aspect of the modern world that it is expected the no. of active users currently is in billions with this number expected to increase more in the coming years. Among some of the popular chat applications Whatsapp’s monthly active users(in millions) are 2000, messenger 988, snapchat 557 to name a few.[1]
+With the rapid development of mobile devices, computers and accessibility to the internet there is growing users of different chat applications. The attracting or more so important features of any social media has become the chat feature. Such chat features provide real time messaging, file sharing which may include different photos, videos, documents, etc. Chatting has been such an important aspect of the modern world that it is expected the no. of active users currently is in billions with this number expected to increase more in the coming years. Among some of the popular chat applications Whatsapp’s monthly active users(in millions) are 2000, messenger 988, snapchat 557 to name a few.\cite{Barakat2018}
 
-The importance of such apps was never more clearly presented as when Facebook experienced outage in 2021. In what was just a 6 hour long outage the competing apps like telegram gained a record 70 million new users. [2]
+The importance of such apps was never more clearly presented as when Facebook experienced outage in 2021. In what was just a 6 hour long outage the competing apps like telegram gained a record 70 million new users.
 As the dependence on chat systems grow day by day the vulnerability and assaults also increases. As such  there is increasing need to implement a secure communication
 
-Digital communication witnesses a noticeable and continuous development in 
-many applications in the Internet. Hence, secure communication sessions must be 
-provided. The security of data transmitted across a global network has turned into a 
-key factor on the network performance measures. So, the confidentiality and the 
-integrity of data are needed to prevent eavesdroppers from accessing and using 
+Digital communication witnesses a noticeable and continuous development in
+many applications in the Internet. Hence, secure communication sessions must be
+provided. The security of data transmitted across a global network has turned into a
+key factor on the network performance measures. So, the confidentiality and the
+integrity of data are needed to prevent eavesdroppers from accessing and using
 transmitted data.
 
-One way of to secure the communication is using End-To-End encryption which use the Cryptographic algorithm. Cryptographic algorithms are divided 
-into symmetric and asymmetric keys. The symmetric algorithms require a single key only for the 
-encryption and decryption of data. Asymmetric algorithms on the other hand require both public 
-and private keys for the encryption and decryption of data. The scrambling of the data is done 
-using the public key while the private key is made known only to the receiver which is meant for 
-the decryption of the data. 
-A maiden asymmetric algorithm was proposed by Diffie-Hellman [2][3] which ensures secured 
-communication as well as data security. A counter algorithm termed RSA which has lower time 
-complexity based on prime number factorization was proposed in 1977 and is the patent of Ron 
-Rivest, Adi Shamir, and Len Adleman (RSA), which was published in 1978 at the Massachusetts 
-Institute of Technology [4]. In this algorithm, two prime numbers are used to produce the public 
-and the private key. When the keys are created, the prime numbers are no more considered and 
-are or can be discarded. 
+One way of to secure the communication is using End-To-End encryption which use the Cryptographic algorithm. Cryptographic algorithms are divided
+into symmetric and asymmetric keys. The symmetric algorithms require a single key only for the
+encryption and decryption of data. Asymmetric algorithms on the other hand require both public
+and private keys for the encryption and decryption of data. The scrambling of the data is done
+using the public key while the private key is made known only to the receiver which is meant for
+the decryption of the data.
+A maiden asymmetric algorithm was proposed by Diffie-Hellman  which ensures secured
+communication as well as data security. A counter algorithm termed RSA which has lower time
+complexity based on prime number factorization was proposed in 1977 and is the patent of Ron
+Rivest, Adi Shamir, and Len Adleman (RSA), which was published in 1978 at the Massachusetts
+Institute of Technology . In this algorithm, two prime numbers are used to produce the public
+and the private key. When the keys are created, the prime numbers are no more considered and
+are or can be discarded.\cite{sa}
 
-  \pagebreak
+\pagebreak
 \section{Problem statement}
 \vspace{-18pt}
-The purpose of this project is to provide the correct data with security to the users. For 
-some of the users the data might be lost during the transmission process in the network 
-and for some, the data might be changed by the unauthorized person in the network and 
-there are some other security problems in the network. Our application will give you more 
-Security to the data present in the network and there will be able to reduce the loss of data 
-in the network which will be transmitted from the sender to the receiver using the latest 
-technologies. Only the Authorized persons i.e., who are using our application will be 
+The purpose of this project is to provide the correct data with security to the users. For
+some of the users the data might be lost during the transmission process in the network
+and for some, the data might be changed by the unauthorized person in the network and
+there are some other security problems in the network. Our application will give you more
+Security to the data present in the network and there will be able to reduce the loss of data
+in the network which will be transmitted from the sender to the receiver using the latest
+technologies. Only the Authorized persons i.e., who are using our application will be
 there in the Network.
 
 The proposed algorithm is to compress the message at one end and ask the public key of another person and use that public key to encrypt the message and the person only decrypt the message using his private key.Using Huffman encoding the message compressed is loss less.
 
 
 \section{Objectives}
-The application aims to provide data security in communication system. The application focuses on 
+The application aims to provide data security in communication system. The application focuses on
 simplicity of design, having user-friendly interface and to be easily understood. \\
 The main objectives of the application can be enumerated as follows:
 \vspace{-18pt}
@@ -202,269 +202,197 @@ The main objectives of the application can be enumerated as follows:
 \end{itemize}
 
 \section{Applications}
-The application is an online web application. This system can be used to provide end to end encryption of data and also used to provide secure connection between user between users with smooth and clean UI. 
- \section{Project features}
- The application, is targeted towards the general population, so the core features of this applications can be listed into two categories depending on whether user wants to view 
- the predicted values or just access the inventory management as follows: 
+The application is an online web application. This system can be used to provide end to end encryption of data and also used to provide secure connection between user between users with smooth and clean UI.
 
- \subsection{Value predictions}
- \vspace{-18pt}
- \begin{itemize}
-	\item Shows entire list of produces and predicted prices, 
-	\item Allow user to select the predicted price according to day, month or year.
-\end{itemize}
+\section{Project features}
+The application, is targeted towards the general population, so the core features of this applications can be listed below:
 
-\subsection{Inventory management}
- \vspace{-18pt}
- \begin{itemize}
-	\item Allow user to add, delete and update inventory,  
-	\item Allow user to create a profile and save their inventory,
+\vspace{-18pt}
+\begin{itemize}
+	\item We can send messages
+	\item It provides end-to-end data security in communication system.
+	\item Simple and ease for general population
+	\item It provides encryption, decryption and compression to messages.
 \end{itemize}
 
 \section{Feasibility Analysis}
 
 \subsection{Economic Feasibility}
-Based on our economic analysis for development and operational cost, 
-the system is being developed and operated economically. For development, 
-the required devices are readily available, so it is feasible. Also, 
+Based on our economic analysis for development and operational cost,
+the system is being developed and operated economically. For development,
+the required devices are readily available, so it is feasible. Also,
 it is economically feasible to the consumers as it costs no charge to use the platform.
 
 \subsection{Schedule Feasibility}
-Based on the objectives and the time left for the development. 
+Based on the objectives and the time left for the development.
 The schedule is found to be feasible.
 
 \subsection{Technical Feasibility}
-Technically, the system is feasible enough and easy-to-use 
-for both technical and non-technical groups of people. It provides 
-a user-friendly environment along with features using the latest technologies. 
-The system provides a layout most of the applications people are used to anyway 
+Technically, the system is feasible enough and easy-to-use
+for both technical and non-technical groups of people. It provides
+a user-friendly environment along with features using the latest technologies.
+The system provides a layout most of the applications people are used to anyway
 so it will be easy to use.
 
 \subsection{Operational Feasibility}
-For the operation of the system, the person does 
-not need to excel in using a computer. Since, the event 
-may not always be related to the technical fields, someone 
-with minimum knowledge about computer and technology can also get 
-benefit from the system. Similarly, one can get access to the system 
-as a web-based application. There is no requirement of huge and expensive hardware. 
-The system comprises only of farmer’s end. 
+For the operation of the system, the person does
+not need to excel in using a computer. Since, the event
+may not always be related to the technical fields, someone
+with minimum knowledge about computer and technology can also get
+benefit from the system. Similarly, one can get access to the system
+as a web-based application. There is no requirement of huge and expensive hardware.
+The system comprises only of farmer’s end.
 
 \section{System Requirements}
 
 \subsection{Software Requirement}
-Application is targeted towards a general market, 
-so it is aimed to be fully optimized enough for any low-range to 
-high-range systems, so listed below are 
+Application is targeted towards a general market,
+so it is aimed to be fully optimized enough for any low-range to
+high-range systems, so listed below are
 the software requirements for the development and operation of this system:
 \vspace{-18pt}
 \begin{itemize}
-   \item Operating System: Windows 8 or above 
-   \item Browsers: Google Chrome, Firefox, etc
-   \item PostgreSQL Server
-   \item Python
+	\item Operating System: Windows 8 or above
+	\item Browsers: Google Chrome, Firefox, etc
+	\item PostgreSQL Server
+	\item Python
 \end{itemize}
 
 \subsection{Hardware Requirement}
-Hardware configuration and requirements for the 
-operation of this application are as follows: 
+Hardware configuration and requirements for the
+operation of this application are as follows:
 \vspace{-18pt}
 \begin{itemize}
-   \item Intel Core 2 Duo Processor (Recommended i-series processors or more) with minimum of 2GB RAM for application operation 
-   \item Server with optimum node speed
+	\item Intel Core 2 Duo Processor (Recommended i-series processors or more) with minimum of 2GB RAM for application operation
+	\item Server with optimum node speed
 \end{itemize}
- %\subsection{Referring Section}
+%\subsection{Referring Section}
 %This is an example of referring Section \ref{sec:bkgrnd} of page \pageref{sec:bkgrnd}. \\
 
 
 
 \chapter{Literature Review}
+\section{Related Paper}
+There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\cite{paley} 
 
-Applications of Machine Learning Techniques in Agricultural Crop Production describes 
-about various Machine Learning applications that would prove to very useful in the 
-agriculture sector. For these applications, a large amount of data available from many 
-resources can be analyzed to find the hidden knowledge. This research field is growing 
-day by day and will prove to be a great tool for the development of the agriculture sector 
-in the future. The combination of Agriculture and Computer Science will provide a great 
-scope of development in the agriculture sector. The paper, Smart Farming: A Techno Agriculture 
-Advancement Powered by Machine Learning’s main aim is to make the agriculture sector aware about 
-the modern technologies. Accurate predictions should be made with the help of machine learning 
-instead of manual predictions so as to improve the commercial value of the crops. The main problem 
-identified in the paper is that Nepal is the only country which lacks in technological advancements 
-in the agriculture sector, due to which manual predictions are done for everything. These results 
-in crops being sold at a less price and sometimes even the crops are ruined due to wrong predictions 
-about the weather. The solution to this is Machine Learning. ML is the technique to provide knowledge 
-to the machine so that it can think on its own provided with the correct data. This will help to 
-raise the standards of agriculture in Nepal. Machine Learning in Agriculture. This paper, Machine 
-Learning in Agriculture: A Review is based takes a practical approach and implements many learning 
-models and algorithms in the field of Agriculture.  
-The paper, Crop Price Prediction System using Machine Learning Algorithms’ main objective is to estimate the 
-crop price by analyzing the existing data using certain data analytics techniques. This 
-paper shows a more of a practical approach towards the topic. Data from various sources 
-have been collected and a system is created for the crop price prediction. The whole 
-system has been implemented using the python programming language. The data is collected 
-from reliable sources and stored in a storage where it is then used accessed, transfer 
-and analyzed by an organization. The data is then processed and transform the raw data 
-into a more efficient format. Machine learning techniques like Decision tree regression 
-is used here to determine important information and to increase the 
-accuracy percentage of the price prediction. The final results are shown through visual 
-elements like bar graphs. This paper is very useful to understand the 
-importance of machine learning techniques and how modern technologies can prove to 
-be very useful in the development of agriculture sector. This paper, Crop Price 
-Prediction using Decision Tree Regression’s main objective is 
-to predict the price of the crop and estimate the profit for the crops given in 
-the system before sowing. The databases provide enough data for predicting the 
-appropriate Market Selling Price for the crops and their demand in the market.This paper shows that the 
-Decision tree regression is a very effective technique in the prediction. As there are many 
-algorithms in machine learning in agriculture, there are various ways to make 
-predictions for the crops which is also one of the main things this paper has 
-shown, that there are different algorithms for different crops and not a single 
-one for all the crops. Thus, this paper shows how machine learning can prove to 
-be beneficial for the farmers to take the 
-right decisions in choosing the crops by analyzed results.\cite{rakhra2021crop}
+There are different Encryption algorithms that can  be utilized  to  provide secure  messaging environment. Thus, messages will circulate as  encrypted form in transmission medium, not as clear text. Somebody who has seized encrypted data does not obtain original message from the encrypted  data  unless they  possess  the  necessary  method or  a  key.  Encryption  methods  are divided into the following categories: private key cryptography and public key cryptography. 
+
+In a symmetric key algorithm, the sender and receiver must have a shared key set up in advance and keep secret from all other parties; the sender uses this key for encryption, and the receiver uses  the  same  key  for  decryption.  In  this  case,  except  for  transmitted  encrypted  message, encryption  key  must  also  be  submitted  confidentially,  which  is  one  of  the  disadvantages of private-key cryptography.
+
+If a third person who has managed to enter the system operator or listen to transmission medium 
+seizes the  key value,  s/he can turn  the  encrypted data into  original data.  The most  important 
+feature of public key cryptography which is another method is that the key value used to encrypt 
+the message is different from the key value used to decrypt the message. Each user has two keys 
+in this method: public key and private key. The public key of the user can be viewed by anyone. 
+The private key is kept secret by the user. When someone wants to send a message to user, they 
+use the user's public key and create the encrypted message and then send the encrypted data to 
+user. The user  decrypts the  encrypted data with  her/his private  key  and obtains  a meaningful 
+message.
+ 
+The data which has been encrypted by the user’s public key is only solved with the user’s private key. When the user wants to send a message, s/he reaches the public key library. S/he takes 
+the public key of somebody to which s/he wants to send a message and encrypts the message and 
+then s/he sends the encrypted message to the receiver. The only thing that the receiver must do is 
+to solve the message with his/her own private key.
+
+RSA algorithm, which is one of the public-key encryption methods and more reliable than the 
+private key encryption algorithms, is used in our proposed app for secure messaging.\cite{paley2}
+
+RSA algorithm is asymmetric cryptography algorithm. Asymmetric means it works in two different keys: Public and Private. Public key is given to everyone and Private key is kept private.
+
+The idea of RSA is based on the fact that it is difficult to factorize a large integer. The public key consists of two numbers where one number is multiplication of two large prime numbers. And private key is also derived from the same two prime numbers. So if somebody can factorize the large number, the private key is compromised. Therefore encryption strength totally lies on the key size and if we double or triple the key size, the strength of encryption increases exponentially. RSA keys can be typically 1024 or 2048 bits long, but experts believe that 1024 bit keys could be broken in the near future. But till now it seems to be an infeasible task.\cite{ram}
+
+\section{Existing system:}
+In this section we briefly introduce many of the popular chat applications. Some of these applications are not public or open source so it is difficult for these to get evaluated by the developer’s community, security experts or research academic.
+
+\subsection{Viber}
+Viber is an instant messaging and Voice over IP (VoIP) application for smartphones developed by Viber Media. In addition to instant messaging, users can exchange images, 
+video and audio media messages. Viber recently supported the end-to-end encryption to their service, but only for one-to-one and group conversations in which all 
+participants are using the latest Viber version 6.0 for Android, iOS or Windows 10. At this time, in the Viber iOS application for iPhone and iPad, attachments such as images and videos which are sent via the iOS Share Extension does not support end-to-end encryption .\cite{shyam} Viber has privacy issues such as adding a friend without his knowledge or adding him to a group without his permission. Plus that, local storage is not secured. It is not 
+open source making it difficult to evaluation.
+
+\subsection{Whatsapp}
+WhatsApp is one of the most popular messaging application, recently enabled end-to-end encryption for its 1 billion users across all platforms. WhatsApp uses part of a security protocol developed by Open Whisper System, so provides a security-verification code that can share with a contact to ensure that the conversation is encrypted. It is difficult to trust in WhatsApp application completely because the application is not open source, making it difficult to verify the functioning process and match them with the work of the encryption protocol which was announced.
+
+\subsection{Telegram}
+Telegram is an open source instant messaging service enables users to send messages, photos, videos, stickers and files. Telegram provides two modes of messaging 
+is regular chat and secret chat. Regular chat is client-server based on cloud-based messaging, it does not provide end-to-end encryption, stores all messages on its 
+servers and synchronizes with all user devices. More, local storage is not encrypted by default. Secret chat is client-client provides end-to-end encryption. Contrary to regular chat messages, messages that are sent in a secret chat can only be accessed on the device that has been initiated a secret chat and the device that has been accepted a secret chat they cannot be accessed on other devices. Messages sent within secret chats can be deleted 
+at any time and can optionally self-destruct. Telegram uses its own cryptographic protocol MTProto which is based on 256-bit symmetric AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key exchange, and has been criticized by a significant part of the cryptographic community about its security. The registration process of Telegram, Viber and WhatsApp depend on SMS. SMS is transported via Signaling System 7 (SS7) protocol. The vulnerability lies in SS7. Attackers exploited SS7 protocol to login into 
+victim's account by intercepting SMS messages. Because of Telegram cloud-based, the attacker exploits it and makes full control of the victim account and can prevent him to enter into his account. To make the account more secure should activate two-factor authentication \cite{de}
+
+\subsection{Facebook Messenger}
+Facebook Messenger is a popular messaging service 
+available for Android and iOS. It provides two modes of 
+messaging one is regular chat and another is secret conversations. 
+Regular chat does not provide end-to-end encryption only 
+secure communication by using TLS,  and it stores all 
+messages on its servers. Secret conversations have  the 
+same idea of Telegram secret chat . 
+
+
 
 
 \chapter{Methodology}
 
 \section{Required Algorithm:}
-\subsection{Overview of Decision tree Algorithm}
-Decision Tree algorithm belongs to the family of supervised learning algorithms. Unlike other supervised learning algorithms, the decision tree algorithm can be used for solving regression and classification problems too.
 
-The goal of using a Decision Tree is to create a training model that can use to predict the class or value of the target variable by learning simple decision rules inferred from prior data(training data).
+\subsection{Overview of  Huffman}
+Huffman coding is a lossless data compression technique used widely to compress images.The main idea is to assign 
+variable length codes to alphabets/symbols based upon there occurrence in the text. In this technique, the code generated is 
+a prefix code, that is, if a symbol, say ‘A’, is assigned a code 0 then no other symbol can have a code starting with 0. 
+It is the most efficient and widely accepted compression technique. It makes use of trees to assign codes to various 
+symbols depending upon there frequency.
 
-In Decision Trees, for predicting a class label for a record we start from the root of the tree. We compare the values of the root attribute with the record’s attribute. On the basis of comparison, we follow the branch corresponding to that value and jump to the next node.
-\vspace{-18pt}
-\begin{enumerate}
-\item \textbf{Important Terminology related to Decision Trees}
-		\begin{itemize}
-		\item \textbf{Root Node:} It represents the entire population or sample and this further gets divided         								  into two or more homogeneous sets.
-		\item \textbf{Splitting:}  It is a process of dividing a node into two or more sub-nodes.
-		\item \textbf{Decision Node:}  When a sub-node splits into further sub-nodes, then it is called the 										decision node.
-		\item \textbf{Leaf / Terminal Node:} Nodes do not split is called Leaf or Terminal node.
-		\item \textbf{Pruning:} When we remove sub-nodes of a decision node, this process is called pruning. You can say the opposite process of splitting.
-		\item \textbf{Branch / Sub-Tree: } A subsection of the entire tree is called branch or sub-tree.
-		\item \textbf{Parent and Child Node:}  A node, which is divided into sub-nodes is called a parent node of sub-nodes whereas sub-nodes are the child of a parent node.
-		\end{itemize}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/decisiontreeoverview1.png}
-	\label{figdecisionalgo1} % for referencing
-\end{figure}
-Decision trees classify the examples by sorting them down the tree from the root to some leaf/terminal node, with the leaf/terminal node providing the classification of the example.
-
-Each node in the tree acts as a test case for some attribute, and each edge descending from the node corresponds to the possible answers to the test case. This process is recursive in nature and is repeated for every subtree rooted at the new node.
-
-\item \textbf{Assumptions while creating Decision Tree}\\
-Below are some of the assumptions we make while using Decision tree:\\
+\subsection{Huffman Algorithm Steps:}
 \vspace{-18pt}
 \begin{itemize}
-\item In the beginning, the whole training set is considered as the root.
-\item Feature values are preferred to be categorical. If the values are continuous then they are discretized prior to building the model.
-\item Records are distributed recursively on the basis of attribute values.
-\item Order to placing attributes as root or internal node of the tree is done by using some statistical approach.
+	\item Calculate the frequency of each symbol
+	\item Take the two least frequent symbols and assign them to two leaf nodes. And assign the sum of the corresponding 
+	frequencies to the parent node
+	\item Now select next two least frequency nodes from the rest of the nodes along with the newly created node and form 
+	another parent node,
+	\item Repeat step 3 till a complete binary tree is formed
+	\item  Starting from the root, assign ‘0’ to the left child and ‘1’ to the right child of every node till you reach the leaf nodes
+	\item To assign the code to the symbol, trace the path from root to the corresponding node
 \end{itemize}
-Decision Trees follow Sum of Product (SOP) representation. The Sum of product (SOP) is also known as Disjunctive Normal Form. For a class, every branch from the root of the tree to a leaf node having the same class is conjunction (product) of values, different branches ending in that class form a disjunction (sum).
+The run time complexity of Huffman for n characters is O (n log n). 
 
-The primary challenge in the decision tree implementation is to identify which attributes do we need to consider as the root node and each level. Handling this is to know as the attributes selection. We have different attributes selection measures to identify the attribute which can be considered as the root note at each level.
+\pagebreak
+\subsection{Overview of RSA Algorithm}
+RSA encryption algorithm, which is based on the idea of ensuring the secure transfer of data in the digital environment and the algorithmic difficulty of separating the integer factorization, is a type of public-key encryption method. Nowadays, it is also known as both the most commonly used encryption method and the method that allows digital signatures. It was created by Ron Rivest, Adi Shamir and Leonard Adleman  in 1978. Prime numbers are used for key generation process in RSA encryption method.This makes it possible to create a safer structure. How the encryption and decryption processes
+are done with RSA algorithm is shown in below figure,
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/rsa algo.png}
+	\caption{RSA al}
+	\label{figdecisionalgo1} % for referencing
+\end{figure}
+\pagebreak
 
-\item \textbf{Reduction in Variance}\\
-Reduction in variance is an algorithm used for continuous target variables (regression problems). This algorithm uses the standard formula of variance to choose the best split. The split with lower variance is selected as the criteria to split the population:\\
-\textbf{Steps to calculate Varience and varience reduction:}\\
+\subsection{RSA algorithm structure}
+\subsubsection{Steps:}
 \vspace{-18pt}
-\begin{enumerate}
-\item Calculate variance for each node.
-\item Calculate variance for each split as the weighted average of each node variance.
-\item Differentiate varience of child from varience of parent. 
-\end{enumerate}
-\textbf{Used Formulae:}\\
-Average = $\frac{\sum{x}}{n}$\\
-Standard Deviation(Sd)=$\sqrt{\frac{\sum{x-\bar{x}}}{n} }$\\
-Varience(var)=$\frac{1}{N}\sum{\left( {x_i - \bar x} \right)^2 } $\\
-Varience Reduction= $var(parent)-\sum{w_i var(child_i)}$\\
+\begin{itemize}
+	\item Choose two very large random prime integers: p and q
+	\item Calculate n = p*q and z = (p-1)(q-1)
+	\item Choose a number e where 1 $<$ e $<$ z
+	\item Calculate d = e-1mod(p-1)(q-1)
+	\item You can bundle private key pair as (n,d)
+	\item You can bundle public key pair as (n,e)
+\end{itemize}
+After creating public and private keys, information which must be sent is encrypted with the
+public key.
+\subsubsection{Encryption and decryption processes are done as follows:}
+\vspace{-18pt}
+\begin{itemize}
+	\item The cypher text C is found by the equation where M is the original
+	message
+	\item The message M can be found from the cypher text C by the equation M = C$^d$ mod n
+	\item A text encrypted with the public key can only be solved with the private key
+\end{itemize}
 
 
-
-\end{enumerate}
-
-\subsection{Data Preprocessing}
-\subsubsection{Step 1:Importing the required libraries}
-These two are essential libraries which we will import every time.
-Numpy is a library which contains mathematical functions.
-Pandas is the library used to import and manage the data sets. 
-
-\subsubsection{Step 2:Importing the data set}
-Data sets are generally available in .csv format. A CSV file stores tabular data in plain text. Each line of the file is a data record. We use the read.csv method of the pandas library to read a local. CSV file as a data frame. Then we make separate Matrix and Vector of independent and dependent variables from the dataframe.
-
-\subsubsection{Step 3: Handling the Missing Data}
-The data we get is rarely homogeneous. Data can be missing due to various reasons and needs to be handled so that it does not reduce the performance of our machine learning model. We can replace the missing data by the Mean or Median of the entire column. We use Imputer class of sklearn.preprocessing for this task.
-
-\subsubsection{Step 4: Encoding Categorical Data}
-Categorical data are variables that contain label. values rather than numeric values. The number of possible values is often limited to a fixed set. Example values
- such as "Yes" and "No" cannot be used in mathematical equations of the model so we need to encode these variables into numbers. To achieve this we import Label Encoder class from sklearn.preprocessing library.
- 
-\subsubsection{Step 5: Splitting the dataset into test set and training set}
-We make two partitions of dataset one for training the
-model called training set and other for testing the performance of the trained model. called test set. The
-split is generally $80/20$. We import train test split  method of sklearn.crossvalidation library.
-
-\subsubsection{Step 6: Feature Scaling}
-Most of the machine learning algorithms use the
-71	Euclidean distance between two data points in their 
-computations, features highly varying in magnitudes, units and range pose problems. High magnitudes features will weigh more in the distance calculations than features with low magnitudes. Done by Feature standardization or Z-score normalization. Standard Scalar of sklearn.preprocessing is imported.
-
-
-
-
-\subsection{Steps for Decision Tree Regression Model:}
-\subsubsection{Step 1:Importing the libraries}
-The first step will always consist of importing the libraries that are needed to 
-develop the ML model. The NumPy, matplotlib and the Pandas libraries are imported.\par
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/import library.png}
-	\label{figimport} % for referencing
-\end{figure}
-
-
-\subsubsection{Step 2:Initialize and print the Dataset}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/intdata.png}
-	\label{figintdata} % for referencing
-\end{figure}
-
-\subsubsection{Step 3: Select all the independent features from the dataset to “X” and dependent features to "y"}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/feature.png}
-	\label{figfeature} % for referencing
-\end{figure}
-
-\subsubsection{Step 5: Fit decision tree regressor to the dataset}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/fit.png}
-	\label{figfit} % for referencing
-\end{figure}
-
-
-\subsubsection{Step 6: Predicting a new value}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/predict.png}
-	\label{figpredict} % for referencing
-\end{figure}
-
-
-\subsubsection{Step 7: Visualising the result}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/visualize.png}
-	\label{figvisualize} % for referencing
-\end{figure}
-
-
-
+\pagebreak
 \section{Software development model}
 \subsection{Incremental Model}
 \begin{figure}[H]
@@ -475,32 +403,32 @@ develop the ML model. The NumPy, matplotlib and the Pandas libraries are importe
 \end{figure}
 
 \subsubsection{First Increment:}
-First, the website was analyzed to know how it should look like. 
-Then, the designing of templates was done. After observing the design of the 
-templates, we started coding using hypertext languages Html, CSS, JavaScript, and Bootstrap. 
-And finally, after testing the frontend was created.
+First, the website was analyzed to know how it should look like.
+Then, the designing of templates was done. After observing the design of the
+templates, we started coding using react js, bootstrap, JavaScript.
 
 \subsubsection{Second Increment:}
-After analyzing the scenario of the project, the algorithms to be 
-implemented was analyzed. Using the algorithms, we started designing 
-the algorithms that is suitable for the project. Initiating the coding we 
-completed the algorithm implementation. The testing of algorithm was done using the dataset. 
+After analyzing the scenario of the project, the algorithms to be
+implemented was analyzed. Using the algorithms, we started designing
+the algorithms that is suitable for the project. Initiating the coding we
+completed the algorithm implementation.
 Finally, the algorithm was implemented.
 
 \subsubsection{Third Increment:}
-After the algorithm implementation backend designing and coding 
-was started. Using Django and Python the backend part 
+After the algorithm implementation backend designing and coding
+was started. Using Django and Python the backend part
 was completed and tested. Finally, backend was ready.
 
 \subsubsection{Fourth Increment:}
-Finally, after all the designing was completed, coding for the project was done. Later, 
-testing of the project was done. 
-At last, the final website was designed.
+Finally, after all the designing was completed, coding for the project was done. Later,
+testing of the project was done.
+At last, the final webapp was designed.
+\pagebreak
 
 \section{Block Diagram:}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=160mm]{images/blockdiagram.png}
+	\includegraphics[width=170mm, height=160mm]{images/Block Diagram.png}
 	\caption{Block Diagram} %figure name
 	\label{figblockdiagram} % for referencing
 \end{figure}
@@ -508,7 +436,7 @@ At last, the final website was designed.
 \section{Use Case Diagram:}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=160mm]{images/usecase.png}
+	\includegraphics[width=180mm, height=180mm]{images/UseCaseDiagram1.png}
 	\caption{Use Case Diagram} %figure name
 	\label{figusecase} % for referencing
 \end{figure}
@@ -516,85 +444,22 @@ At last, the final website was designed.
 
 
 
-\chapter{Result and Discussion}
+\chapter{Epilogue}
 
-\section{Output:}
-We succesfully created a vegetable price predictiction model which can predict price with good accuracy. All the the data to train model were taken from Kalimati market price dataset to complete our project. We use 
-data from year 2013 t0 2021 and use hundreds of dats's for better accuracy of our model. 
+\section{ Expected Output:}
+The application will have a good user interface and user experience. It will be a web based application. In this application the user will first need  to provide their details in order to login. Then the user can send messages to receiver which is first compressed using huffman and the gets encrypted using RSA algorithm. After that same message is sent to receiver which gets decrypted using RSA algorithm and the decompressed using huffman and receiver receives message with higher security and privacy. In this the message is encrypted with public key of receiver and the decrypted using private key of receiver. We expect a clean UI of this message communication web application with higher security and privacy. 
 
-We then trained all the datasets to make a model. We tried to create efficient and accurate model to identify the vegetable and predict it's price of the given date. After training and testing of model, a user friendly web UI is made for the user to make task easier.
-
-Machine learning model accuracy is the measurement used to determine which model
-is best at identifying relationships and patterns between variables in a data-set based on
-the training data. 
-
-In Machine Learning, error is used to see how accurately our model can predict on data it uses to learn; as well as new, unseen data.
+\section{Work Schedule}
+Scheduling establishes the timelines, delivery and availability of project resources whether they be personnel, inventory or capital. For this reason, any project without a schedule is a project doomed to issue down the road.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=140mm]{images/DecisionTree_1.png}
-	\caption{Vegetable Price Prediction Decision Tree} %figure name
-	\label{figresult} % for referencing
-\end{figure}
-The above figure shows the regression tree working for our model. This figure includes year, month, regreesion value etc which shows how regression tree method is working and providing us assist for creating vegetable price prediction model. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/accuracy.png}
-	\caption{Vegetable Price Prediction Model Accuracy} %figure name
-	\label{figresult2} % for referencing
-\end{figure}
-The above figure shows the accuracy of our model. It has accuracy of about 75\%.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=140mm]{images/error.png}
-	\caption{Vegetable Price Prediction Mode error} %figure name
-	\label{result3} % for referencing
-\end{figure}
-The above figure shows the error of our model. We get mean square error of approximate 34.46, absolute error of approx 4.34 and mean square error of about 5.87.
-
-\section{UI output}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{images/signup.png}
-	\caption{Sign up interface} %figure name
-	\label{figsignup} % for referencing
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{images/login.png}
-	\caption{Sign in interface} %figure name
-	\label{figlogin} % for referencing
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=120mm]{images/output1.png}
-	\caption{Output of UI} %figure name
-	\label{figoutput1} % for referencing
+	\includegraphics[width=160mm]{images/ganttchart.png}
+	\caption{Gantt Chart} %figure name
+	\label{figganttchart} % for referencing
 \end{figure}
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=120mm]{images/output2.png}
-	\caption{Output of UI} %figure name
-	\label{figoutput2} % for referencing
-\end{figure}
-The above figures shows the User interface of our website where we can sign up , log in and predict price of vegetables using day , month and year. 
-
-
-
-
-
-\chapter{Conclusion}
-Timro Baari (A vegetable Price Prediction Model) uses machine learning method using regression tree. It can detect the price of vegetables of given date (year/month/date) of vegtable which we choose to predict. This can help different aspects of agriculture and farmers can predict price through which they can mass produce vegetables in which they will get more profit. As well as costumer can predict price of vegetables and buy more vegetables which they need before increment of price. It will help in production of vegetables of farmers in which they will not have loss. This proposed model has accuracy of about 75%.
-
-\subsection{Possible Future research}
-In future we can use other various types of machine learning method for better accuracy of prediction. We can also add tremendous amount of datasets and more type of vegetables choice. We can also make our Web UI more user friendly and clean.   
 
 
 %Reference

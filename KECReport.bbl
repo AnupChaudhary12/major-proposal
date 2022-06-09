@@ -21,10 +21,48 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{rakhra2021crop}
-M.~Rakhra, P.~Soniya, D.~Tanwar, P.~Singh, D.~Bordoloi, P.~Agarwal, S.~Takkar,
-  K.~Jairath, and N.~Verma, ``Crop price prediction using random forest and
-  decision tree regression:-a review,'' \emph{Materials Today: Proceedings},
-  2021.
+\bibitem{Chauhan2016}
+\BIBentryALTinterwordspacing
+P.~Chauhan, S.~Gupta, and N.~S. Mathur, ``A new approach to encryption using
+  huffman coding,'' pp. 76--82, 2016. [Online]. Available:
+  \url{http://ijpsat.ijsht-journals.org}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sa}
+\BIBentryALTinterwordspacing
+J.~K. Dawson, F.~Twum, J.~B.~H. Acquah, and B.~K. Ayawli, ``An enhanced rsa
+  algorithm for data security using gaussian interpolation formula,'' 2022.
+  [Online]. Available: \url{https://doi.org/10.21203/rs.3.rs-1326669/v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Barakat2018}
+M.~Barakat, C.~Eder, and T.~Hanke, ``An introduction to cryptography,'' 2018.
+
+\bibitem{paley}
+N.~Sabah, J.~Mohamad, and B.~N. Dhannoon, ``Developing an end-to-end secure
+  chat application,'' vol.~17, 11 2017.
+
+\bibitem{paley2}
+H.~Bodur and R.~Kara, ``Secure sms encryption using rsa encryption algorithm on
+  android message application,'' 06 2015.
+
+\bibitem{ram}
+\BIBentryALTinterwordspacing
+``Rsa algorithm in cryptography - geeksforgeeks.'' [Online]. Available:
+  \url{https://www.geeksforgeeks.org/rsa-algorithm-cryptography/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{shyam}
+\BIBentryALTinterwordspacing
+``End-to-end encryption in chats - viber support knowledge base.'' [Online].
+  Available:
+  \url{https://help.viber.com/en/article/end-to-end-encryption-in-chats}
+\BIBentrySTDinterwordspacing
+
+\bibitem{de}
+\BIBentryALTinterwordspacing
+``Telegram faq.'' [Online]. Available:
+  \url{https://telegram.org/faq#q-so-how-do-you-encrypt-data}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
