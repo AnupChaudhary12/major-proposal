@@ -1,9 +1,6 @@
 \acswitchoff 
-\contentsline {chapter}{Copyright}{i}{chapter*.2}%
-\contentsline {chapter}{Approval Letter}{ii}{chapter*.3}%
-\contentsline {chapter}{Abstract}{iii}{chapter*.4}%
-\contentsline {chapter}{Acknowledgment}{iv}{chapter*.5}%
-\contentsline {chapter}{List of Figures}{vii}{chapter*.7}%
+\contentsline {chapter}{Abstract}{i}{chapter*.2}%
+\contentsline {chapter}{List of Figures}{iv}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem statement}{3}{section.1.2}%
@@ -35,13 +32,13 @@
 \contentsline {subsubsection}{Encryption and decryption processes are done as follows:}{12}{subsection.3.1.4}%
 \contentsline {section}{\numberline {3.2}Software development model}{13}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Incremental Model}{13}{subsection.3.2.1}%
-\contentsline {subsubsection}{First Increment:}{13}{figure.caption.9}%
-\contentsline {subsubsection}{Second Increment:}{13}{figure.caption.9}%
-\contentsline {subsubsection}{Third Increment:}{14}{figure.caption.9}%
-\contentsline {subsubsection}{Fourth Increment:}{14}{figure.caption.9}%
+\contentsline {subsubsection}{First Increment:}{13}{figure.caption.6}%
+\contentsline {subsubsection}{Second Increment:}{13}{figure.caption.6}%
+\contentsline {subsubsection}{Third Increment:}{14}{figure.caption.6}%
+\contentsline {subsubsection}{Fourth Increment:}{14}{figure.caption.6}%
 \contentsline {section}{\numberline {3.3}Block Diagram:}{15}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Use Case Diagram:}{16}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Epilogue}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1} Expected Output:}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Work Schedule}{17}{section.4.2}%
-\contentsline {chapter}{References}{18}{figure.caption.12}%
+\contentsline {chapter}{References}{18}{figure.caption.9}%

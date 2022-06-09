@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.8)  9 JUN 2022 10:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.8)  9 JUN 2022 10:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -431,7 +431,7 @@ Package hyperref Info: Link coloring OFF on input line 69.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 69.
-<images/logo.png, id=163, 102.3825pt x 102.3825pt>
+<images/logo.png, id=151, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 70.
@@ -443,11 +443,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.71 \KECtitlepage
-                   % command defined in KECReportFormat [1] [1
-
-] [2
-
-]
+                   % command defined in KECReportFormat [1]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
  (C:\Users\cosine\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -455,21 +451,19 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
  (C:\Users\cosine\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
+) [1
 
-] [4
-
-] (KECReport.toc [5
+] (KECReport.toc [2
 
 ])
 \tf@toc=\write4
 \openout4 = `KECReport.toc'.
 
- [6] (KECReport.lof)
+ [3] (KECReport.lof)
 \tf@lof=\write5
 \openout5 = `KECReport.lof'.
 
- [7
+ [4
 
 ]
 Chapter 1.
@@ -477,11 +471,11 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.178 
+l.160 
        [1
 
 ] [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 200.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 182.
  (C:\Users\cosine\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3] [4] [5]
@@ -493,62 +487,62 @@ Chapter 3.
 [10
 
 ]
-<images/rsa algo.png, id=316, 456.5055pt x 266.1945pt>
+<images/rsa algo.png, id=288, 456.5055pt x 266.1945pt>
 File: images/rsa algo.png Graphic file (type png)
 <use images/rsa algo.png>
-Package pdftex.def Info: images/rsa algo.png  used on input line 366.
+Package pdftex.def Info: images/rsa algo.png  used on input line 348.
 (pdftex.def)             Requested size: 455.24408pt x 265.45865pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 366--367
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 348--349
  [][] 
  []
 
 [11 <./images/rsa algo.png>] [12]
-<images/incremental model.png, id=328, 690.58pt x 457.71pt>
+<images/incremental model.png, id=300, 690.58pt x 457.71pt>
 File: images/incremental model.png Graphic file (type png)
 <use images/incremental model.png>
-Package pdftex.def Info: images/incremental model.png  used on input line 400.
+Package pdftex.def Info: images/incremental model.png  used on input line 382.
 (pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 400--401
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 382--383
  [][] 
  []
 
 [13 <./images/incremental model.png>] [14]
-<images/Block Diagram.png, id=338, 708.6475pt x 325.215pt>
+<images/Block Diagram.png, id=311, 708.6475pt x 325.215pt>
 File: images/Block Diagram.png Graphic file (type png)
 <use images/Block Diagram.png>
-Package pdftex.def Info: images/Block Diagram.png  used on input line 431.
+Package pdftex.def Info: images/Block Diagram.png  used on input line 413.
 (pdftex.def)             Requested size: 483.70134pt x 455.27805pt.
 
-Overfull \hbox (66.86845pt too wide) in paragraph at lines 431--432
+Overfull \hbox (66.86845pt too wide) in paragraph at lines 413--414
  [][] 
  []
 
-<images/UseCaseDiagram1.png, id=339, 1155.31625pt x 915.42pt>
+<images/UseCaseDiagram1.png, id=312, 1155.31625pt x 915.42pt>
 File: images/UseCaseDiagram1.png Graphic file (type png)
 <use images/UseCaseDiagram1.png>
-Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 439.
+Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 421.
 (pdftex.def)             Requested size: 512.14853pt x 512.17076pt.
 
-Overfull \hbox (95.31564pt too wide) in paragraph at lines 439--440
+Overfull \hbox (95.31564pt too wide) in paragraph at lines 421--422
  [][] 
  []
 
 [15 <./images/Block Diagram.png>] [16 <./images/UseCaseDiagram1.png>]
 Chapter 4.
 
-Overfull \hbox (10.68619pt too wide) in paragraph at lines 453--454
+Overfull \hbox (10.68619pt too wide) in paragraph at lines 435--436
 \OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
  []
 
-<images/ganttchart.png, id=351, 677.62839pt x 346.54771pt>
+<images/ganttchart.png, id=323, 677.62839pt x 346.54771pt>
 File: images/ganttchart.png Graphic file (type png)
 <use images/ganttchart.png>
-Package pdftex.def Info: images/ganttchart.png  used on input line 457.
+Package pdftex.def Info: images/ganttchart.png  used on input line 439.
 (pdftex.def)             Requested size: 455.24408pt x 232.81502pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 457--458
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 439--440
  [][] 
  []
 
@@ -563,20 +557,20 @@ Underfull \hbox (badness 2158) in paragraph at lines 64--67
 
 ] (KECReport.aux)
 Package rerunfilecheck Info: File `KECReport.out' has not changed.
-(rerunfilecheck)             Checksum: A71E0E85F2B3130C84DB29352DF69740;5452.
+(rerunfilecheck)             Checksum: 047104BD86DB6953B2D0A27292635796;5123.
  ) 
 Here is how much of TeX's memory you used:
- 16624 strings out of 478614
- 323145 string characters out of 2842651
- 600984 words of memory out of 3000000
- 34490 multiletter control sequences out of 15000+600000
- 491352 words of font info for 72 fonts, out of 8000000 for 9000
+ 16613 strings out of 478614
+ 323032 string characters out of 2842651
+ 600980 words of memory out of 3000000
+ 34486 multiletter control sequences out of 15000+600000
+ 489723 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,7n,82p,1434b,483s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/cosine/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on KECReport.pdf (27 pages, 462578 bytes).
+Output written on KECReport.pdf (24 pages, 456517 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 388 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 327 words of extra memory for PDF output out of 10000 (max. 10000000)
 
