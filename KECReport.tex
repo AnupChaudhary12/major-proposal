@@ -73,7 +73,7 @@
 \pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
 
 %Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
- % defined in KECReportFormat.tex
+% defined in KECReportFormat.tex
 
 %Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
 % defined in KECReportFormat.tex
@@ -97,29 +97,29 @@ Since we used huffman to compress the data and RSA algorithm for securing the da
 
 
 
-%to adjust spacings for TOC, LOF, LOT
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%TOC, LOF and LOT
-\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
-\makeatletter
-% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
-\def\@makeschapterhead#1{%
-	%\vspace*{50\p@}% Remove the vertical space
-	{\newpage \parindent \z@ \raggedright
-			\normalfont
-			\interlinepenalty\@M
-			\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
-			\vskip 18\p@ % adjust space after heading 18pt
-		}}
-\makeatother
+	%to adjust spacings for TOC, LOF, LOT
+	{
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%TOC, LOF and LOT
+		\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
+		\makeatletter
+		% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
+		\def\@makeschapterhead#1{%
+			%\vspace*{50\p@}% Remove the vertical space
+			{\newpage \parindent \z@ \raggedright
+					\normalfont
+					\interlinepenalty\@M
+					\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
+					\vskip 18\p@ % adjust space after heading 18pt
+				}}
+		\makeatother
 
-\tableofcontents % prints table of contents
-\listoffigures % prints list of figures
-\addcontentsline{toc}{chapter}{List of Figures}
-%\listoftables % prints list of table
-%\addcontentsline{toc}{chapter}{List of Tables}
-}
+		\tableofcontents % prints table of contents
+		\listoffigures % prints list of figures
+		\addcontentsline{toc}{chapter}{List of Figures}
+		%\listoftables % prints list of table
+		%\addcontentsline{toc}{chapter}{List of Tables}
+	}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %comment this chapter if you don't have List of Abbreviations
@@ -255,28 +255,28 @@ operation of this application are as follows:
 
 \chapter{Literature Review}
 \section{Related Paper}
-There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\cite{paley} 
+There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\cite{paley}
 
-There are different Encryption algorithms that can  be utilized  to  provide secure  messaging environment. Thus, messages will circulate as  encrypted form in transmission medium, not as clear text. Somebody who has seized encrypted data does not obtain original message from the encrypted  data  unless they  possess  the  necessary  method or  a  key.  Encryption  methods  are divided into the following categories: private key cryptography and public key cryptography. 
+There are different Encryption algorithms that can  be utilized  to  provide secure  messaging environment. Thus, messages will circulate as  encrypted form in transmission medium, not as clear text. Somebody who has seized encrypted data does not obtain original message from the encrypted  data  unless they  possess  the  necessary  method or  a  key.  Encryption  methods  are divided into the following categories: private key cryptography and public key cryptography.
 
 In a symmetric key algorithm, the sender and receiver must have a shared key set up in advance and keep secret from all other parties; the sender uses this key for encryption, and the receiver uses  the  same  key  for  decryption.  In  this  case,  except  for  transmitted  encrypted  message, encryption  key  must  also  be  submitted  confidentially,  which  is  one  of  the  disadvantages of private-key cryptography.
 
-If a third person who has managed to enter the system operator or listen to transmission medium 
-seizes the  key value,  s/he can turn  the  encrypted data into  original data.  The most  important 
-feature of public key cryptography which is another method is that the key value used to encrypt 
-the message is different from the key value used to decrypt the message. Each user has two keys 
-in this method: public key and private key. The public key of the user can be viewed by anyone. 
-The private key is kept secret by the user. When someone wants to send a message to user, they 
-use the user's public key and create the encrypted message and then send the encrypted data to 
-user. The user  decrypts the  encrypted data with  her/his private  key  and obtains  a meaningful 
+If a third person who has managed to enter the system operator or listen to transmission medium
+seizes the  key value,  s/he can turn  the  encrypted data into  original data.  The most  important
+feature of public key cryptography which is another method is that the key value used to encrypt
+the message is different from the key value used to decrypt the message. Each user has two keys
+in this method: public key and private key. The public key of the user can be viewed by anyone.
+The private key is kept secret by the user. When someone wants to send a message to user, they
+use the user's public key and create the encrypted message and then send the encrypted data to
+user. The user  decrypts the  encrypted data with  her/his private  key  and obtains  a meaningful
 message.
- 
-The data which has been encrypted by the user’s public key is only solved with the user’s private key. When the user wants to send a message, s/he reaches the public key library. S/he takes 
-the public key of somebody to which s/he wants to send a message and encrypts the message and 
-then s/he sends the encrypted message to the receiver. The only thing that the receiver must do is 
+
+The data which has been encrypted by the user’s public key is only solved with the user’s private key. When the user wants to send a message, s/he reaches the public key library. S/he takes
+the public key of somebody to which s/he wants to send a message and encrypts the message and
+then s/he sends the encrypted message to the receiver. The only thing that the receiver must do is
 to solve the message with his/her own private key.
 
-RSA algorithm, which is one of the public-key encryption methods and more reliable than the 
+RSA algorithm, which is one of the public-key encryption methods and more reliable than the
 private key encryption algorithms, is used in our proposed app for secure messaging.\cite{paley2}
 
 RSA algorithm is asymmetric cryptography algorithm. Asymmetric means it works in two different keys: Public and Private. Public key is given to everyone and Private key is kept private.
@@ -287,29 +287,29 @@ The idea of RSA is based on the fact that it is difficult to factorize a large i
 In this section we briefly introduce many of the popular chat applications. Some of these applications are not public or open source so it is difficult for these to get evaluated by the developer’s community, security experts or research academic.
 
 \subsection{Viber}
-Viber is an instant messaging and Voice over IP (VoIP) application for smartphones developed by Viber Media. In addition to instant messaging, users can exchange images, 
-video and audio media messages. Viber recently supported the end-to-end encryption to their service, but only for one-to-one and group conversations in which all 
-participants are using the latest Viber version 6.0 for Android, iOS or Windows 10. At this time, in the Viber iOS application for iPhone and iPad, attachments such as images and videos which are sent via the iOS Share Extension does not support end-to-end encryption .\cite{shyam} Viber has privacy issues such as adding a friend without his knowledge or adding him to a group without his permission. Plus that, local storage is not secured. It is not 
+Viber is an instant messaging and Voice over IP (VoIP) application for smartphones developed by Viber Media. In addition to instant messaging, users can exchange images,
+video and audio media messages. Viber recently supported the end-to-end encryption to their service, but only for one-to-one and group conversations in which all
+participants are using the latest Viber version 6.0 for Android, iOS or Windows 10. At this time, in the Viber iOS application for iPhone and iPad, attachments such as images and videos which are sent via the iOS Share Extension does not support end-to-end encryption .\cite{shyam} Viber has privacy issues such as adding a friend without his knowledge or adding him to a group without his permission. Plus that, local storage is not secured. It is not
 open source making it difficult to evaluation.
 
 \subsection{Whatsapp}
 WhatsApp is one of the most popular messaging application, recently enabled end-to-end encryption for its 1 billion users across all platforms. WhatsApp uses part of a security protocol developed by Open Whisper System, so provides a security-verification code that can share with a contact to ensure that the conversation is encrypted. It is difficult to trust in WhatsApp application completely because the application is not open source, making it difficult to verify the functioning process and match them with the work of the encryption protocol which was announced.
 
 \subsection{Telegram}
-Telegram is an open source instant messaging service enables users to send messages, photos, videos, stickers and files. Telegram provides two modes of messaging 
-is regular chat and secret chat. Regular chat is client-server based on cloud-based messaging, it does not provide end-to-end encryption, stores all messages on its 
-servers and synchronizes with all user devices. More, local storage is not encrypted by default. Secret chat is client-client provides end-to-end encryption. Contrary to regular chat messages, messages that are sent in a secret chat can only be accessed on the device that has been initiated a secret chat and the device that has been accepted a secret chat they cannot be accessed on other devices. Messages sent within secret chats can be deleted 
-at any time and can optionally self-destruct. Telegram uses its own cryptographic protocol MTProto which is based on 256-bit symmetric AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key exchange, and has been criticized by a significant part of the cryptographic community about its security. The registration process of Telegram, Viber and WhatsApp depend on SMS. SMS is transported via Signaling System 7 (SS7) protocol. The vulnerability lies in SS7. Attackers exploited SS7 protocol to login into 
+Telegram is an open source instant messaging service enables users to send messages, photos, videos, stickers and files. Telegram provides two modes of messaging
+is regular chat and secret chat. Regular chat is client-server based on cloud-based messaging, it does not provide end-to-end encryption, stores all messages on its
+servers and synchronizes with all user devices. More, local storage is not encrypted by default. Secret chat is client-client provides end-to-end encryption. Contrary to regular chat messages, messages that are sent in a secret chat can only be accessed on the device that has been initiated a secret chat and the device that has been accepted a secret chat they cannot be accessed on other devices. Messages sent within secret chats can be deleted
+at any time and can optionally self-destruct. Telegram uses its own cryptographic protocol MTProto which is based on 256-bit symmetric AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key exchange, and has been criticized by a significant part of the cryptographic community about its security. The registration process of Telegram, Viber and WhatsApp depend on SMS. SMS is transported via Signaling System 7 (SS7) protocol. The vulnerability lies in SS7. Attackers exploited SS7 protocol to login into
 victim's account by intercepting SMS messages. Because of Telegram cloud-based, the attacker exploits it and makes full control of the victim account and can prevent him to enter into his account. To make the account more secure should activate two-factor authentication \cite{de}
 
 \subsection{Facebook Messenger}
-Facebook Messenger is a popular messaging service 
-available for Android and iOS. It provides two modes of 
-messaging one is regular chat and another is secret conversations. 
-Regular chat does not provide end-to-end encryption only 
-secure communication by using TLS,  and it stores all 
-messages on its servers. Secret conversations have  the 
-same idea of Telegram secret chat . 
+Facebook Messenger is a popular messaging service
+available for Android and iOS. It provides two modes of
+messaging one is regular chat and another is secret conversations.
+Regular chat does not provide end-to-end encryption only
+secure communication by using TLS,  and it stores all
+messages on its servers. Secret conversations have  the
+same idea of Telegram secret chat .
 
 
 
@@ -319,25 +319,25 @@ same idea of Telegram secret chat .
 \section{Required Algorithm:}
 
 \subsection{Overview of  Huffman}
-Huffman coding is a lossless data compression technique used widely to compress images.The main idea is to assign 
-variable length codes to alphabets/symbols based upon there occurrence in the text. In this technique, the code generated is 
-a prefix code, that is, if a symbol, say ‘A’, is assigned a code 0 then no other symbol can have a code starting with 0. 
-It is the most efficient and widely accepted compression technique. It makes use of trees to assign codes to various 
+Huffman coding is a lossless data compression technique used widely to compress images.The main idea is to assign
+variable length codes to alphabets/symbols based upon there occurrence in the text. In this technique, the code generated is
+a prefix code, that is, if a symbol, say ‘A’, is assigned a code 0 then no other symbol can have a code starting with 0.
+It is the most efficient and widely accepted compression technique. It makes use of trees to assign codes to various
 symbols depending upon there frequency.
 
 \subsection{Huffman Algorithm Steps:}
 \vspace{-18pt}
 \begin{itemize}
 	\item Calculate the frequency of each symbol
-	\item Take the two least frequent symbols and assign them to two leaf nodes. And assign the sum of the corresponding 
-	frequencies to the parent node
-	\item Now select next two least frequency nodes from the rest of the nodes along with the newly created node and form 
-	another parent node,
+	\item Take the two least frequent symbols and assign them to two leaf nodes. And assign the sum of the corresponding
+	      frequencies to the parent node
+	\item Now select next two least frequency nodes from the rest of the nodes along with the newly created node and form
+	      another parent node,
 	\item Repeat step 3 till a complete binary tree is formed
 	\item  Starting from the root, assign ‘0’ to the left child and ‘1’ to the right child of every node till you reach the leaf nodes
 	\item To assign the code to the symbol, trace the path from root to the corresponding node
 \end{itemize}
-The run time complexity of Huffman for n characters is O (n log n). 
+The run time complexity of Huffman for n characters is O (n log n).
 
 \pagebreak
 \subsection{Overview of RSA Algorithm}
@@ -368,7 +368,7 @@ public key.
 \vspace{-18pt}
 \begin{itemize}
 	\item The cypher text C is found by the equation where M is the original
-	message
+	      message
 	\item The message M can be found from the cypher text C by the equation M = C$^d$ mod n
 	\item A text encrypted with the public key can only be solved with the private key
 \end{itemize}
@@ -429,7 +429,7 @@ At last, the final webapp was designed.
 \chapter{Epilogue}
 
 \section{ Expected Output:}
-The application will have a good user interface and user experience. It will be a web based application. In this application the user will first need  to provide their details in order to login. Then the user can send messages to receiver which is first compressed using huffman and the gets encrypted using RSA algorithm. After that same message is sent to receiver which gets decrypted using RSA algorithm and the decompressed using huffman and receiver receives message with higher security and privacy. In this the message is encrypted with public key of receiver and the decrypted using private key of receiver. We expect a clean UI of this message communication web application with higher security and privacy. 
+The application will have a good user interface and user experience. It will be a web based application. In this application the user will first need  to provide their details in order to login. Then the user can send messages to receiver which is first compressed using huffman and the gets encrypted using RSA algorithm. After that same message is sent to receiver which gets decrypted using RSA algorithm and the decompressed using huffman and receiver receives message with higher security and privacy. In this the message is encrypted with public key of receiver and the decrypted using private key of receiver. We expect a clean UI of this message communication web application with higher security and privacy.
 
 \section{Work Schedule}
 Scheduling establishes the timelines, delivery and availability of project resources whether they be personnel, inventory or capital. For this reason, any project without a schedule is a project doomed to issue down the road.
