@@ -3,9 +3,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces RSA algorithm working mechanism\relax }}{11}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Incremental Model Block Diagram\relax }}{13}{figure.caption.6}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Block Diagram\relax }}{15}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Use Case Diagram\relax }}{16}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diffie Hellman working mechanism\relax }}{11}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces RSA algorithm working mechanism\relax }}{12}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces User authentication and encryption of public key\relax }}{15}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Man in the Middle Attack Prevention by Proposed Algorithm\relax }}{16}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Incremental Model Block Diagram\relax }}{19}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Block Diagram\relax }}{21}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Use Case Diagram\relax }}{22}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gantt Chart\relax }}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gantt Chart\relax }}{23}{figure.caption.12}%

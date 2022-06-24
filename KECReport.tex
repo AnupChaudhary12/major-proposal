@@ -318,26 +318,28 @@ same idea of Telegram secret chat .
 
 \section{Required Algorithm:}
 
-\subsection{Overview of  Huffman}
-Huffman coding is a lossless data compression technique used widely to compress images.The main idea is to assign
-variable length codes to alphabets/symbols based upon there occurrence in the text. In this technique, the code generated is
-a prefix code, that is, if a symbol, say ‘A’, is assigned a code 0 then no other symbol can have a code starting with 0.
-It is the most efficient and widely accepted compression technique. It makes use of trees to assign codes to various
-symbols depending upon there frequency.
+\subsection{Overview of  Diffie Hellman Algorithm}
+The algorithm is based on Elliptic Curve Cryptography, a method of doing public-key cryptography based on the algebra structure of elliptic curves over finite fields. The DH also uses the trapdoor function, just like many other ways to do public-key cryptography. The simple idea of understanding to the DH Algorithm is the following.
 
-\subsection{Huffman Algorithm Steps:}
+\subsection{Diffie Hellman Algorithm Steps:}
 \vspace{-18pt}
 \begin{itemize}
-	\item Calculate the frequency of each symbol
-	\item Take the two least frequent symbols and assign them to two leaf nodes. And assign the sum of the corresponding
-	      frequencies to the parent node
-	\item Now select next two least frequency nodes from the rest of the nodes along with the newly created node and form
-	      another parent node,
-	\item Repeat step 3 till a complete binary tree is formed
-	\item  Starting from the root, assign ‘0’ to the left child and ‘1’ to the right child of every node till you reach the leaf nodes
-	\item To assign the code to the symbol, trace the path from root to the corresponding node
+	\item The first party picks two prime numbers, g and p and tells them to the second party.
+	\item The second party then picks a secret number (let’s call it a), and then it computes $g^a$ mod p and sends the result back to the first party; let’s call the result A. Keep in mind that the secret number is not sent to anyone, only the result is.
+	\item Then the first party does the same; it selects a secret number b and calculates the result B=$g^b$ mod p similar to the step 2.
+	\item Then, this result is sent to the second party.
+	\item  The second party takes the received number B and calculates $K_{a}$= $B^a$ mod p
+	\item The first party takes the received number A and calculates $K_{b}$ = $A^b$ mod p.
+	\item The
 \end{itemize}
-The run time complexity of Huffman for n characters is O (n log n).
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/Diffie-Hellman_Key_Exchange.png}
+	\caption{Diffie Hellman working mechanism}
+	\label{figDeffie Hellman Algorithm} % for referencing
+\end{figure}
+\pagebreak
+
 
 \pagebreak
 \subsection{Overview of RSA Algorithm}
@@ -372,6 +374,164 @@ public key.
 	\item The message M can be found from the cypher text C by the equation M = C$^d$ mod n
 	\item A text encrypted with the public key can only be solved with the private key
 \end{itemize}
+\pagebreak
+\subsection{Proposed algorithm}
+\subsubsection{Steps:}
+\vspace{-18pt}
+\begin{itemize}
+	\item Alice(User A) and Bob (User B) Choose two very large random prime integers: s and r
+	\item Calculate n = s*r and z = (s-1)(r-1)
+	\item Choose a small exponent say e :
+	      \subitem But e Must be
+	      \subitem An integer.
+	      \subitem Not be a factor of n.
+	      \subitem 1 $<$ e $<$ z
+
+	\item Calculate d = e$^{-1}$ mod(p-1)(q-1) or d = (k*z + 1) / e
+
+	\item Public key will contain (n , e) and private key will contain
+	      (n , d).
+	\item Alice needs to identify Bob. For the authentication
+	      process Alice and Bob use Modified Diffie-Hellman
+	      algorithm
+	\item Alice and Bob choose two large prime p,g such as g$<$p.
+	\item Alice chooses a large random number x$_{1} (0<x_{1}<p)$ and computes $R_{1} = g^{x_{1}} mod p.$
+	\item Alice sends $R_{1}$ to Bob
+	\item Bob chooses a large random number x$_{2} (0<x_{2}<p)$ and computes $R_{2} = g^{x_{2}} mod p.$
+	\item  Bob computes $K_{Bob} = R_{1}^{x_{2}} mod p$
+	      and $E_{1}=Encrypt(R_{2},K_{Bob}).$
+	\item Bob sends $R_{2},E_{1}$ to Alice.
+	\item Alice computes $K_{Alice} = R_{2}^{x_{1}} mod p$
+	      and $R^{'}_{2}=Decrypt(E_{1},K_{Alice}).$
+	\item If $R_{2}=R^{'}_{2}$ she proceeds; otherwise the verifier is
+	      dishonest.
+	\item Alice lets Bob send his public key.
+	\item Bob encrypts his public key via the secret key $(K_{Bob})$ and
+	      sends it to Alice.
+	\item Alice decrypts Bob's public key via the secret key $(K_{Alice})$
+	\item Alice encrypt message with Bob’s public key and sends
+	      it to Bob.
+	\item Bob decrypts the message via the secret key $(K_{Bob})$
+	\item Now Bob has the original message.
+
+
+\end{itemize}
+\pagebreak
+There are two main steps in the suggested algorithm: user
+authentication and encryption. These steps have been shown in figure below:
+\vspace{-10pt}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/Userauth.png}{}
+	\caption{User authentication and encryption of public key} %figure name
+	\label{figauthentication} % for referencing
+\end{figure}
+
+\subsection{Security analysis}
+Man in the Middle attack and Discrete Logarithm attacks
+are the most damaging attacks in key-exchanging process.
+Furthermore, Cycle attack, Brute Force attack, and Timing
+attack are the most important attacks during the encryption
+and decryption process. The following step evaluates the
+algorithm against these attacks.
+\subsubsection{Man in the Middle Attack}
+Man in the Middle is an attack that the attacker is able to
+read and modify all the messages between Alice and Bob [16].
+To protect the suggested model from Man in the Middle
+attack, encrypted replies $(R_{1},R_{2})$ and mutual
+authentication between Alice  and Bob  is
+required. For this purpose Bob computes
+$K_{Bob} = R_{1}^{x_{2}} mod p$
+and $E_{1}=Encrypt(R_{2},K_{Bob})$ and sends $ R_{2},E_{1}$ to Alice.
+After that, Alice computes $K_{Alice} = R_{2}^{x_{1}} mod p$
+and $R^{'}_{2}=Decrypt(E_{1},K_{Alice}).$
+These processes prevented the Man in the Middle attack and by comparing $R_{2}$ and $R^{'}_{2}$ the attack will be identified. The following figure shows the Man in the Middle attack prevention in the proposed model.
+
+\vspace{-10pt}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/maninmiddle.png}{}
+	\caption{ Man in the Middle Attack Prevention by Proposed Algorithm} %figure name
+	\label{figmaninmiddle} % for referencing
+\end{figure}
+
+According to the figure, $R_{m}$ and $R^{'}_{m}$ are not same for
+Alice because the keys between users and attackers are
+different.\\
+{$K_{Alice} = g^{x_{1}{x_{m}}}$ mod p}\\
+{$K_{Bob} = g^{x_{2}{x_{m}}}$ mod p}\\
+{$K_{Eve} = g^{x_{2}{x_{m}}}$ mod p}\\
+It means $K_{Alice}$ $\neq$ $K_{Bob}$ = $K_{Eve}$  and because of that, the
+Man in the Middle attack was noticed by Alice and the attack
+was prevented.
+
+\subsubsection{Cycle Attack }
+Cycle Attack is an attack where the attacker encrypts the
+cipher text alternately, until the original text appears. This
+number of encrypting will decrypt any cipher text. In large key
+RSA, this attack could not be practical even when a
+generalisation of the attack allows the modulus to be factored
+and most of the time it works faster. Moreover, in the
+proposed model, the attacker will not have access to the public
+key to re-encrypt the cipher text because the public key has
+been encrypted by the secret key that was generated in
+Modified Diffie-Hellman process.
+
+\subsubsection{Brute Force Attack}
+All possible combinations to guess the private key have
+been tried by the attacker during Brute Force attack. In
+original RSA, the probability of failure against this attack can
+be decreased considerably by choosing exponents larger than
+2048 bits but with the combination of the proposed model, this
+algorithm has significant resistance towards brute force attack
+even with 1024 bits exponents because of the encryption of
+the public key before sending it.
+
+\subsubsection{Timing Attack}
+Timing attack is a side channel attack in which the attacker
+determines private exponent by calculating the time by
+exploiting the timing variation of the modular exponentiation
+	[18]. Timing attack in original RSA might be prevented by
+including a random delay to the exponentiation algorithm or
+multiplying the cipher-text with a random number [19] while
+the dual encryption (public key encryption by secret key and
+the file encryption by RSA Small-e) in the suggested model
+will protect the transferred message from the timing attack and
+it is not necessary to multiply the cipher-text.
+
+\subsection{Limitations}
+One of the most important limitations of the proposed
+model is compatibility of the system in various situations and
+platforms. The proposed system should have same
+performance in different devices (e.g. PCs, desktops, tablets,
+smart phones, etc.) and platforms (e.g. Windows, iOS,
+Android, Linux, Mac, etc.). This problem will be more
+specific in portable devices with limited memory and capacity
+which results in full performance in encryption, decryption
+and key generation process [20]. This problem can be solved
+by decreasing the size of exponents and keys but with this
+decrease the security of the system will be reduced
+considerably. Overall, 1024 bits keys are the most appropriate
+key size in the client-based encryption and control system
+including both security and compatibility. Furthermore, the
+role of the file owner in managing the accesses is increased in
+the proposed model and by this increase the owner should
+manage all of the accesses by himself [20]. User’s common
+mistakes in this self-control process may have a significant
+impact in reducing system security
+
+\subsection{CIA triad}
+CIA triad is one of the most important models which is designed to guide policies
+for information security within an organization.
+CIA stands for :Confidentiality,
+Integrity,
+Availability.\\
+In this project, we only focuses on two models Confidentiality and 	integrity.\\
+Confidentiality means that only authorized individuals/systems can view sensitive or classified information. The data being sent over the network should not be accessed by unauthorized individuals.We use Encryption to protect the data.\\
+
+The next thing to talk about is integrity. Well, the idea here is to make sure that data has not been modified. Corruption of data is a failure to maintain data integrity. To check if our data has been modified or not, we make use of a hash function.
+
+
 
 
 \pagebreak
