@@ -495,41 +495,22 @@ exploiting the timing variation of the modular exponentiation
 including a random delay to the exponentiation algorithm or
 multiplying the cipher-text with a random number [19] while
 the dual encryption (public key encryption by secret key and
-the file encryption by RSA Small-e) in the suggested model
+the message encryption by RSA ) in the suggested model
 will protect the transferred message from the timing attack and
 it is not necessary to multiply the cipher-text.
 
-\subsection{Limitations}
-One of the most important limitations of the proposed
-model is compatibility of the system in various situations and
-platforms. The proposed system should have same
-performance in different devices (e.g. PCs, desktops, tablets,
-smart phones, etc.) and platforms (e.g. Windows, iOS,
-Android, Linux, Mac, etc.). This problem will be more
-specific in portable devices with limited memory and capacity
-which results in full performance in encryption, decryption
-and key generation process [20]. This problem can be solved
-by decreasing the size of exponents and keys but with this
-decrease the security of the system will be reduced
-considerably. Overall, 1024 bits keys are the most appropriate
-key size in the client-based encryption and control system
-including both security and compatibility. Furthermore, the
-role of the file owner in managing the accesses is increased in
-the proposed model and by this increase the owner should
-manage all of the accesses by himself [20]. User’s common
-mistakes in this self-control process may have a significant
-impact in reducing system security
-
+\pagebreak
 \subsection{CIA triad}
 CIA triad is one of the most important models which is designed to guide policies
 for information security within an organization.
-CIA stands for :Confidentiality,
+CIA stands for :\\
+Confidentiality,
 Integrity,
 Availability.\\
 In this project, we only focuses on two models Confidentiality and 	integrity.\\
 Confidentiality means that only authorized individuals/systems can view sensitive or classified information. The data being sent over the network should not be accessed by unauthorized individuals.We use Encryption to protect the data.\\
 
-The next thing to talk about is integrity. Well, the idea here is to make sure that data has not been modified. Corruption of data is a failure to maintain data integrity. We verified that we are sending message to is a genuine person so no tempering of message will happen.
+The next thing to talk about is integrity. Well, the idea here is to make sure that data has not been modified. Corruption of data is a failure to maintain data integrity. We verified that we are sending message to is a genuine person so no tempering of message will happen. To check if our data has been modified or not, we make use of a hash function.
 
 
 
