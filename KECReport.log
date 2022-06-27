@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.23)  24 JUN 2022 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.23)  27 JUN 2022 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -549,10 +549,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--512
 <images/incremental model.png, id=358, 690.58pt x 457.71pt>
 File: images/incremental model.png Graphic file (type png)
 <use images/incremental model.png>
-Package pdftex.def Info: images/incremental model.png  used on input line 523.
+Package pdftex.def Info: images/incremental model.png  used on input line 522.
 (pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 523--524
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 522--523
  [][] 
  []
 
@@ -560,37 +560,37 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 523--524
 <images/Block Diagram.png, id=369, 708.6475pt x 325.215pt>
 File: images/Block Diagram.png Graphic file (type png)
 <use images/Block Diagram.png>
-Package pdftex.def Info: images/Block Diagram.png  used on input line 554.
+Package pdftex.def Info: images/Block Diagram.png  used on input line 553.
 (pdftex.def)             Requested size: 483.70134pt x 455.27805pt.
 
-Overfull \hbox (66.86845pt too wide) in paragraph at lines 554--555
+Overfull \hbox (66.86845pt too wide) in paragraph at lines 553--554
  [][] 
  []
 
 <images/UseCaseDiagram1.png, id=370, 1155.31625pt x 915.42pt>
 File: images/UseCaseDiagram1.png Graphic file (type png)
 <use images/UseCaseDiagram1.png>
-Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 562.
+Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 561.
 (pdftex.def)             Requested size: 512.14853pt x 512.17076pt.
 
-Overfull \hbox (95.31564pt too wide) in paragraph at lines 562--563
+Overfull \hbox (95.31564pt too wide) in paragraph at lines 561--562
  [][] 
  []
 
 [21 <./images/Block Diagram.png>] [22 <./images/UseCaseDiagram1.png>]
 Chapter 4.
 
-Overfull \hbox (10.68619pt too wide) in paragraph at lines 576--577
+Overfull \hbox (10.68619pt too wide) in paragraph at lines 575--576
 \OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
  []
 
 <images/ganttchart.png, id=381, 677.62839pt x 346.54771pt>
 File: images/ganttchart.png Graphic file (type png)
 <use images/ganttchart.png>
-Package pdftex.def Info: images/ganttchart.png  used on input line 580.
+Package pdftex.def Info: images/ganttchart.png  used on input line 579.
 (pdftex.def)             Requested size: 455.24408pt x 232.81502pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 580--581
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 579--580
  [][] 
  []
 
@@ -616,7 +616,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  79i,7n,82p,1434b,593s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on KECReport.pdf (30 pages, 678058 bytes).
+Output written on KECReport.pdf (30 pages, 678008 bytes).
 PDF statistics:
  472 PDF objects out of 1000 (max. 8388607)
  87 named destinations out of 1000 (max. 500000)
