@@ -2,9 +2,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
-\newcommand{\projectTitle}{End-To-End Encryption and Decryption Using Cryptography (Asymmetric Key Encryption and Decryption (RSA)) } %specify "Title" of Your Project
-\newcommand{\doc}{Proposal} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
-% Note that You have to sibmit "Final Report" for Pre-final defense as well.
+\newcommand{\projectTitle}{End-To-End Encryption and Decryption Using Cryptography } %specify "Title" of Your Project
+\newcommand{\doc}{Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
+% Note that You have to submit "Final Report" for Pre-final defense as well.
 \newcommand{\subCode}{CT707} %specify Subject of Your Project
 \newcommand{\degree}{Bachelor in Computer Engineering} %specify your degree
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
@@ -255,12 +255,9 @@ operation of this application are as follows:
 
 \chapter{Literature Review}
 \section{Related Paper}
-There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\cite{paley}
-
+There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.[1]
 There are different Encryption algorithms that can  be utilized  to  provide secure  messaging environment. Thus, messages will circulate as  encrypted form in transmission medium, not as clear text. Somebody who has seized encrypted data does not obtain original message from the encrypted  data  unless they  possess  the  necessary  method or  a  key.  Encryption  methods  are divided into the following categories: private key cryptography and public key cryptography.
-
 In a symmetric key algorithm, the sender and receiver must have a shared key set up in advance and keep secret from all other parties; the sender uses this key for encryption, and the receiver uses  the  same  key  for  decryption.  In  this  case,  except  for  transmitted  encrypted  message, encryption  key  must  also  be  submitted  confidentially,  which  is  one  of  the  disadvantages of private-key cryptography.
-
 If a third person who has managed to enter the system operator or listen to transmission medium
 seizes the  key value,  s/he can turn  the  encrypted data into  original data.  The most  important
 feature of public key cryptography which is another method is that the key value used to encrypt
@@ -270,18 +267,11 @@ The private key is kept secret by the user. When someone wants to send a message
 use the user's public key and create the encrypted message and then send the encrypted data to
 user. The user  decrypts the  encrypted data with  her/his private  key  and obtains  a meaningful
 message.
+The data which has been encrypted by the user’s public key is only solved with the user’s private key. When the user wants to send a message, s/he reaches the public key library. S/he takes the public key of somebody to which s/he wants to send a message and encrypts the message and then s/he sends the encrypted message to the receiver. The only thing that the receiver must do is to solve the message with his/her own private key. DH protocol is to enable two users to exchange a secret key securely that can be used for subsequent encryption of messages. The protocol itself is limited to the exchange of the keys. But because of having no entity authentication mechanism, DH protocol is easily attacked by the man-in-the-middle attack and impersonation attack in practice. The DH key exchange is a cryptographic protocol that allows two parties that have no prior knowledge of each other to establish together a shared secret key over an insecure communications channel. Then they use this key to encrypt subsequent communications using a symmetric-key cipher[3]
+The Classic Diffie-Hellman (CDH) algorithm encounters several security problems. The algorithm security depends on the complexity of solving the discrete logarithm and the integer factorization problem. The security also depends on the length of bits keys used. In this paper, we proposed a hybrid algorithm, the combination of Modified Diffie Hellman (MDH) with the Rivest, Shamir, and Adelman (RSA) algorithm. The MDH will not use primitive root (g). Instead, it will use two prime numbers (P and Q) for key exchange. It reduces the possibility of a man-in-the-middle attack. Furthermore, the MDH has an authentication mechanism. If both shared keys are equal, the communication will continue. Otherwise, it will stop because it is compromised. Also, the RSA algorithm will use the two prime numbers generated by MDH (P and Q). RSA algorithm, which is one of the public-key encryption methods and more reliable than the private key encryption algorithms, is used for secure messaging.[2]
+RSA algorithm is asymmetric cryptography algorithm. The RSA algorithm will perform the encryption and decryption message. The Diffie Hellman (DH) and the RSA Algorithms are the basis of several security standards and services on the internet, especially TLS and SSL. If the security of both algorithms is compromised, such systems will collapse. In this proposal, the combined cryptography system aims to achieve secret message exchange; it uses random prime numbers after multiplication and eventually shared with the other end of a communication. The proposed algorithm secretly generate a value so that the security level increases[3]
+Security of RSA depends on the prime factorization of N. The proposed algorithm authenticates a user as shown is the first part of the algorithm by exchange value of random P and Q. Another strength of the hybrid algorithm, it will not generate primitive root (g). Then generate secret keys at both sides. Secret keys not known or not sent over a communication channel, so eavesdropper has no chance to get the value of the secret key. The secret key is multiplied to P, and hence new P will be not identifiable to attacker though the value of P gets compromised. This value of P and Q is generated secretly at the user side, and this valued is not shared through the communication channel, so we claim that the proposed method is more secure than the original RSA. The disadvantage of the proposed algorithm has extra steps that mix symmetric key and asymmetric key cryptography. The time required for this integration steps is disadvantageous of this proposed method. But we can achieve better security[3]
 
-The data which has been encrypted by the user’s public key is only solved with the user’s private key. When the user wants to send a message, s/he reaches the public key library. S/he takes
-the public key of somebody to which s/he wants to send a message and encrypts the message and
-then s/he sends the encrypted message to the receiver. The only thing that the receiver must do is
-to solve the message with his/her own private key.
-
-RSA algorithm, which is one of the public-key encryption methods and more reliable than the
-private key encryption algorithms, is used in our proposed app for secure messaging.\cite{paley2}
-
-RSA algorithm is asymmetric cryptography algorithm. Asymmetric means it works in two different keys: Public and Private. Public key is given to everyone and Private key is kept private.
-
-The idea of RSA is based on the fact that it is difficult to factorize a large integer. The public key consists of two numbers where one number is multiplication of two large prime numbers. And private key is also derived from the same two prime numbers. So if somebody can factorize the large number, the private key is compromised. Therefore encryption strength totally lies on the key size and if we double or triple the key size, the strength of encryption increases exponentially. RSA keys can be typically 1024 or 2048 bits long, but experts believe that 1024 bit keys could be broken in the near future. But till now it seems to be an infeasible task.\cite{ram}
 
 \section{Existing system:}
 In this section we briefly introduce many of the popular chat applications. Some of these applications are not public or open source so it is difficult for these to get evaluated by the developer’s community, security experts or research academic.
@@ -567,10 +557,27 @@ At last, the final webapp was designed.
 
 
 
-\chapter{Epilogue}
+\chapter{RESULT AND DISCUSSION}
 
 \section{ Expected Output:}
-The application will have a good user interface and user experience. It will be a web based application. In this application the user will first need  to provide their details in order to login. Then the user can send messages to receiver which is first compressed using huffman and the gets encrypted using RSA algorithm. After that same message is sent to receiver which gets decrypted using RSA algorithm and the decompressed using huffman and receiver receives message with higher security and privacy. In this the message is encrypted with public key of receiver and the decrypted using private key of receiver. We expect a clean UI of this message communication web application with higher security and privacy.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm, height=180mm]{images/signup.png}
+	\caption{Sign up interface} %figure name
+	\label{figusecase} % for referencing
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm, height=180mm]{images/signin.png}
+	\caption{Sign in interface} %figure name
+	\label{figusecase} % for referencing
+\end{figure}
+
+
+\section{Work on Progress:}
+The ultimate goal of this project is to develop a working model of secure end to end chat web-app. This will include a working web client for user login and chat in real time using socket.io .
 
 \section{Work Schedule}
 Scheduling establishes the timelines, delivery and availability of project resources whether they be personnel, inventory or capital. For this reason, any project without a schedule is a project doomed to issue down the road.

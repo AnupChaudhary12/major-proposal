@@ -18,55 +18,51 @@ Warning--entry type for "shyam" isn't style-file defined
 --line 44 of file library.bib
 Warning--entry type for "de" isn't style-file defined
 --line 48 of file library.bib
-Warning--entry type for "ram" isn't style-file defined
---line 52 of file library.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in sa
-Warning--empty journal in paley
-Warning--empty booktitle in paley2
 
 Done.
-You've used 8 entries,
+You've used 5 entries,
             4087 wiz_defined-function locations,
-            859 strings with 8403 characters,
-and the built_in function-call counts, 3412 in all, are:
-= -- 227
-> -- 73
-< -- 7
-+ -- 37
-- -- 15
-* -- 161
-:= -- 555
-add.period$ -- 16
-call.type$ -- 8
-change.case$ -- 8
+            845 strings with 8060 characters,
+and the built_in function-call counts, 2267 in all, are:
+= -- 152
+> -- 50
+< -- 6
++ -- 26
+- -- 10
+* -- 111
+:= -- 372
+add.period$ -- 10
+call.type$ -- 5
+change.case$ -- 5
 chr.to.int$ -- 15
-cite$ -- 11
-duplicate$ -- 281
-empty$ -- 324
-format.name$ -- 20
-if$ -- 748
+cite$ -- 6
+duplicate$ -- 176
+empty$ -- 201
+format.name$ -- 13
+if$ -- 490
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 61
-newline$ -- 57
-num.names$ -- 5
-pop$ -- 201
+int.to.str$ -- 5
+missing$ -- 39
+newline$ -- 46
+num.names$ -- 3
+pop$ -- 129
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 244
+skip$ -- 159
 stack$ -- 0
-substring$ -- 43
-swap$ -- 160
-text.length$ -- 2
+substring$ -- 40
+swap$ -- 105
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 8
-warning$ -- 3
-while$ -- 8
-width$ -- 9
-write$ -- 89
-(There were 8 warnings)
+type$ -- 5
+warning$ -- 1
+while$ -- 6
+width$ -- 6
+write$ -- 66
+(There were 5 warnings)

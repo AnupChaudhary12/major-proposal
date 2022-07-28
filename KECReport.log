@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.23)  12 JUL 2022 07:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.23)  28 JUL 2022 21:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,7 +352,14 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 69.
  (C:\Users\himal\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (KECReport.aux)
+) (KECReport.aux
+
+LaTeX Warning: Label `figusecase' multiply defined.
+
+
+LaTeX Warning: Label `figusecase' multiply defined.
+
+)
 \openout1 = `KECReport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -439,7 +446,7 @@ Package hyperref Info: Link coloring OFF on input line 69.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 69.
-<images/logo.png, id=163, 102.3825pt x 102.3825pt>
+<images/logo.png, id=167, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 70.
@@ -490,135 +497,159 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Chapter 2.
 [6
 
-] [7] [8] [9]
+] [7] [8] [9] [10]
 Chapter 3.
-<images/Diffie-Hellman_Key_Exchange.png, id=305, 376.40625pt x 565.11125pt>
+<images/Diffie-Hellman_Key_Exchange.png, id=312, 376.40625pt x 565.11125pt>
 File: images/Diffie-Hellman_Key_Exchange.png Graphic file (type png)
 <use images/Diffie-Hellman_Key_Exchange.png>
-Package pdftex.def Info: images/Diffie-Hellman_Key_Exchange.png  used on input line 337.
+Package pdftex.def Info: images/Diffie-Hellman_Key_Exchange.png  used on input line 327.
 (pdftex.def)             Requested size: 455.24408pt x 683.52803pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 337--338
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 327--328
  [][] 
  []
 
-[10
+[11
 
 ]
 Overfull \vbox (5.52115pt too high) has occurred while \output is active []
 
- [11 <./images/Diffie-Hellman_Key_Exchange.png>]
-<images/rsa algo.png, id=317, 456.5055pt x 266.1945pt>
+ [12 <./images/Diffie-Hellman_Key_Exchange.png>]
+<images/rsa algo.png, id=324, 456.5055pt x 266.1945pt>
 File: images/rsa algo.png Graphic file (type png)
 <use images/rsa algo.png>
-Package pdftex.def Info: images/rsa algo.png  used on input line 350.
+Package pdftex.def Info: images/rsa algo.png  used on input line 340.
 (pdftex.def)             Requested size: 455.24408pt x 265.45865pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 350--351
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 340--341
  [][] 
  []
 
-[12 <./images/rsa algo.png>] [13] [14]
-<images/Userauth.png, id=337, 339.06676pt x 257.763pt>
+[13 <./images/rsa algo.png>] [14] [15]
+<images/Userauth.png, id=344, 339.06676pt x 257.763pt>
 File: images/Userauth.png Graphic file (type png)
 <use images/Userauth.png>
-Package pdftex.def Info: images/Userauth.png  used on input line 426.
+Package pdftex.def Info: images/Userauth.png  used on input line 416.
 (pdftex.def)             Requested size: 455.24408pt x 346.08499pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 426--427
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 416--417
  [][] 
  []
 
-[15 <./images/Userauth.png>]
-<images/maninmiddle.png, id=343, 486.01575pt x 264.38776pt>
+[16 <./images/Userauth.png>]
+<images/maninmiddle.png, id=350, 486.01575pt x 264.38776pt>
 File: images/maninmiddle.png Graphic file (type png)
 <use images/maninmiddle.png>
-Package pdftex.def Info: images/maninmiddle.png  used on input line 454.
+Package pdftex.def Info: images/maninmiddle.png  used on input line 444.
 (pdftex.def)             Requested size: 455.24408pt x 247.65312pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 454--455
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 444--445
  [][] 
  []
 
-[16 <./images/maninmiddle.png>] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 505--513
+[17 <./images/maninmiddle.png>] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 495--503
 
  []
 
-[18]
-<images/incremental model.png, id=358, 690.58pt x 457.71pt>
+[19]
+<images/incremental model.png, id=366, 690.58pt x 457.71pt>
 File: images/incremental model.png Graphic file (type png)
 <use images/incremental model.png>
-Package pdftex.def Info: images/incremental model.png  used on input line 523.
+Package pdftex.def Info: images/incremental model.png  used on input line 513.
 (pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 523--524
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 513--514
  [][] 
  []
 
-[19 <./images/incremental model.png>] [20]
-<images/block diag.png, id=369, 1267.73625pt x 576.1525pt>
+[20 <./images/incremental model.png>] [21]
+<images/block diag.png, id=376, 1267.73625pt x 576.1525pt>
 File: images/block diag.png Graphic file (type png)
 <use images/block diag.png>
-Package pdftex.def Info: images/block diag.png  used on input line 554.
+Package pdftex.def Info: images/block diag.png  used on input line 544.
 (pdftex.def)             Requested size: 483.69853pt x 455.26097pt.
 
-Overfull \hbox (66.86565pt too wide) in paragraph at lines 554--555
+Overfull \hbox (66.86565pt too wide) in paragraph at lines 544--545
  [][] 
  []
 
-<images/UseCaseDiagram1.png, id=370, 1155.31625pt x 915.42pt>
+<images/UseCaseDiagram1.png, id=377, 1155.31625pt x 915.42pt>
 File: images/UseCaseDiagram1.png Graphic file (type png)
 <use images/UseCaseDiagram1.png>
-Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 562.
+Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 552.
 (pdftex.def)             Requested size: 512.14853pt x 512.17076pt.
 
-Overfull \hbox (95.31564pt too wide) in paragraph at lines 562--563
+Overfull \hbox (95.31564pt too wide) in paragraph at lines 552--553
  [][] 
  []
 
-[21 <./images/block diag.png>] [22 <./images/UseCaseDiagram1.png>]
+[22 <./images/block diag.png>] [23 <./images/UseCaseDiagram1.png>]
 Chapter 4.
+<images/signup.png, id=388, 552.56438pt x 636.12656pt>
+File: images/signup.png Graphic file (type png)
+<use images/signup.png>
+Package pdftex.def Info: images/signup.png  used on input line 566.
+(pdftex.def)             Requested size: 455.23888pt x 512.1439pt.
 
-Overfull \hbox (10.68619pt too wide) in paragraph at lines 576--577
+Overfull \hbox (38.40599pt too wide) in paragraph at lines 566--567
+ [][] 
+ []
+
+<images/signin.png, id=389, 631.60968pt x 538.26094pt>
+File: images/signin.png Graphic file (type png)
+<use images/signin.png>
+Package pdftex.def Info: images/signin.png  used on input line 573.
+(pdftex.def)             Requested size: 455.25014pt x 512.1581pt.
+
+Overfull \hbox (38.41725pt too wide) in paragraph at lines 573--574
+ [][] 
+ []
+
+[24
+
+ <./images/signup.png>]
+Overfull \hbox (10.68619pt too wide) in paragraph at lines 583--584
 \OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
  []
 
-<images/ganttchart.png, id=381, 677.62839pt x 346.54771pt>
+[25 <./images/signin.png>]
+<images/ganttchart.png, id=401, 677.62839pt x 346.54771pt>
 File: images/ganttchart.png Graphic file (type png)
 <use images/ganttchart.png>
-Package pdftex.def Info: images/ganttchart.png  used on input line 580.
+Package pdftex.def Info: images/ganttchart.png  used on input line 587.
 (pdftex.def)             Requested size: 455.24408pt x 232.81502pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 580--581
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 587--588
  [][] 
  []
 
-(KECReport.bbl [23
-
- <./images/ganttchart.png>]
-Underfull \hbox (badness 2158) in paragraph at lines 64--67
+(KECReport.bbl [26 <./images/ganttchart.png>]
+Underfull \hbox (badness 2158) in paragraph at lines 50--53
 []\OT1/ptm/m/n/12 ``Telegram faq.'' [On-line]. Avail-able: []$https : / / telegram . org / faq #
  []
 
-) [24
+) [27
 
 ] (KECReport.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `KECReport.out' has not changed.
-(rerunfilecheck)             Checksum: A45C2934EBA4336719AEB69BC3D863DE;5668.
+(rerunfilecheck)             Checksum: D507588B25DB59FDBB2F0C2E4A947176;5885.
  ) 
 Here is how much of TeX's memory you used:
- 16661 strings out of 478354
- 323762 string characters out of 2837118
- 609245 words of memory out of 3000000
- 34779 multiletter control sequences out of 15000+600000
- 489729 words of font info for 70 fonts, out of 8000000 for 9000
+ 16676 strings out of 478354
+ 324078 string characters out of 2837118
+ 612154 words of memory out of 3000000
+ 34789 multiletter control sequences out of 15000+600000
+ 489732 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,7n,82p,1434b,593s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 79i,7n,82p,1425b,593s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/himal/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on KECReport.pdf (30 pages, 682352 bytes).
+Output written on KECReport.pdf (33 pages, 916303 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 

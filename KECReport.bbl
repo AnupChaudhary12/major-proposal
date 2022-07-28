@@ -38,20 +38,6 @@ J.~K. Dawson, F.~Twum, J.~B.~H. Acquah, and B.~K. Ayawli, ``An enhanced rsa
 \bibitem{Barakat2018}
 M.~Barakat, C.~Eder, and T.~Hanke, ``An introduction to cryptography,'' 2018.
 
-\bibitem{paley}
-N.~Sabah, J.~Mohamad, and B.~N. Dhannoon, ``Developing an end-to-end secure
-  chat application,'' vol.~17, 11 2017.
-
-\bibitem{paley2}
-H.~Bodur and R.~Kara, ``Secure sms encryption using rsa encryption algorithm on
-  android message application,'' 06 2015.
-
-\bibitem{ram}
-\BIBentryALTinterwordspacing
-``Rsa algorithm in cryptography - geeksforgeeks.'' [Online]. Available:
-  \url{https://www.geeksforgeeks.org/rsa-algorithm-cryptography/}
-\BIBentrySTDinterwordspacing
-
 \bibitem{shyam}
 \BIBentryALTinterwordspacing
 ``End-to-end encryption in chats - viber support knowledge base.'' [Online].
