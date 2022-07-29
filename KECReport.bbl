@@ -38,6 +38,12 @@ J.~K. Dawson, F.~Twum, J.~B.~H. Acquah, and B.~K. Ayawli, ``An enhanced rsa
 \bibitem{Barakat2018}
 M.~Barakat, C.~Eder, and T.~Hanke, ``An introduction to cryptography,'' 2018.
 
+\bibitem{mdh}
+J.~E. Avestro, A.~M. Sison, and R.~P. Medina, ``Hybrid algorithm combining
+  modified diffie hellman and rsa.''\hskip 1em plus 0.5em minus 0.4em\relax
+  Institute of Electrical and Electronics Engineers Inc., 11 2019, pp.
+  100--104.
+
 \bibitem{shyam}
 \BIBentryALTinterwordspacing
 ``End-to-end encryption in chats - viber support knowledge base.'' [Online].
@@ -45,10 +51,26 @@ M.~Barakat, C.~Eder, and T.~Hanke, ``An introduction to cryptography,'' 2018.
   \url{https://help.viber.com/en/article/end-to-end-encryption-in-chats}
 \BIBentrySTDinterwordspacing
 
+\bibitem{e2echat}
+\BIBentryALTinterwordspacing
+``(pdf) developing an end-to-end secure chat application.'' [Online].
+  Available:
+  \url{https://www.researchgate.net/publication/322509087_Developing_an_End-to-End_Secure_Chat_Application}
+\BIBentrySTDinterwordspacing
+
 \bibitem{de}
 \BIBentryALTinterwordspacing
 ``Telegram faq.'' [Online]. Available:
   \url{https://telegram.org/faq#q-so-how-do-you-encrypt-data}
 \BIBentrySTDinterwordspacing
+
+\bibitem{telegram}
+\BIBentryALTinterwordspacing
+``Faq for the technically inclined.'' [Online]. Available:
+  \url{https://core.telegram.org/techfaq#q-how-does-end-to-end-encryption-work-in-mtproto}
+\BIBentrySTDinterwordspacing
+
+\bibitem{fb}
+``Messenger secret conversations technical whitepaper,'' 2017.
 
 \end{thebibliography}
