@@ -21,13 +21,13 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Barakat2018}
+M.~Barakat, C.~Eder, and T.~Hanke, ``An introduction to cryptography,'' 2018.
+
 \bibitem{sa}
 F.~S{\"o}nmez and M.~K. Abbas, ``Development of a client/server
   cryptography-based secure messaging system using rsa algorithm,'' \emph{J.
   Manag. Eng. Inf. Technol}, vol.~4, no.~6, 2017.
-
-\bibitem{Barakat2018}
-M.~Barakat, C.~Eder, and T.~Hanke, ``An introduction to cryptography,'' 2018.
 
 \bibitem{Sabah2017}
 \BIBentryALTinterwordspacing
