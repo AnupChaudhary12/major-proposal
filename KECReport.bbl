@@ -22,11 +22,9 @@
 \BIBdecl
 
 \bibitem{sa}
-\BIBentryALTinterwordspacing
-J.~K. Dawson, F.~Twum, J.~B.~H. Acquah, and B.~K. Ayawli, ``An enhanced rsa
-  algorithm for data security using gaussian interpolation formula,'' 2022.
-  [Online]. Available: \url{https://doi.org/10.21203/rs.3.rs-1326669/v1}
-\BIBentrySTDinterwordspacing
+F.~S{\"o}nmez and M.~K. Abbas, ``Development of a client/server
+  cryptography-based secure messaging system using rsa algorithm,'' \emph{J.
+  Manag. Eng. Inf. Technol}, vol.~4, no.~6, 2017.
 
 \bibitem{Barakat2018}
 M.~Barakat, C.~Eder, and T.~Hanke, ``An introduction to cryptography,'' 2018.

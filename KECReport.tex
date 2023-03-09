@@ -2,10 +2,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
-\newcommand{\projectTitle}{End-To-End Encryption and Decryption Using Cryptography } %specify "Title" of Your Project
+\newcommand{\projectTitle}{End-To-End Encryption Chatapp } %specify "Title" of Your Project
 \newcommand{\doc}{Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to submit "Final Report" for Pre-final defense as well.
-\newcommand{\subCode}{CT707} %specify Subject of Your Project
+\newcommand{\subCode}{CT755} %specify Subject of Your Project
 \newcommand{\degree}{Bachelor in Computer Engineering} %specify your degree
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
 {
@@ -19,9 +19,9 @@
 
 \newcommand{\submittedTo}{Department of Computer and Electronics Engineering} %specify your department
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
-\newcommand{\defYear}{2022} %Defense Year
-\newcommand{\defMonth}{June} %Defense Month- January, February, ...
-\newcommand{\defDay}{12} %specify Defense Day- 1, 2, ...
+\newcommand{\defYear}{2023} %Defense Year
+\newcommand{\defMonth}{March} %Defense Month- January, February, ...
+\newcommand{\defDay}{29} %specify Defense Day- 1, 2, ...
 
 \newcommand{\supervisor}{none} % Specify Name of Supervisor for Major Project (write "none" if no Supervisor is assigned)
 \newcommand{\degSup}{Supervisor's Designation\\Second Line of Designation (if required)} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
@@ -73,7 +73,9 @@
 \pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
 
 %Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
+\KECcopyright
 % defined in KECReportFormat.tex
+\KECapproval
 
 %Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
 % defined in KECReportFormat.tex
@@ -86,40 +88,61 @@ provides privacy, integrity, confidentiality, and authentication.
 
 In the current world where communication has been made easy such that you could talk to a person on the other side of the world with a press of the button. With the increase in availability of internet service you can send texts, photos ,files through the internet in a matter of seconds and for far less cheaper. This is achieved through different chat applications. With the increased usage of such chat applications the contents of such messages contains more that just simple messages to friends and families but also very important information and files which on the wrong hands could cause a huge catastrophe. As such End-to-End security is needed to safely exchange private information with each other without worrying about data. With this project we aim to provide an End-to-End encrypted chat apps.
 
-This project approach End-to-end encryption method to provide  secure communication that prevents third parties from accessing data while it's transferred from one end system or device to another.
-The end-to-end encryption method is implemented using the Asymmetric key encryption algorithm (RSA). We compressed the message using huffman Encoding algorithm. Then used RSA to encrypt that encoded data. The login system is also secured because we used AES library to secure the password.
+This project approach End-to-End encryption method to provide  secure communication that prevents third parties from accessing data while it's transferred from one end system or device to another.
+The End-to-End encryption method is implemented using the Asymmetric key encryption algorithm (RSA). We used RSA to encrypt that encoded data.
 
 In this way we can maintain the data more securely.
-Since we used modified Deffie-Hellman the data and RSA algorithm for securing the data.\cite{sa}
+Since we used RSA algorithm for securing the data.\cite{sa}
 
 \par
-\textbf{\textit{Keywords$-$}} RSA, Huffman
+\textbf{\textit{Keywords$-$}} RSA
+
+\chapter*{Acknowledgment}
+\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
+helping us with different views of application, development and scalability as well as helped us in development of our project.
+His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
+We would like to express our notable thanks to Department of Computer and Electronics Engineering
+for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
+We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
+for presenting useful suggestions regarding the queries put forward regarding the project.\par
+Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
+and helping to better cope with the difficulties along with giving supportive hands. Without their
+valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
+Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
+withstand in our success in this project.
+%to display members name under Acknowledgement
+\begin{flushright}
+	\vskip -20pt
+	\setstretch{1.2}
+	\submittedBy
+\end{flushright}
 
 
 
-	%to adjust spacings for TOC, LOF, LOT
-	{
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		%TOC, LOF and LOT
-		\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
-		\makeatletter
-		% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
-		\def\@makeschapterhead#1{%
-			%\vspace*{50\p@}% Remove the vertical space
-			{\newpage \parindent \z@ \raggedright
-					\normalfont
-					\interlinepenalty\@M
-					\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
-					\vskip 18\p@ % adjust space after heading 18pt
-				}}
-		\makeatother
+%to adjust spacings for TOC, LOF, LOT
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TOC, LOF and LOT
+\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
+\makeatletter
+% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
+\def\@makeschapterhead#1{%
+	%\vspace*{50\p@}% Remove the vertical space
+	{\newpage \parindent \z@ \raggedright
+			\normalfont
+			\interlinepenalty\@M
+			\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
+			\vskip 18\p@ % adjust space after heading 18pt
+		}}
+\makeatother
 
-		\tableofcontents % prints table of contents
-		\listoffigures % prints list of figures
-		\addcontentsline{toc}{chapter}{List of Figures}
-		%\listoftables % prints list of table
-		%\addcontentsline{toc}{chapter}{List of Tables}
-	}
+\tableofcontents % prints table of contents
+\listoffigures % prints list of figures
+\addcontentsline{toc}{chapter}{List of Figures}
+%\listoftables % prints list of table
+%\addcontentsline{toc}{chapter}{List of Tables}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %comment this chapter if you don't have List of Abbreviations
@@ -161,16 +184,7 @@ are or can be discarded.\cite{sa}
 \pagebreak
 \section{Problem statement}
 \vspace{-18pt}
-The purpose of this project is to provide the correct data with security to the users. For
-some of the users the data might be lost during the transmission process in the network
-and for some, the data might be changed by the unauthorized person in the network and
-there are some other security problems in the network. Our application will give you more
-Security to the data present in the network and there will be able to reduce the loss of data
-in the network which will be transmitted from the sender to the receiver using the latest
-technologies. Only the Authorized persons i.e., who are using our application will be
-there in the Network.
-
-The proposed algorithm is to compress the message at one end and ask the public key of another person and use that public key to encrypt the message and the person only decrypt the message using his private key.Using Huffman encoding the message compressed is loss less.
+Traditional messaging like SMS are very unsecure as it travels through the network in plain text. Since messages might contain very sensitive informations the messages shouldn't be accessible to any other person beside the actual people involved in the conversation. Furthermore in unsecure messaging any third party can pretend to be the intended person and gain access or send wrong information.
 
 
 \section{Objectives}
@@ -194,7 +208,7 @@ The application, is targeted towards the general population, so the core feature
 	\item We can send messages
 	\item It provides end-to-end data security in communication system.
 	\item Simple and ease for general population
-	\item It provides encryption, decryption and compression to messages.
+	\item It provides encryption, decryption to messages.
 \end{itemize}
 
 \section{Feasibility Analysis}
@@ -223,7 +237,6 @@ may not always be related to the technical fields, someone
 with minimum knowledge about computer and technology can also get
 benefit from the system. Similarly, one can get access to the system
 as a web-based application. There is no requirement of huge and expensive hardware.
-The system comprises only of farmer’s end.
 
 \section{System Requirements}
 
@@ -236,8 +249,8 @@ the software requirements for the development and operation of this system:
 \begin{itemize}
 	\item Operating System: Windows 8 or above
 	\item Browsers: Google Chrome, Firefox, etc
-	\item PostgreSQL Server
-	\item Python
+	\item Mongodb, Node.js Server
+	\item React js
 \end{itemize}
 
 \subsection{Hardware Requirement}
@@ -300,8 +313,38 @@ secure communication by using TLS,  and it stores all
 messages on its servers. Secret conversations have  the
 same idea of Telegram secret chat . .\cite{fb}
 
+\section{The Challenge- Making it real-time}
+For any app to feel real-time, the user needs to be kept updated with any activity happening as soon as possible. The challenge arises in selecting and implementing a suitable development technique. With the traditional request-response model, we have few options:
+\subsection{Refresh Webpage}
+The user might refresh the web page time-to-time to check for message updates. But that is not an optimal solution. This may result in bad UX.
+
+\subsection{HTTP Protocol}
+The concept of HTTP request-response is widely used. But this requires establishing a TCP connection every time data is sent to the server. Being a one-way synchronous communication protocol, this may result in a lot of overheads while creating and destroying a TCP connection every time a message is sent in real-time chat applications.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=140mm, height=160mm]{images/Http_request-response_cycle.png}
+	\caption{Http Request-Response Cycle} %figure name
+	\label{figusecase} % for referencing
+\end{figure}
 
 
+
+\section{Web Sockets}
+This concept resolves most of the issues we just discussed. It implements instant two-way communication of messages with a persistent connection just as required for developing a real-time system. NodeJS offers several libraries to implement this technology. What we will be utilizing for our application is the Web Socket API with ‘Socket.io’ library.
+\subsection{Socket.io Api}
+Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server. It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection.
+
+\subsection{Socket.io Handshake}
+The handshake in Socket.IO is like any other information technology related handshake. It is the process of negotiation, which in Socket. IO's case, decides whether a client may connect, and if not, denies the connection.
+
+\subsection{Exchanging Messages}
+\vspace{-18pt}
+\begin{itemize}
+	\item The messages are exchanged in the form of data frames rather than a stream of data
+	\item It is a bi-directional flow of data
+	\item The event listeners of the ws object are used for message exchange
+	\item The closing handshake can take place either by the client or the server. Reconnection has to be done manually.
+\end{itemize}
 
 \chapter{Methodology}
 
@@ -310,60 +353,32 @@ same idea of Telegram secret chat . .\cite{fb}
 \subsection{Overview of  Diffie Hellman Algorithm}
 The algorithm is based on Elliptic Curve Cryptography, a method of doing public-key cryptography based on the algebra structure of elliptic curves over finite fields. The DH also uses the trapdoor function, just like many other ways to do public-key cryptography. The simple idea of understanding to the DH Algorithm is the following.
 
-\subsection{Diffie Hellman Algorithm Steps:}
+\subsection{Diffie-Helmann Algorithm}
+With simple encryption, the messages are usually encrypted only between the users and the server, making use of some cryptographic keys, hence making data vulnerable at the server. We want these keys only to exist between the users and not the server. Diffie-Helmann makes this possible. Suppose we have two clients ALice and Bob.
+
 \vspace{-18pt}
 \begin{itemize}
-	\item The first party picks two prime numbers, g and p and tells them to the second party.
-	\item The second party then picks a secret number (let’s call it a), and then it computes $g^a$ mod p and sends the result back to the first party; let’s call the result A. Keep in mind that the secret number is not sent to anyone, only the result is.
-	\item Then the first party does the same; it selects a secret number b and calculates the result B=$g^b$ mod p similar to the step 2.
-	\item Then, this result is sent to the second party.
-	\item  The second party takes the received number B and calculates $K_{a}$= $B^a$ mod p
-	\item The first party takes the received number A and calculates $K_{b}$ = $A^b$ mod p.
-	\item The  $K_{a}$ and $K_{b}$ are the shared secret keys and  $K_{a}$ = $K_{b}$ .
+	\item Alice and Bob agree to use two common prime numbers (g \& n) provided by the server
+	\item Now, these are combined using some mathematical calculations with the Private keys of Alice and Bob = a + g = ag and b + g = bg.
+	\item We exchange these Ephemeral/Public Keys ag and bg via server.
+	\item Combine the exchanged keys with the Private keys of Alice and Bob respectively to form a Shared Secret Key = ag+b = agb and bg+a = bga at both ends.
+	\item Now the attacker might be aware of g, n, ag \& bg as these are being shared publicly, but not a \& b since these are private keys only available to Alice and Bob.
+	\item It is too difficult for any intruder to split up the public components ag and bg.
+	\item Any attacker can combine ag+bg = abgg (extra bit) - too hard to figure out.
 \end{itemize}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=160mm]{images/Diffie-Hellman_Key_Exchange.png}
 	\caption{Diffie Hellman working mechanism}
 	\label{figDeffie Hellman Algorithm} % for referencing
 \end{figure}
-\pagebreak
+This mechanism was developed by Whitfield Diffie and Martin Hellman to derive the cryptographic keys instead of exchanging them completely in public. It is explained using colors since it is not possible to separate colours once mixed. Similarly, it is hard to figure out the secret keys using the only public components, once combined mathematically with the prime numbers provided by the server.
 
+\subsection{Problems with Diffie-Hellman Key Exchange}
+Although the mechanism provides us with a secure way to create cryptographic keys as end-to-end, it does not authorise the users. Hence, we might have some third party pretending to be the intended recipient and he/she will be able to access or modify the messages, by creating another pair of shared secret keys with Alice and Bob respectively. This is usually known as a Man-in-the-middle attack.\\
+That is when RSA came to rescue. The sender not only performs Diffie-Hellman but also shares his/her signature to ensure that only he/she has sent that message.
 
-\pagebreak
-\subsection{Overview of RSA Algorithm}
-RSA encryption algorithm, which is based on the idea of ensuring the secure transfer of data in the digital environment and the algorithmic difficulty of separating the integer factorization, is a type of public-key encryption method. Nowadays, it is also known as both the most commonly used encryption method and the method that allows digital signatures. It was created by Ron Rivest, Adi Shamir and Leonard Adleman  in 1978. Prime numbers are used for key generation process in RSA encryption method.This makes it possible to create a safer structure. How the encryption and decryption processes
-are done with RSA algorithm is shown in below figure,
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/rsa algo.png}
-	\caption{RSA algorithm working mechanism}
-	\label{figdecisionalgo1} % for referencing
-\end{figure}
-\pagebreak
-
-\subsection{RSA algorithm structure}
-\subsubsection{Steps:}
-\vspace{-18pt}
-\begin{itemize}
-	\item Choose two very large random prime integers: p and q
-	\item Calculate n = p*q and z = (p-1)(q-1)
-	\item Choose a number e where 1 $<$ e $<$ z
-	\item Calculate d = e-1mod(p-1)(q-1)
-	\item You can bundle private key pair as (n,d)
-	\item You can bundle public key pair as (n,e)
-\end{itemize}
-After creating public and private keys, information which must be sent is encrypted with the
-public key.
-\subsubsection{Encryption and decryption processes are done as follows:}
-\vspace{-18pt}
-\begin{itemize}
-	\item The cypher text C is found by the equation where M is the original
-	      message
-	\item The message M can be found from the cypher text C by the equation M = C$^d$ mod n
-	\item A text encrypted with the public key can only be solved with the private key
-\end{itemize}
-\pagebreak
 \subsection{Proposed algorithm}
 \subsubsection{Steps:}
 \vspace{-18pt}
@@ -416,6 +431,53 @@ authentication and encryption. These steps have been shown in figure below:
 	\caption{User authentication and encryption of public key} %figure name
 	\label{figauthentication} % for referencing
 \end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+\subsection{Overview of RSA Algorithm}
+RSA encryption algorithm, which is based on the idea of ensuring the secure transfer of data in the digital environment and the algorithmic difficulty of separating the integer factorization, is a type of public-key encryption method. Nowadays, it is also known as both the most commonly used encryption method and the method that allows digital signatures. It was created by Ron Rivest, Adi Shamir and Leonard Adleman  in 1978. Prime numbers are used for key generation process in RSA encryption method.This makes it possible to create a safer structure. How the encryption and decryption processes
+are done with RSA algorithm is shown in below figure,
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/rsa algo.png}
+	\caption{RSA algorithm working mechanism}
+	\label{figdecisionalgo1} % for referencing
+\end{figure}
+\pagebreak
+
+\subsection{RSA algorithm structure}
+\subsubsection{Steps:}
+\vspace{-18pt}
+\begin{itemize}
+	\item Choose two very large random prime integers: p and q
+	\item Calculate n = p*q and z = (p-1)(q-1)
+	\item Choose a number e where 1 $<$ e $<$ z
+	\item Calculate d = e-1mod(p-1)(q-1)
+	\item You can bundle private key pair as (n,d)
+	\item You can bundle public key pair as (n,e)
+\end{itemize}
+After creating public and private keys, information which must be sent is encrypted with the
+public key.
+\subsubsection{Encryption and decryption processes are done as follows:}
+\vspace{-18pt}
+\begin{itemize}
+	\item The cypher text C is found by the equation where M is the original
+	      message
+	\item The message M can be found from the cypher text C by the equation M = C$^d$ mod n
+	\item A text encrypted with the public key can only be solved with the private key
+\end{itemize}
+\pagebreak
+
 
 \subsection{Security analysis}
 Man in the Middle attack and Discrete Logarithm attacks
@@ -573,20 +635,25 @@ At last, the final webapp was designed.
 	\caption{Sign in interface} %figure name
 	\label{figusecase} % for referencing
 \end{figure}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm, height=160mm]{images/chat1.png}
+	\caption{Chat interface} %figure name
+	\label{figusecase} % for referencing
+\end{figure}
 
 \section{Work on Progress:}
-The ultimate goal of this project is to develop a working model of secure end to end chat web-app. This will include a working web client for user login and chat in real time using socket.io . We have finished creating login and signup system with a working frontend and backend.
+The ultimate goal of this project is to develop a working model of secure end to end chat web-app. This will include a working web client for user login and chat in real time using socket.io . We have finished creating login and signup system. Our program allows to search and add contacts; create a group chat. Our program also allows Users to send enrypted messages to each other.
 
 \section {Work Remaining:}
-We are still working on the backend and frontend  of the chat system. We also have to implement working algorithm of end to end encryption. We also have designing of UI, coding, testing and documentation and report of the project remaining.
+We are still working on the backend and frontend  of the chat system. We are yet to integrate the DH algorithm to our current program. So far our program only allows encrypted chat between single users. We are yet to have encrypted group chat.
 
 \section{Work Schedule}
 Scheduling establishes the timelines, delivery and availability of project resources whether they be personnel, inventory or capital. For this reason, any project without a schedule is a project doomed to issue down the road.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=160mm]{images/ganttchart.png}
+	\includegraphics[width=160mm]{images/gantt.png}
 	\caption{Gantt Chart} %figure name
 	\label{figganttchart} % for referencing
 \end{figure}
