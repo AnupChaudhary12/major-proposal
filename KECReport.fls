@@ -791,6 +791,13 @@ INPUT C:\Miktex\fonts\vf\adobe\times\ptmr8c.vf
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Miktex\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT .\images\clientserver.png
+INPUT .\images\clientserver.png
+INPUT images\clientserver.png
+INPUT .\images\clientserver.png
+INPUT .\images\clientserver.png
+INPUT .\images\clientserver.png
+INPUT .\images\clientserver.png
 INPUT .\images\Http_request-response_cycle.png
 INPUT .\images\Http_request-response_cycle.png
 INPUT images\Http_request-response_cycle.png
@@ -798,20 +805,6 @@ INPUT .\images\Http_request-response_cycle.png
 INPUT .\images\Http_request-response_cycle.png
 INPUT .\images\Http_request-response_cycle.png
 INPUT .\images\Http_request-response_cycle.png
-INPUT .\images\Diffie-Hellman_Key_Exchange.png
-INPUT .\images\Diffie-Hellman_Key_Exchange.png
-INPUT images\Diffie-Hellman_Key_Exchange.png
-INPUT .\images\Diffie-Hellman_Key_Exchange.png
-INPUT .\images\Diffie-Hellman_Key_Exchange.png
-INPUT .\images\Diffie-Hellman_Key_Exchange.png
-INPUT .\images\Diffie-Hellman_Key_Exchange.png
-INPUT .\images\Userauth.png
-INPUT .\images\Userauth.png
-INPUT images\Userauth.png
-INPUT .\images\Userauth.png
-INPUT .\images\Userauth.png
-INPUT .\images\Userauth.png
-INPUT .\images\Userauth.png
 INPUT .\images\rsa algo.png
 INPUT .\images\rsa algo.png
 INPUT images\rsa algo.png
@@ -868,20 +861,18 @@ INPUT .\images\chat1.png
 INPUT .\images\chat1.png
 INPUT .\images\chat1.png
 INPUT .\images\chat1.png
-INPUT .\images\gantt.png
-INPUT .\images\gantt.png
-INPUT images\gantt.png
-INPUT .\images\gantt.png
-INPUT .\images\gantt.png
-INPUT .\images\gantt.png
-INPUT .\images\gantt.png
+INPUT .\images\ganttchart.png.jpg
+INPUT .\images\ganttchart.png.jpg
+INPUT images\ganttchart.png.jpg
+INPUT .\images\ganttchart.png.jpg
+INPUT .\images\ganttchart.png.jpg
+INPUT .\images\ganttchart.png.jpg
+INPUT .\images\ganttchart.png.jpg
 INPUT .\KECReport.bbl
 INPUT KECReport.bbl
 INPUT .\KECReport.bbl
 INPUT KECReport.bbl
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT C:\Miktex\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT C:\Miktex\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Miktex\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT KECReport.aux
@@ -904,8 +895,6 @@ INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Miktex\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Miktex\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Miktex\fonts\type1\urw\times\utmbi8a.pfb

@@ -10,66 +10,52 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: library.bib
-Warning--entry type for "telegram" isn't style-file defined
---line 21 of file library.bib
-Warning--entry type for "e2echat" isn't style-file defined
---line 25 of file library.bib
-Warning--entry type for "Barakat2018" isn't style-file defined
---line 80 of file library.bib
-Warning--entry type for "shyam" isn't style-file defined
---line 85 of file library.bib
-Warning--entry type for "de" isn't style-file defined
---line 89 of file library.bib
 Warning--entry type for "Sabah2017" isn't style-file defined
---line 97 of file library.bib
-Warning--entry type for "Bodur2015" isn't style-file defined
---line 108 of file library.bib
+--line 14 of file library.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty author in fb
-Warning--empty journal in fb
 
 Done.
-You've used 10 entries,
+You've used 3 entries,
             4087 wiz_defined-function locations,
-            867 strings with 9111 characters,
-and the built_in function-call counts, 4063 in all, are:
-= -- 283
-> -- 73
-< -- 10
-+ -- 39
-- -- 14
-* -- 183
-:= -- 670
-add.period$ -- 20
-call.type$ -- 10
-change.case$ -- 10
-chr.to.int$ -- 21
-cite$ -- 12
-duplicate$ -- 341
-empty$ -- 383
-format.name$ -- 19
-if$ -- 893
+            839 strings with 7854 characters,
+and the built_in function-call counts, 1682 in all, are:
+= -- 134
+> -- 39
+< -- 5
++ -- 18
+- -- 9
+* -- 91
+:= -- 292
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 135
+empty$ -- 129
+format.name$ -- 12
+if$ -- 363
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 71
-newline$ -- 65
-num.names$ -- 5
-pop$ -- 231
+int.to.str$ -- 3
+missing$ -- 28
+newline$ -- 32
+num.names$ -- 3
+pop$ -- 65
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 296
+skip$ -- 129
 stack$ -- 0
-substring$ -- 59
-swap$ -- 196
-text.length$ -- 3
+substring$ -- 11
+swap$ -- 95
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 10
-warning$ -- 2
-while$ -- 8
-width$ -- 12
-write$ -- 106
-(There were 9 warnings)
+type$ -- 3
+warning$ -- 0
+while$ -- 4
+width$ -- 4
+write$ -- 50
+(There was 1 warning)
