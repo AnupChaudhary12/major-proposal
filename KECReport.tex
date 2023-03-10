@@ -154,31 +154,69 @@ withstand in our success in this project.
 
 \chapter{Introduction}
 \section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in your document.
-With the rapid development of mobile devices, computers and accessibility to the internet there is growing users of different chat applications. The attracting or more so important features of any social media has become the chat feature. Such chat features provide real time messaging, file sharing which may include different photos, videos, documents, etc. Chatting has been such an important aspect of the modern world that it is expected the no. of active users currently is in billions with this number expected to increase more in the coming years. Among some of the popular chat applications Whatsapp’s monthly active users(in millions) are 2000, messenger 988, snapchat 557 to name a few.\cite{Barakat2018}
+Digital communications surveillance is a major
+security concern in the world at large. End-to-End (E2E)
+encryption in mobile communication applications delivers
+confidentiality between users, defending messages against
+snooping. Several widespread communication tools
+(WhatsApp, Signal, Telegram, iMessage) have implemented
+end-to-end encryption, as a major selling point. Yet, the
+understand of the security goals (confidentiality, integrity,
+authentication) remain vague to users, such as how the
+security goals offer protection, and if they value that
+protection.\par
+With the growing use of the internet as a medium for
+communication, it becomes imperative to secure personal
+and business’ online communications. Consequently, the
+motivation to execute attacks increases and preventing
+against these attacks using technology that is almost
+unbreakable was considered. This technology, if employed
+accurately, could avert large-scale attacks. End-To-End
+Encryption suggests a maintainable answer to the continuing
+challenges of internet security . End-to-end encryption
+describes the process of secure exchange of data from
+sender to recipient; preventing third-parties from accessing
+the data during transmission. All information is encrypted by
+the sender and the recipient decrypts it. During
+transmission, the content is completely encrypted, which
+means that no third parties can access or tamper with it
+during transmission . Several cryptographic algorithms
+are used alone or combined for the encryption purposes.\par
+The components of End-To-End Encryption includes :
+The identity component authenticates users. The protocols
+component handles the key exchange and the algorithm. The
+algorithm uses scientific process to encrypt the data, and it
+cannot be decrypted without the predetermined key. Secure
+implementation and operation ensure the End-To-End
+Encryption process is not vulnerable to attacks on the
+hardware side. These components work together to deliver a
+system that operates efficiently to offer the best security to
+end users.\par
+Internet security is an extremely vital issue in computer
+science, due to the increasing acceptance of online
+communication. Since e-mailing services became public,
+questions arose about how secure they are. Furthermore, the
+need to secure the internet was made popular by shopping,
+banking, and other financial transactions via the internet .
+Is End-To-End Encryption the best technology to ensuring
+data security? In recent times, most of the communications
+between clients and servers are secured using Transport
+Layer Security. However, communications between clients
+are not yet secured . With plaintext communication
+vulnerable to hackers . Consequently, security
+researchers have proffered the usage of End-To-End
+Encryption.\par
+This research focused on providing a performance
+evaluation experiment on RSA algorithm and its usage in end to end encrypted
+chat app. RSA is based
+on number theory, using two prime numbers or
+mathematical operation to randomly produce the public and
+private keys. The public key (which is public) is used for
+encryption, and the private key (which is private) is used for
+decryption. Sender encrypts the communication using public
+key of the recipient and when the communication is
+received, the recipient can decrypt it with its private key.\cite{paley}
 
-The importance of such apps was never more clearly presented as when Facebook experienced outage in 2021. In what was just a 6 hour long outage the competing apps like telegram gained a record 70 million new users.
-As the dependence on chat systems grow day by day the vulnerability and assaults also increases. As such  there is increasing need to implement a secure communication
-
-Digital communication witnesses a noticeable and continuous development in
-many applications in the Internet. Hence, secure communication sessions must be
-provided. The security of data transmitted across a global network has turned into a
-key factor on the network performance measures. So, the confidentiality and the
-integrity of data are needed to prevent eavesdroppers from accessing and using
-transmitted data.
-
-One way of to secure the communication is using End-To-End encryption which use the Cryptographic algorithm. Cryptographic algorithms are divided
-into symmetric and asymmetric keys. The symmetric algorithms require a single key only for the
-encryption and decryption of data. Asymmetric algorithms on the other hand require both public
-and private keys for the encryption and decryption of data. The scrambling of the data is done
-using the public key while the private key is made known only to the receiver which is meant for
-the decryption of the data.
-A maiden asymmetric algorithm was proposed by Diffie-Hellman  which ensures secured
-communication as well as data security. A counter algorithm termed RSA which has lower time
-complexity based on prime number factorization was proposed in 1977 and is the patent of Ron
-Rivest, Adi Shamir, and Len Adleman (RSA), which was published in 1978 at the Massachusetts
-Institute of Technology . In this algorithm, two prime numbers are used to produce the public
-and the private key. When the keys are created, the prime numbers are no more considered and
-are or can be discarded.\cite{sa}
 
 \pagebreak
 \section{Problem statement}
@@ -274,8 +312,9 @@ operation of this application are as follows:
 
 
 \chapter{Literature Review}
-\section{Related Paper}
-There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\cite{Sabah2017}\\
+
+\section{Research on End-to-End Encryption chat app}
+There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\\
 There are different Encryption algorithms that can  be utilized  to  provide secure  messaging environment. Thus, messages will circulate as  encrypted form in transmission medium, not as clear text. Somebody who has seized encrypted data does not obtain original message from the encrypted  data  unless they  possess  the  necessary  method or  a  key.  Encryption  methods  are divided into the following categories: private key cryptography and public key cryptography.\\
 In a symmetric key algorithm, the sender and receiver must have a shared key set up in advance and keep secret from all other parties; the sender uses this key for encryption, and the receiver uses  the  same  key  for  decryption.  In  this  case,  except  for  transmitted  encrypted  message, encryption  key  must  also  be  submitted  confidentially,  which  is  one  of  the  disadvantages of private-key cryptography.
 If a third person who has managed to enter the system operator or listen to transmission medium
@@ -284,32 +323,280 @@ in this method: public key and private key. The public key of the user can be vi
 The private key is kept secret by the user. When someone wants to send a message to user, they
 use the user's public key and create the encrypted message and then send the encrypted data to
 user. The user  decrypts the  encrypted data with  her/his private  key  and obtains  a meaningful
-message.\\
-The data which has been encrypted by the user’s public key is only solved with the user’s private key. When the user wants to send a message, s/he reaches the public key library. S/he takes the public key of somebody to which s/he wants to send a message and encrypts the message and then s/he sends the encrypted message to the receiver. The only thing that the receiver must do is to solve the message with his/her own private key. DH protocol is to enable two users to exchange a secret key securely that can be used for subsequent encryption of messages. The protocol itself is limited to the exchange of the keys. But because of having no entity authentication mechanism, DH protocol is easily attacked by the man-in-the-middle attack and impersonation attack in practice. The DH key exchange is a cryptographic protocol that allows two parties that have no prior knowledge of each other to establish together a shared secret key over an insecure communications channel. Then they use this key to encrypt subsequent communications using a symmetric-key cipher.
-\cite{Avestro2019}\\
-The Classic Diffie-Hellman (CDH) algorithm encounters several security problems. The algorithm security depends on the complexity of solving the discrete logarithm and the integer factorization problem. The security also depends on the length of bits keys used. In this paper, we proposed a hybrid algorithm, the combination of Modified Diffie Hellman (MDH) with the Rivest, Shamir, and Adelman (RSA) algorithm. The MDH will not use primitive root (g). Instead, it will use two prime numbers (P and Q) for key exchange. It reduces the possibility of a man-in-the-middle attack. Furthermore, the MDH has an authentication mechanism. If both shared keys are equal, the communication will continue. Otherwise, it will stop because it is compromised. Also, the RSA algorithm will use the two prime numbers generated by MDH (P and Q). RSA algorithm, which is one of the public-key encryption methods and more reliable than the private key encryption algorithms, is used for secure messaging.\cite{Bodur2015}\\
-RSA algorithm is asymmetric cryptography algorithm. The RSA algorithm will perform the encryption and decryption message. The Diffie Hellman (DH) and the RSA Algorithms are the basis of several security standards and services on the internet, especially TLS and SSL. If the security of both algorithms is compromised, such systems will collapse. In this proposal, the combined cryptography system aims to achieve secret message exchange; it uses random prime numbers after multiplication and eventually shared with the other end of a communication. The proposed algorithm secretly generate a value so that the security level increases .\cite{Avestro2019} \\
-Security of RSA depends on the prime factorization of N. The proposed algorithm authenticates a user as shown is the first part of the algorithm by exchange value of random P and Q. Another strength of the hybrid algorithm, it will not generate primitive root (g). Then generate secret keys at both sides. Secret keys not known or not sent over a communication channel, so eavesdropper has no chance to get the value of the secret key. The secret key is multiplied to P, and hence new P will be not identifiable to attacker though the value of P gets compromised. This value of P and Q is generated secretly at the user side, and this valued is not shared through the communication channel, so we claim that the proposed method is more secure than the original RSA. The disadvantage of the proposed algorithm has extra steps that mix symmetric key and asymmetric key cryptography. The time required for this integration steps is disadvantageous of this proposed method. But we can achieve better security\cite{Avestro2019}
+message.\cite{Sabah2017}\\
+\section{Research on Client / Server Cryptography-Based Secure Messaging
+  System Using RSA Algorithm }
+In today’s world, computer networking has become an
+integral part of life. There are many different networks
+available to share information between groups of devices
+through a shared communication medium . They are
+mainly differentiated by the physical medium and protocol
+standards. Ethernet is a prime wired networking standard
+which is an obvious choice for many network applications
+due to reliability, efficiency, and speed. Ethernet standard is
+used in various application segments . Figure below
+shows the Client/Server model architecture that has been
+used in most network systems and in this study specially.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/clientserver.png}
+	\caption{A CLient/Server architecture}
+	\label{figclientserver} % for referencing
+\end{figure}
+
+The client side could be any type of smart devices
+(desktop, laptop, smart phone, etc.). The server part is one
+device that control and pass messages and opining the
+connections among clients and/or between clients and server
+. The Internet part could be one device to isolate the
+network overall into two main parts: client(s) and server, it
+could be a switch or hub or router or just a cable.\\
+A very important aspect in the world of software
+development is the security of data that flows through open
+communication channels. In our web applications,
+there is an intensive exchange of data via different
+protocols, like http, between client applications which
+presented as browser applications and
+server side applications. The importance and confidentiality
+of data may be different depending on the specifics of the
+web application, and the possibility of interception by a third
+party increases with perfection of hacking techniques in the
+world of IT. What can be done to prevent access to the
+data by your traffic listener? If we exchange with data
+between the client applications and server we don’t want the
+information to be stored as open text on the server, which will
+be accessible in case of server crack.\\
+Every day people used chat area, through the users
+(clients) scan chat or send messages to selected users.
+However, the security components in chat area application
+are to make sure all information from clients is protected
+from hackers. The chat messages from users can easily
+transform by expert hackers, without a good enough security
+components. In this way, a chat area interface (CAI) is
+required technique to secure a chat message from hackers.
+The cryptography is significant to keep private data secure
+and to avoid unauthorized access.\\
+Basically, the proposed messaging/chat system is
+expected to provide a communication channel between
+clients via a server using encryption based on RSA in a
+Client/Server environment. The goal for this study is
+to use client/server architecture to accomplish secure chat
+between clients. All the used encryption
+processes based on RSA algorithm.\\
+The very term client-server was initially applied to the
+software architecture, which described the distribution of the
+execution process by the principle of interaction of two
+software processes, one of which in this model was called the
+client and the other the server. The client process requested
+some services, and the server process ensured their execution.
+It was assumed that one server process can serve a lot of
+client processes. One of the client/server application is that
+“chatting”. Chatting alludes to one kind of correspondence
+over the Internet that offers a continuous transmission of
+instant messages from sender to beneficiary or over a server
+that is control and deal with the gatherings (customers) to
+convey.\cite{sonmez2017development}\\
+\subsection{Client/Server}
+The used client/server model describes how
+a server provides resources and services to one or
+more clients. Examples of servers including web servers, chat
+servers, and file servers. Each of these servers provide
+resources to client devices. Most servers have a one-to-many
+relationship with clients, meaning a single server can provide
+resources to m Computers. In order to meet the main
+requirements of businesses, networks themselves are
+becoming quite complex multiple clients at one time .\cite{sonmez2017development}\\
+
+\subsection{Chat Service}
+A secure chat service provides the ability to have real time
+secure discussions among users electronically, one-to-one or
+in groups session . A public network accumulates
+information slightly, rather than on a user’s individual
+computer that is used to keep in touch with people.\cite{sonmez2017development} A secure
+chatting between client and server to make a safe and reliable
+communication, the benefits are :
+\vspace{-18pt}
+\begin{itemize}
+	\item Allows for instant communications between users
+	\item Uses real time chat over the network that can
+	      eliminate costly long distance charges.
+	\item Allows for rapid query and rapid responses.
+\end{itemize}
+While the negative points of chat service can be listed as
+following:
+\vspace{-18pt}
+\begin{itemize}
+	\item Security problems of instant messaging program
+	\item Secure chats in most cases are routed through a
+	      server system, where the service is provided and that is a
+	      single point where all messages can be intercepted.
+	\item Chat programs can provide an open avenue of
+	      attack for hackers, crackers, spies and thieves.
+\end{itemize}
+
+\subsection{RSA Encryption}
+In this, an encrypted chat program designed to
+ensure a safe mode of communication between two users. It
+uses RSA encryption to encode and decode messages in a
+terminal window. RSA is widely used public-key
+cryptograph and authentication system for data encryption of
+digital messaging transactions such as e-mail over the
+intranet, extranet and Internet. Clients exchange public keys
+and encrypt outgoing text with the intended recipient’s public
+key. Each user connects to a central server which
+forwards messages to the intended recipient. On the receiving
+end, the program utilizes a client’s private key to decrypt
+received messages. In 1977, Ron Rivest, Adi Shamir and
+Leonard Adleman introduced a cryptographic algorithm,
+RSA, which is named for the first letter in each of its
+inventors’ last name. RSA’s motivation is DiffieHellman Algorithm which describes the idea of such an
+algorithm that enables public-key cryptosystem.\\
+Encryption algorithm is deployed to encrypt messages
+exchanged with the proposed chat gateway. The chat messaging
+environment showed a great potential to host realtime
+interactive interaction system which is supported by RSA
+encryption methodology to preserve the security of the
+message stream. \\
+Choosing the key size in RSA encryption is of great
+importance. As the size of the key increases, the security level
+of the system, the complexity and the resistance of encrypted
+text increases . These advantages make it difficult to
+decrypt ciphertexts and break passwords. However, in
+addition to these advantages, the encryption key creation
+time, text encryption time, and mobile device RAM
+consumption increase . These disadvantages are
+factors that will influence the effective use of the application.
+For this reason, the advantages and disadvantages of key
+dimensions should be determined and the most suitable key
+size should be preferred. \cite{sonmez2017development}\\
+Currently, RSA is secure using 2048 and 4096-bit key lengths.
+Larger keys will be required in a near future.Theoretically, RSA keys that are 2048 bits long should be good until 2030. If so, isn't it a bit early to start using the 4096-bit keys that have become increasingly available in encryption-enabled applications?
+According to " NIST Special Publication 800-57 Part1"2048-bit RSA keys are roughly equivalent to a Security Strength of 112. Security strength is simply a number associated with the amount of work required to break a cryptographic algorithm. Basically, the higher that number, the greater the amount of work required.
+It implies longer keys are more difficult to break and are hence more secure.\\
+
+\begin{tabular}{ |p{3cm}||p{3cm}|  }
+
+	\hline
+	Security Strength & RSA Key length \\
+	\hline
+	$<=80 $           & 1024           \\
+	112               & 2048           \\
+	128               & 3072           \\
+	192               & 7680           \\
+	256               & 15360          \\
+	\hline
+\end{tabular}
+\\
+According to that publication, 112 security strength (which corresponds to 2048-bit keys) is considered to be acceptable until 2030. Again, here's a portion of that table for reference.\\
+
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|  }
+
+	\hline
+	Security Strength & Through 2030 & 2030 and beyond \\
+	\hline
+	$<112 $           & Disallowed   & Disallowed      \\
+	112               & Acceptable   & Disallowed      \\
+	128               & Acceptable   & Acceptable      \\
+	192               & Acceptable   & Acceptable      \\
+	256               & Acceptable   & Acceptable      \\
+	\hline
+\end{tabular}
+\\
+\\
+So now we know 2048 bit keys are indeed acceptable until 2030 as per NIST.
+So where does that put our 4096 bit keys? Incidentally, the document is
+silent about this particular key length. However, because the two tables
+indicate that 3072-bit keys (whose security strength is 128) and 7680-bit
+keys (whose security strength is 192) are good beyond 2030, we can safely
+say 4096 bit keys (which are somewhere in between)
+should likewise be considered secure enough then.\\
+In fact, since 2048-bit keys are supposed to be disallowed after 2030, we
+know for certain that 4096 bit keys are going to be more suitable in
+production environments than 2048 keys when that time comes. But since
+we're still at least a decade away from 2030, it's probably not yet
+necessary to migrate from 2048 to 4096, right?
+So why then are we already seeing options for 4096-bit keys in some security applications?\\
+Well, there is  couple of reasons. One is simply to make the application
+future proof. A future proof security solution can mitigate the risk of
+cyber threats. We know that cyber criminals are always one step ahead of
+security professionals, so we're not 100percent sure 2048-bit keys are going to
+remain unbreakable before 2030. (Source: NIST Special Publication 800-57 Part1)
+
+In RSA, a sender encrypts a message using the recipient's public key, and
+the recipient decrypts the message using their private key.
+sWhen transferring an RSA public key, it is important to ensure that the
+key cannot be easily intercepted and replaced by an attacker. One common
+technique for protecting the key during transfer
+is to use salting, also known as padding or randomization.
+
+Salting involves adding random data to the beginning or end of the
+public key before transferring it. This random data, or salt, makes
+it more difficult for an attacker to intercept and replace the key
+with their own. The recipient of the key can then strip off the salt
+before using the key for encryption or decryption.
+
+In summary, salting is a simple and effective technique for protecting
+RSA public keys during transfer. It adds an extra layer of security to
+the key exchange process and makes it more difficult for attackers to
+intercept and replace the key.
 
 
 \section{Existing system:}
 In this section we briefly introduce many of the popular chat applications. Some of these applications are not public or open source so it is difficult for these to get evaluated by the developer’s community, security experts or research academic.
 
 \subsection{Viber}
-Viber is an instant messaging and Voice over IP (VoIP) application for smartphones developed by Viber Media. In addition to instant messaging, users can exchange images,
-video and audio media messages. Viber recently supported the end-to-end encryption to their service, but only for one-to-one and group conversations in which all
-participants are using the latest Viber version 6.0 for Android, iOS or Windows 10. At this time, in the Viber iOS application for iPhone and iPad, attachments such as images and videos which are sent via the iOS Share Extension does not support end-to-end encryption .\cite{shyam} Viber has privacy issues such as adding a friend without his knowledge or adding him to a group without his permission. Plus that, local storage is not secured. It is not
-open source making it difficult to evaluation.
+Viber is an instant messaging and Voice over IP (VoIP) application for
+smartphones developed by Viber Media. In addition to instant messaging,
+users can exchange images,
+video and audio media messages. Viber recently supported the end-to-end
+encryption to their service, but only for one-to-one and group conversations
+in which all
+participants are using the latest Viber version 6.0 for Android, iOS or
+Windows 10. At this time, in the Viber iOS application for iPhone and iPad,
+attachments such as images and videos which are sent via the iOS Share
+Extension does not support end-to-end encryption.
+Viber has privacy issues such as adding a friend without his knowledge
+or adding him to a group without his permission. Plus that, local storage
+is not secured. It is not
+open source making it difficult to evaluation.\cite{Sabah2017}
 
 \subsection{Whatsapp}
-WhatsApp is one of the most popular messaging application, recently enabled end-to-end encryption for its 1 billion users across all platforms. WhatsApp uses part of a security protocol developed by Open Whisper System, so provides a security-verification code that can share with a contact to ensure that the conversation is encrypted. It is difficult to trust in WhatsApp application completely because the application is not open source, making it difficult to verify the functioning process and match them with the work of the encryption protocol which was announced. .\cite{e2echat}
+WhatsApp is one of the most popular messaging application, recently
+enabled end-to-end encryption for its 1 billion users across all platforms.
+WhatsApp uses part of a security protocol developed by Open Whisper System,
+so provides a security-verification code that can share with a contact to
+ensure
+that the conversation is encrypted. It is difficult to trust in
+WhatsApp application completely because the application is not open source,
+making it difficult to verify the functioning process and match them
+with the work of the encryption protocol which was announced. .\cite{Sabah2017}
 
 \subsection{Telegram}
-Telegram is an open source instant messaging service enables users to send messages, photos, videos, stickers and files. Telegram provides two modes of messaging
-is regular chat and secret chat. Regular chat is client-server based on cloud-based messaging, it does not provide end-to-end encryption, stores all messages on its
-servers and synchronizes with all user devices. More, local storage is not encrypted by default. Secret chat is client-client provides end-to-end encryption. Contrary to regular chat messages, messages that are sent in a secret chat can only be accessed on the device that has been initiated a secret chat and the device that has been accepted a secret chat they cannot be accessed on other devices. Messages sent within secret chats can be deleted.\cite{de}
-at any time and can optionally self-destruct. Telegram uses its own cryptographic protocol MTProto which is based on 256-bit symmetric AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key exchange, and has been criticized by a significant part of the cryptographic community about its security. The registration process of Telegram, Viber and WhatsApp depend on SMS. SMS is transported via Signaling System 7 (SS7) protocol. The vulnerability lies in SS7. Attackers exploited SS7 protocol to login into
-victim's account by intercepting SMS messages. Because of Telegram cloud-based, the attacker exploits it and makes full control of the victim account and can prevent him to enter into his account. To make the account more secure should activate two-factor authentication \cite{telegram}
+Telegram is an open source instant messaging service enables users
+to send messages, photos, videos, stickers and files. Telegram provides
+two modes of messaging
+is regular chat and secret chat. Regular chat is client-server based on
+cloud-based messaging, it does not provide end-to-end encryption, stores
+all messages on its
+servers and synchronizes with all user devices. More, local storage is
+not encrypted by default. Secret chat is client-client provides end-to-end
+encryption. Contrary to regular chat messages, messages that are sent in a
+secret chat can only be accessed on the device that has been initiated a
+secret chat and the device that has been accepted a secret chat they
+cannot be accessed on other devices. Messages sent within secret chats
+can be deleted.
+at any time and can optionally self-destruct. Telegram uses its
+own cryptographic protocol MTProto which is based on 256-bit symmetric
+AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key
+exchange, and has been criticized by a significant part of the cryptographic
+community about its security. The registration process of Telegram, Viber
+and WhatsApp depend on SMS. SMS is transported via Signaling System 7 (SS7)
+protocol. The vulnerability lies in SS7. Attackers exploited SS7 protocol
+to login into
+victim's account by intercepting SMS messages. Because of Telegram cloud-based,
+the attacker exploits it and makes full control of the victim account and can
+prevent him to enter into his account. To make the account more secure should
+activate two-factor authentication \cite{Sabah2017}
 
 \subsection{Facebook Messenger}
 Facebook Messenger is a popular messaging service
@@ -318,7 +605,7 @@ messaging one is regular chat and another is secret conversations.
 Regular chat does not provide end-to-end encryption only
 secure communication by using TLS,  and it stores all
 messages on its servers. Secret conversations have  the
-same idea of Telegram secret chat . .\cite{fb}
+same idea of Telegram secret chat . \cite{Sabah2017}
 
 \section{The Challenge- Making it real-time}
 For any app to feel real-time, the user needs to be kept updated with any activity happening as soon as possible. The challenge arises in selecting and implementing a suitable development technique. With the traditional request-response model, we have few options:
@@ -357,100 +644,6 @@ The handshake in Socket.IO is like any other information technology related hand
 
 \section{Required Algorithm:}
 
-\subsection{Overview of  Diffie Hellman Algorithm}
-The algorithm is based on Elliptic Curve Cryptography, a method of doing public-key cryptography based on the algebra structure of elliptic curves over finite fields. The DH also uses the trapdoor function, just like many other ways to do public-key cryptography. The simple idea of understanding to the DH Algorithm is the following.
-
-\subsection{Diffie-Helmann Algorithm}
-With simple encryption, the messages are usually encrypted only between the users and the server, making use of some cryptographic keys, hence making data vulnerable at the server. We want these keys only to exist between the users and not the server. Diffie-Helmann makes this possible. Suppose we have two clients ALice and Bob.
-
-\vspace{-18pt}
-\begin{itemize}
-	\item Alice and Bob agree to use two common prime numbers (g \& n) provided by the server
-	\item Now, these are combined using some mathematical calculations with the Private keys of Alice and Bob = a + g = ag and b + g = bg.
-	\item We exchange these Ephemeral/Public Keys ag and bg via server.
-	\item Combine the exchanged keys with the Private keys of Alice and Bob respectively to form a Shared Secret Key = ag+b = agb and bg+a = bga at both ends.
-	\item Now the attacker might be aware of g, n, ag \& bg as these are being shared publicly, but not a \& b since these are private keys only available to Alice and Bob.
-	\item It is too difficult for any intruder to split up the public components ag and bg.
-	\item Any attacker can combine ag+bg = abgg (extra bit) - too hard to figure out.
-\end{itemize}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/Diffie-Hellman_Key_Exchange.png}
-	\caption{Diffie Hellman working mechanism}
-	\label{figDeffie Hellman Algorithm} % for referencing
-\end{figure}
-This mechanism was developed by Whitfield Diffie and Martin Hellman to derive the cryptographic keys instead of exchanging them completely in public. It is explained using colors since it is not possible to separate colours once mixed. Similarly, it is hard to figure out the secret keys using the only public components, once combined mathematically with the prime numbers provided by the server.
-
-\subsection{Problems with Diffie-Hellman Key Exchange}
-Although the mechanism provides us with a secure way to create cryptographic keys as end-to-end, it does not authorise the users. Hence, we might have some third party pretending to be the intended recipient and he/she will be able to access or modify the messages, by creating another pair of shared secret keys with Alice and Bob respectively. This is usually known as a Man-in-the-middle attack.\\
-That is when RSA came to rescue. The sender not only performs Diffie-Hellman but also shares his/her signature to ensure that only he/she has sent that message.
-
-\subsection{Proposed algorithm}
-\subsubsection{Steps:}
-\vspace{-18pt}
-\begin{itemize}
-	\item Alice(User A) and Bob (User B) Choose two very large random prime integers: s and r
-	\item Calculate n = s*r and z = (s-1)(r-1)
-	\item Choose a small exponent say e :
-	      \subitem But e Must be
-	      \subitem An integer.
-	      \subitem Not be a factor of n.
-	      \subitem 1 $<$ e $<$ z
-
-	\item Calculate d = e$^{-1}$ mod(p-1)(q-1) or d = (k*z + 1) / e
-
-	\item Public key will contain (n , e) and private key will contain
-	      (n , d).
-	\item Alice needs to identify Bob. For the authentication
-	      process Alice and Bob use Modified Diffie-Hellman
-	      algorithm
-	\item Alice and Bob choose two large prime p,g such as g$<$p.
-	\item Alice chooses a large random number x$_{1} (0<x_{1}<p)$ and computes $R_{1} = g^{x_{1}} mod p.$
-	\item Alice sends $R_{1}$ to Bob
-	\item Bob chooses a large random number x$_{2} (0<x_{2}<p)$ and computes $R_{2} = g^{x_{2}} mod p.$
-	\item  Bob computes $K_{Bob} = R_{1}^{x_{2}} mod p$
-	      and $E_{1}=Encrypt(R_{2},K_{Bob}).$
-	\item Bob sends $R_{2},E_{1}$ to Alice.
-	\item Alice computes $K_{Alice} = R_{2}^{x_{1}} mod p$
-	      and $R^{'}_{2}=Decrypt(E_{1},K_{Alice}).$
-	\item If $R_{2}=R^{'}_{2}$ she proceeds; otherwise the verifier is
-	      dishonest.
-	\item Alice lets Bob send his public key.
-	\item Bob encrypts his public key via the secret key $(K_{Bob})$ and
-	      sends it to Alice.
-	\item Alice decrypts Bob's public key via the secret key $(K_{Alice})$
-	\item Alice encrypt message with Bob’s public key and sends
-	      it to Bob.
-	\item Bob decrypts the message via the secret key $(K_{Bob})$
-	\item Now Bob has the original message.
-
-
-
-\end{itemize}
-\pagebreak
-There are two main steps in the suggested algorithm: user
-authentication and encryption. These steps have been shown in figure below:
-\vspace{-10pt}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/Userauth.png}{}
-	\caption{User authentication and encryption of public key} %figure name
-	\label{figauthentication} % for referencing
-\end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-\pagebreak
 \subsection{Overview of RSA Algorithm}
 RSA encryption algorithm, which is based on the idea of ensuring the secure transfer of data in the digital environment and the algorithmic difficulty of separating the integer factorization, is a type of public-key encryption method. Nowadays, it is also known as both the most commonly used encryption method and the method that allows digital signatures. It was created by Ron Rivest, Adi Shamir and Leonard Adleman  in 1978. Prime numbers are used for key generation process in RSA encryption method.This makes it possible to create a safer structure. How the encryption and decryption processes
 are done with RSA algorithm is shown in below figure,
@@ -468,7 +661,7 @@ are done with RSA algorithm is shown in below figure,
 \begin{itemize}
 	\item Choose two very large random prime integers: p and q
 	\item Calculate n = p*q and z = (p-1)(q-1)
-	\item Choose a number e where 1 $<$ e $<$ z
+	\item Choose a number e as public key where 1 $<$ e $<$ z which is co-prime with z
 	\item Calculate d = e-1mod(p-1)(q-1)
 	\item You can bundle private key pair as (n,d)
 	\item You can bundle public key pair as (n,e)
@@ -625,9 +818,20 @@ At last, the final webapp was designed.
 
 
 
-\chapter{RESULT AND DISCUSSION}
+\chapter{Epilogue}
 
-\section{ Expected Output:}
+\section{User Application}
+Based on the observation of the system, we came to the following observation:
+\vspace{-18pt}
+\begin{itemize}
+	\item The user application works well through all phase: signup and login, message sending and receiving. This make user experiene smooth.
+	\item It is suitable for users who prioritize privacy in their communication. They allow users to have private conversations without fear of eavesdropping or surveillance from third parties.
+\end{itemize}
+
+\section{ Output:}
+In the project hour, we researched on cryptography, chat app using cryptography, their advantages
+disadvantages and probelms occured in chatapp etc. We developed chat app using react js, nodeJs, socket.io’
+and RSA algorithm and Mongodb as database where we can send end to end encrypted text message between clients.
 
 \begin{figure}[H]
 	\centering
@@ -649,21 +853,43 @@ At last, the final webapp was designed.
 	\label{figusecase} % for referencing
 \end{figure}
 
-\section{Work on Progress:}
-The ultimate goal of this project is to develop a working model of secure end to end chat web-app. This will include a working web client for user login and chat in real time using socket.io . We have finished creating login and signup system. Our program allows to search and add contacts; create a group chat. Our program also allows Users to send enrypted messages to each other.
+%\section{Work on Progress:}
+%%The ultimate goal of this project is to develop a working model of secure end to end chat web-app. This will include a working web client for user login and chat in real time using socket.io . We have finished creating login and signup system. Our program allows to search and add contacts; create a group chat. Our program also allows Users to send enrypted messages to each other.
 
-\section {Work Remaining:}
-We are still working on the backend and frontend  of the chat system. We are yet to integrate the DH algorithm to our current program. So far our program only allows encrypted chat between single users. We are yet to have encrypted group chat.
+%\section {Work Remaining:}
+%We are still working on the backend and frontend  of the chat system. We are yet to integrate the DH algorithm to our current program. So far our program only allows encrypted chat between single users. We are yet to have encrypted group chat.
+
+
+\section{Limitation}
+The limitation of our system are listed below:
+\vspace{-18pt}
+\begin{itemize}
+	\item Our chat application can send text message with 4000 character  at max. It is not available for audio, video, images messaging.
+	\item The security measures taken can be complicated and require a lot of computing resources to implement, which can make the chat application bit slower to use.
+	\item The system required the first internet connectivity for smooth operation.
+\end{itemize}
+\section{Future Enhancement}
+This project can be further enhanced. Currently, we are able to send text message only but it can be developed to
+send audio, video , images messaging chat app. We can add group chats options. As well as this project can be made more
+secure with updates. Extra new trending features can be added in our system. We can also made this application compatible to all kind
+of platforms and devices.
 
 \section{Work Schedule}
-Scheduling establishes the timelines, delivery and availability of project resources whether they be personnel, inventory or capital. For this reason, any project without a schedule is a project doomed to issue down the road.
+Scheduling establishes the timelines, delivery and availability of project
+resources whether they be personnel, inventory or capital. For this reason,
+any project without a schedule is a project doomed to issue down the road.
+The estimated time period of this project is 30 weeks. The work is divided into several
+phases as shown in gantt chart.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=160mm]{images/gantt.png}
+	\includegraphics[width=160mm]{images/ganttchart.png.jpg}
 	\caption{Gantt Chart} %figure name
 	\label{figganttchart} % for referencing
 \end{figure}
+
+\section{Conclusion}
+In this great era of technology and science
 
 
 
