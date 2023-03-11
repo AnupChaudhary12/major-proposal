@@ -684,7 +684,17 @@ a password from its hash value. Without the salt, an attacker could use a precom
 passwords to a database of stolen password hashes and quickly find matches, allowing them to gain unauthorized access to user accounts. 
 However, with a unique salt for each password, the precomputed hash tables become useless, as the attacker would need to generate a new hash table for each salt used.
 In summary, salting is an important security measure that helps to protect user passwords and other sensitive information by making 
-them more resistant to attacks by malicious actors.
+them more resistant to attacks by malicious actors.\\
+In RSA we can also use salting to improve the security of the public key in the key sharing process. Here are the steps:
+\begin{itemize}
+	\item Generate a random salt value: The sender generates a random salt value, which is a random sequence of bytes. 
+	This salt value is different for each key sharing process.
+	\item Concatenate the salt value with the public key: The sender adds the salt value in the public key at random position and random length, creating a new string.
+	\item Store the salt value: The sender's salt value and position is stored in the database
+	\item Share the salt added string: The salted key is sent to the receiver
+	\item Verify the received public key: The receiver desalts the received key using the salt information stored in the database. If it gives a key without error, 
+	the receiver knows that the received public key is authentic and has not been tampered with during transmission.
+\end{itemize}
 \subsection*{Hashing}
 Hashing is a process of converting input data of any length into a fixed-size output, called a hash or message digest. 
 The hash function takes the input data and applies a one-way mathematical algorithm to it to produce a unique hash value. 
@@ -703,7 +713,7 @@ It involves the use of a public key algorithm, such as RSA, to create a digital 
 \subsubsection{Steps:}
 \begin{itemize}
 	\item Creation of Hash Message: The sender of a message generates a digital signature by generating hash of the message.
-	\item Sign Hash with private key: This hash value is signed using the priate key, resulting digital signature which is appended to the message and sent to the 
+	\item Sign Hash with private key: This hash value is signed using the private key, resulting digital signature which is appended to the message and sent to the 
 	recipient.
 	\item Send the message and the digital signature: The message and the digital signature are sent together to the recipient.
 	\item Verify the signature: The recipient can verify the authenticity and integrity of the message by applying the same 
@@ -714,15 +724,17 @@ It involves the use of a public key algorithm, such as RSA, to create a digital 
 \begin{itemize}	
 	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm. 
 	The public key is shared with the receiver, while the private key is kept secret.
-	\item Hash the message using a salt value: The sender hashes the message using a secure hashing algorithm: SHA-256. 
-	To add an extra layer of security, a salt value is added to the message before hashing. 
-	The salt value is a random value that is different for each message and is used to prevent dictionary attacks.
-	\item Encrypt the hashed message using the private key: The sender encrypts the hashed message using their private key. 
+	\item Add Salt value in the public key: Sender adds salt value of length 6-10 to their key at random position before sending it. The position and value of 
+	the salt is stored in the database and is retrieved during desaltification of the key 
+	\item Verify the received public key: The receiver desalts the received key using the salt information in the database and 
+	checks if the received key is correct
+	\item Hash the message: The sender hashes the message using a hashing algorithm SHA256
+	\item Digital Signature: The sender encrypts the hashed message using their private key. 
 	This creates a digital signature that can only be decrypted using the sender's public key.
-	\item Send the message and the digital signature: The sender sends the original message and the digital signature to the receiver.
-	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. This gives them the hashed message.
-	\item Hash the received message using the same salt value: The receiver hashes the received message using the same salt value that was used by the sender.
-	\item Compare the two hashes: The receiver compares the hashed message they computed with the one that was received from the sender. 
+	\item Send the message and the digital signature: The sender sends the encrypted message and the digital signature to the receiver.
+	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. 
+	This gives them the hashed message. The receiver also decrypts the message using the same hash function used by the sender.
+	Then the two hash function is compared and if it matches the message hasn't been tampered with.	
 \end{itemize}
 If the two hashes match, the message is authentic and has not been tampered with during transmission.
 Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with, 
