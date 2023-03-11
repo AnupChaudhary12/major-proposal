@@ -695,6 +695,8 @@ In RSA we can also use salting to improve the security of the public key in the 
 	\item Verify the received public key: The receiver desalts the received key using the salt information stored in the database. If it gives a key without error, 
 	the receiver knows that the received public key is authentic and has not been tampered with during transmission.
 \end{itemize}
+\includegraphics[width=160mm]{images/salting.png}
+
 \subsection*{Hashing}
 Hashing is a process of converting input data of any length into a fixed-size output, called a hash or message digest. 
 The hash function takes the input data and applies a one-way mathematical algorithm to it to produce a unique hash value. 
@@ -739,6 +741,8 @@ It involves the use of a public key algorithm, such as RSA, to create a digital 
 If the two hashes match, the message is authentic and has not been tampered with during transmission.
 Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with, 
 and was sent by the claimed sender.
+\includegraphics[width=160mm]{images/proposedalgo2.png}
+
 \pagebreak
 \subsection{Security analysis}
 Man in the Middle attack and Discrete Logarithm attacks

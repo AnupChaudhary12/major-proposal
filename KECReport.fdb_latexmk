@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex KECReport"] 1678551084 "KECReport.aux" "KECReport.bbl" "KECReport" 1678551140 0
+["bibtex KECReport"] 1678556107 "KECReport.aux" "KECReport.bbl" "KECReport" 1678557210 0
   "./library.bib" 1678458266 1848 bb30dce101edd38107d37c5c5e960818 ""
   "C:/Users/chris/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "KECReport.aux" 1678551139 12230 de6492a07a1d8b4f2b1663192cc6e114 "pdflatex"
+  "KECReport.aux" 1678557209 12230 b7682facf573491546a24e7ec7148830 "pdflatex"
   (generated)
   "KECReport.bbl"
   "KECReport.blg"
   (rewritten before read)
-["pdflatex"] 1678551136 "d:/Code/major/major-proposal/KECReport.tex" "KECReport.pdf" "KECReport" 1678551140 0
+["pdflatex"] 1678557206 "d:/Code/major/major-proposal/KECReport.tex" "KECReport.pdf" "KECReport" 1678557210 0
   "C:/Users/chris/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1678461485 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/chris/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1678461617 23175798 64df8f9f03e564270c5a148fecbddeab ""
   "C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -124,14 +124,14 @@
   "C:/Users/chris/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/chris/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/chris/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "KECReport.aux" 1678551139 12230 de6492a07a1d8b4f2b1663192cc6e114 "pdflatex"
-  "KECReport.bbl" 1678551084 1479 b50563a2b45e3c9690a75c0acf445c93 "bibtex KECReport"
-  "KECReport.lof" 1678551139 1346 5065e5df182118894264203c8054a64e "pdflatex"
-  "KECReport.out" 1678551139 7963 870aecaa968e4d029ebf5947407842bf "pdflatex"
-  "KECReport.tex" 1678551135 58195 b1732a8d8e2809c0459e563fa9733a01 ""
-  "KECReport.toc" 1678551139 5214 df338f80c064178758aee0f3b2c92aa4 "pdflatex"
+  "KECReport.aux" 1678557209 12230 b7682facf573491546a24e7ec7148830 "pdflatex"
+  "KECReport.bbl" 1678556107 1479 b50563a2b45e3c9690a75c0acf445c93 "bibtex KECReport"
+  "KECReport.lof" 1678557209 1346 dd5213f6a81b9359b8171b60270d9d67 "pdflatex"
+  "KECReport.out" 1678557209 7963 870aecaa968e4d029ebf5947407842bf "pdflatex"
+  "KECReport.tex" 1678557206 58307 7c60b9862f63bb16fd276a5f55570e1b ""
+  "KECReport.toc" 1678557209 5214 e5a70f31fc732a1b31b75196f08c9c7d "pdflatex"
   "KECReportFormat.tex" 1678458266 8951 01122ce9d634e04e6adf9a46e286a8c6 ""
-  "d:/Code/major/major-proposal/KECReport.tex" 1678551135 58195 b1732a8d8e2809c0459e563fa9733a01 ""
+  "d:/Code/major/major-proposal/KECReport.tex" 1678557206 58307 7c60b9862f63bb16fd276a5f55570e1b ""
   "images/Http_request-response_cycle.png" 1678458266 870912 4595b5f88c9f292499eb06824ae76752 ""
   "images/UseCaseDiagram1.png" 1678458266 90716 168ad2be6e8cd22771c1e374501c14b3 ""
   "images/block diag.png" 1678458266 20022 407dd76d03e897429377a28ed171dfd7 ""
@@ -141,7 +141,9 @@
   "images/incremental model.png" 1678458266 15095 90373c0e9fada2e73b0bda0a18fd8c54 ""
   "images/logo.png" 1678458266 19498 fd2ea0dee21b5cc3cc2968e068fdea73 ""
   "images/maninmiddle.png" 1678458266 58035 3483c80903374d2f2c114f1a8c27d34f ""
+  "images/proposedalgo2.png" 1678557185 69373 6c903eb449dfcfb2ff7fa5fb2884a696 ""
   "images/rsa algo.png" 1678458266 184556 e5313d8b72a4d07366023cd9c0238334 ""
+  "images/salting.png" 1678551941 30776 612d819e98fe3ce1afcd205bfdb5dc48 ""
   "images/signin.png" 1678458266 134954 32b09704950caf6418f4b8f90e2d25be ""
   "images/signup.png" 1678458266 95322 c7a68f4a1555b05dbb5ddb329f3cd8d4 ""
   (generated)
