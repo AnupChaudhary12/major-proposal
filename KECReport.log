@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.10)  10 MAR 2023 21:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.10)  11 MAR 2023 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -574,15 +574,15 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 652--653
 <images/maninmiddle.png, id=463, 486.01575pt x 264.38776pt>
 File: images/maninmiddle.png Graphic file (type png)
 <use images/maninmiddle.png>
-Package pdftex.def Info: images/maninmiddle.png  used on input line 754.
+Package pdftex.def Info: images/maninmiddle.png  used on input line 766.
 (pdftex.def)             Requested size: 455.24408pt x 247.65312pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 754--755
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 766--767
  [][] 
  []
 
 [24 <./images/maninmiddle.png>] [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 822--824
+Underfull \hbox (badness 10000) in paragraph at lines 834--836
 
  []
 
@@ -590,10 +590,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 822--824
 <images/incremental model.png, id=485, 690.58pt x 457.71pt>
 File: images/incremental model.png Graphic file (type png)
 <use images/incremental model.png>
-Package pdftex.def Info: images/incremental model.png  used on input line 838.
+Package pdftex.def Info: images/incremental model.png  used on input line 850.
 (pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 838--839
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 850--851
  [][] 
  []
 
@@ -601,20 +601,20 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 838--839
 <images/block diag.png, id=496, 1267.73625pt x 576.1525pt>
 File: images/block diag.png Graphic file (type png)
 <use images/block diag.png>
-Package pdftex.def Info: images/block diag.png  used on input line 869.
+Package pdftex.def Info: images/block diag.png  used on input line 881.
 (pdftex.def)             Requested size: 483.69853pt x 455.26097pt.
 
-Overfull \hbox (66.86565pt too wide) in paragraph at lines 869--870
+Overfull \hbox (66.86565pt too wide) in paragraph at lines 881--882
  [][] 
  []
 
 <images/UseCaseDiagram1.png, id=497, 1155.31625pt x 915.42pt>
 File: images/UseCaseDiagram1.png Graphic file (type png)
 <use images/UseCaseDiagram1.png>
-Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 877.
+Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 889.
 (pdftex.def)             Requested size: 512.14853pt x 512.17076pt.
 
-Overfull \hbox (95.31564pt too wide) in paragraph at lines 877--878
+Overfull \hbox (95.31564pt too wide) in paragraph at lines 889--890
  [][] 
  []
 
@@ -623,10 +623,10 @@ Chapter 4.
 <images/signup.png, id=508, 552.56438pt x 636.12656pt>
 File: images/signup.png Graphic file (type png)
 <use images/signup.png>
-Package pdftex.def Info: images/signup.png  used on input line 902.
+Package pdftex.def Info: images/signup.png  used on input line 914.
 (pdftex.def)             Requested size: 455.23888pt x 512.1439pt.
 
-Overfull \hbox (38.40599pt too wide) in paragraph at lines 902--903
+Overfull \hbox (38.40599pt too wide) in paragraph at lines 914--915
  [][] 
  []
 
@@ -636,35 +636,35 @@ Overfull \hbox (38.40599pt too wide) in paragraph at lines 902--903
 <images/signin.png, id=513, 631.60968pt x 538.26094pt>
 File: images/signin.png Graphic file (type png)
 <use images/signin.png>
-Package pdftex.def Info: images/signin.png  used on input line 909.
+Package pdftex.def Info: images/signin.png  used on input line 921.
 (pdftex.def)             Requested size: 455.25014pt x 512.1581pt.
 
-Overfull \hbox (38.41725pt too wide) in paragraph at lines 909--910
+Overfull \hbox (38.41725pt too wide) in paragraph at lines 921--922
  [][] 
  []
 
 <images/chat1.png, id=514, 1927.2pt x 1084.05pt>
 File: images/chat1.png Graphic file (type png)
 <use images/chat1.png>
-Package pdftex.def Info: images/chat1.png  used on input line 915.
+Package pdftex.def Info: images/chat1.png  used on input line 927.
 (pdftex.def)             Requested size: 455.2446pt x 455.24828pt.
 
-Overfull \hbox (38.41171pt too wide) in paragraph at lines 915--916
+Overfull \hbox (38.41171pt too wide) in paragraph at lines 927--928
  [][] 
  []
 
 [33 <./images/signup.png>] [34 <./images/signin.png>] [35 <./images/chat1.png>]
-Overfull \hbox (10.68619pt too wide) in paragraph at lines 942--947
+Overfull \hbox (10.68619pt too wide) in paragraph at lines 954--959
 \OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
  []
 
 <images/ganttchart.png.jpg, id=531, 551.81157pt x 292.84406pt>
 File: images/ganttchart.png.jpg Graphic file (type jpg)
 <use images/ganttchart.png.jpg>
-Package pdftex.def Info: images/ganttchart.png.jpg  used on input line 950.
+Package pdftex.def Info: images/ganttchart.png.jpg  used on input line 962.
 (pdftex.def)             Requested size: 455.24408pt x 241.60826pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 950--951
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 962--963
  [][] 
  []
 
@@ -686,7 +686,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  82i,9n,82p,1367b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/chris/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on KECReport.pdf (47 pages, 1808623 bytes).
+Output written on KECReport.pdf (47 pages, 1809396 bytes).
 PDF statistics:
  626 PDF objects out of 1000 (max. 8388607)
  117 named destinations out of 1000 (max. 500000)
