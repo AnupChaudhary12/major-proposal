@@ -1,6 +1,6 @@
-PWD c:\Users\dpray\Desktop\New folder (2)\major2\major-proposal
+PWD c:\Users\dpray\Desktop\New folder (2)\major-proposal
 INPUT C:\Users\dpray\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\dpray\Desktop\New folder (2)\major2\major-proposal\KECReport.tex
+INPUT c:\Users\dpray\Desktop\New folder (2)\major-proposal\KECReport.tex
 OUTPUT KECReport.log
 INPUT .\KECReportFormat.tex
 INPUT .\KECReportFormat.tex
@@ -847,13 +847,6 @@ INPUT .\images\UseCaseDiagram1.png
 INPUT .\images\UseCaseDiagram1.png
 INPUT .\images\UseCaseDiagram1.png
 INPUT .\images\UseCaseDiagram1.png
-INPUT .\images\signup.png
-INPUT .\images\signup.png
-INPUT images\signup.png
-INPUT .\images\signup.png
-INPUT .\images\signup.png
-INPUT .\images\signup.png
-INPUT .\images\signup.png
 INPUT .\images\signin.png
 INPUT .\images\signin.png
 INPUT images\signin.png
