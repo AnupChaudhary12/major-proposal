@@ -677,55 +677,55 @@ public key.
 	\item A text encrypted with the public key can only be solved with the private key
 \end{itemize}
 \subsection*{Salting}
-Salting is the process of adding random data to a password or other sensitive information before it is hashed. 
+Salting is the process of adding random data to a password or other sensitive information before it is hashed.
 The salt is a random string of characters that is unique to each user and is added to the password before it is hashed.
-The purpose of salting is to make it much more difficult for attackers to use precomputed hash tables to reverse-engineer 
-a password from its hash value. Without the salt, an attacker could use a precomputed hash table to compare a list of hashed 
-passwords to a database of stolen password hashes and quickly find matches, allowing them to gain unauthorized access to user accounts. 
+The purpose of salting is to make it much more difficult for attackers to use precomputed hash tables to reverse-engineer
+a password from its hash value. Without the salt, an attacker could use a precomputed hash table to compare a list of hashed
+passwords to a database of stolen password hashes and quickly find matches, allowing them to gain unauthorized access to user accounts.
 However, with a unique salt for each password, the precomputed hash tables become useless, as the attacker would need to generate a new hash table for each salt used.
-In summary, salting is an important security measure that helps to protect user passwords and other sensitive information by making 
+In summary, salting is an important security measure that helps to protect user passwords and other sensitive information by making
 them more resistant to attacks by malicious actors.
 \subsection*{Hashing}
-Hashing is a process of converting input data of any length into a fixed-size output, called a hash or message digest. 
-The hash function takes the input data and applies a one-way mathematical algorithm to it to produce a unique hash value. 
+Hashing is a process of converting input data of any length into a fixed-size output, called a hash or message digest.
+The hash function takes the input data and applies a one-way mathematical algorithm to it to produce a unique hash value.
 Hashing is used in many applications such as password storage, data integrity verification, and digital signatures.
-Hashing and RSA are two separate cryptographic concepts that are often used together in digital signatures. RSA is a public key encryption algorithm, 
-while hashing is a one-way function used to create a unique fixed-size output (hash) from an input of any size.When we say that hashing is a one-way function, 
+Hashing and RSA are two separate cryptographic concepts that are often used together in digital signatures. RSA is a public key encryption algorithm,
+while hashing is a one-way function used to create a unique fixed-size output (hash) from an input of any size.When we say that hashing is a one-way function,
 it means that it is easy to compute the hash value from the input data, but it is computationally infeasible to recover the original input data from the hash value.
-This property of hashing is important for ensuring the integrity and security of data. For example, in password storage, instead of storing the actual password, the password is hashed and the hash value is stored. 
-When a user logs in with their password, the system hashes the password and compares the resulting hash value with the stored hash value. If they match, the password is correct. 
+This property of hashing is important for ensuring the integrity and security of data. For example, in password storage, instead of storing the actual password, the password is hashed and the hash value is stored.
+When a user logs in with their password, the system hashes the password and compares the resulting hash value with the stored hash value. If they match, the password is correct.
 However, because the hash function is one-way, even if an attacker obtains the hash value, they cannot easily determine the original password.
 Using a hash function before applying RSA in digital signatures provides added security and efficiency, as it ensures that the signature only depends on the message's content and not on the message's size or format.
 
 \subsection*{Digital Signature}
-A digital signature is a cryptographic technique used to verify the authenticity and integrity of a digital message or document. 
+A digital signature is a cryptographic technique used to verify the authenticity and integrity of a digital message or document.
 It involves the use of a public key algorithm, such as RSA, to create a digital signature that is unique to the sender and the message being signed.
 \subsubsection{Steps:}
 \begin{itemize}
 	\item Creation of Hash Message: The sender of a message generates a digital signature by generating hash of the message.
-	\item Sign Hash with private key: This hash value is signed using the priate key, resulting digital signature which is appended to the message and sent to the 
-	recipient.
+	\item Sign Hash with private key: This hash value is signed using the priate key, resulting digital signature which is appended to the message and sent to the
+	      recipient.
 	\item Send the message and the digital signature: The message and the digital signature are sent together to the recipient.
-	\item Verify the signature: The recipient can verify the authenticity and integrity of the message by applying the same 
-	mathematical function to the message using the sender's public key, and comparing the resulting signature to the one that was sent with the message.
-	If the two signatures match, it indicates that the message was sent by the sender and has not been modified in transit.
+	\item Verify the signature: The recipient can verify the authenticity and integrity of the message by applying the same
+	      mathematical function to the message using the sender's public key, and comparing the resulting signature to the one that was sent with the message.
+	      If the two signatures match, it indicates that the message was sent by the sender and has not been modified in transit.
 \end{itemize}
 \subsection*{Proposed Algorithm}
-\begin{itemize}	
-	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm. 
-	The public key is shared with the receiver, while the private key is kept secret.
-	\item Hash the message using a salt value: The sender hashes the message using a secure hashing algorithm: SHA-256. 
-	To add an extra layer of security, a salt value is added to the message before hashing. 
-	The salt value is a random value that is different for each message and is used to prevent dictionary attacks.
-	\item Encrypt the hashed message using the private key: The sender encrypts the hashed message using their private key. 
-	This creates a digital signature that can only be decrypted using the sender's public key.
+\begin{itemize}
+	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm.
+	      The public key is shared with the receiver, while the private key is kept secret.
+	\item Hash the message using a salt value: The sender hashes the message using a secure hashing algorithm: SHA-256.
+	      To add an extra layer of security, a salt value is added to the message before hashing.
+	      The salt value is a random value that is different for each message and is used to prevent dictionary attacks.
+	\item Encrypt the hashed message using the private key: The sender encrypts the hashed message using their private key.
+	      This creates a digital signature that can only be decrypted using the sender's public key.
 	\item Send the message and the digital signature: The sender sends the original message and the digital signature to the receiver.
 	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. This gives them the hashed message.
 	\item Hash the received message using the same salt value: The receiver hashes the received message using the same salt value that was used by the sender.
-	\item Compare the two hashes: The receiver compares the hashed message they computed with the one that was received from the sender. 
+	\item Compare the two hashes: The receiver compares the hashed message they computed with the one that was received from the sender.
 \end{itemize}
 If the two hashes match, the message is authentic and has not been tampered with during transmission.
-Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with, 
+Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with,
 and was sent by the claimed sender.
 \pagebreak
 \subsection{Security analysis}
@@ -811,18 +811,18 @@ Availability.\\
 RSA with hashing, digital signature, and salting can provide confidentiality, integrity, and authenticity (CIA) for a message or data. \\
 Here's how each component contributes to CIA protection:
 \begin{itemize}
-	\item Hashing: A secure hash function is used to produce a fixed-length hash value from the message or data. 
-	This ensures the integrity of the message, as any changes to the original message will result in a different hash value.
-	\item Salting: Salting is the process of adding random data to the input before hashing. 
-	This makes it harder for an attacker to precompute hash values for commonly used inputs, such as passwords. 
-	Salting increases the security of the hash value, as it makes it more difficult to guess the original input.
-	\item RSA Encryption: The hash value is encrypted using the sender's private key, which creates a digital signature. 
-	The recipient can verify the authenticity of the message by decrypting the digital signature using the sender's public key.
-	This ensures the authenticity of the message, as only the sender's private key can create the digital signature.
-\item Confidentiality: RSA encryption can also provide confidentiality by encrypting the original message with the recipient's public key. 
-This ensures that only the intended recipient can decrypt and read the message.\\
+	\item Hashing: A secure hash function is used to produce a fixed-length hash value from the message or data.
+	      This ensures the integrity of the message, as any changes to the original message will result in a different hash value.
+	\item Salting: Salting is the process of adding random data to the input before hashing.
+	      This makes it harder for an attacker to precompute hash values for commonly used inputs, such as passwords.
+	      Salting increases the security of the hash value, as it makes it more difficult to guess the original input.
+	\item RSA Encryption: The hash value is encrypted using the sender's private key, which creates a digital signature.
+	      The recipient can verify the authenticity of the message by decrypting the digital signature using the sender's public key.
+	      This ensures the authenticity of the message, as only the sender's private key can create the digital signature.
+	\item Confidentiality: RSA encryption can also provide confidentiality by encrypting the original message with the recipient's public key.
+	      This ensures that only the intended recipient can decrypt and read the message.\\
 
-Overall, RSA with hashing, digital signature, and salting can provide CIA protection for messages or data, making it a useful tool in secure communication and data protection.
+	      Overall, RSA with hashing, digital signature, and salting can provide CIA protection for messages or data, making it a useful tool in secure communication and data protection.
 \end{itemize}
 
 
