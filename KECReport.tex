@@ -10,8 +10,8 @@
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
 {
 %Edit Member Names and Roll/Symbol No. and adjust width (\makebox[width]) if necessary 
-\makebox[7cm]{Anup chaudhary \hfill [KAN075BCT009]}\\
-\makebox[7cm]{Chris Gurung \hfill [KAN075BCT023]}\\
+\makebox[7cm]{Anup chaudhary \hfill [38659]}\\
+\makebox[7cm]{Chris Gurung \hfill [38672]}\\
 \makebox[7cm]{Himalaya Pal \hfill [KAN075BCT029]}\\
 \makebox[7cm]{Kundan Giri \hfill [KAN075BCT030]}
 %\makebox[9cm]{Member Name \hfill [Roll/Symbol No.]}\\
@@ -520,7 +520,7 @@ Well, there is  couple of reasons. One is simply to make the application
 future proof. A future proof security solution can mitigate the risk of
 cyber threats. We know that cyber criminals are always one step ahead of
 security professionals, so we're not 100percent sure 2048-bit keys are going to
-remain unbreakable before 2030. (Source: NIST Special Publication 800-57 Part1)
+remain unbreakable before 2030. \cite{barker2016nist}
 
 In RSA, a sender encrypts a message using the recipient's public key, and
 the recipient decrypts the message using their private key.
@@ -684,7 +684,15 @@ a password from its hash value. Without the salt, an attacker could use a precom
 passwords to a database of stolen password hashes and quickly find matches, allowing them to gain unauthorized access to user accounts.
 However, with a unique salt for each password, the precomputed hash tables become useless, as the attacker would need to generate a new hash table for each salt used.
 In summary, salting is an important security measure that helps to protect user passwords and other sensitive information by making
-them more resistant to attacks by malicious actors.
+them more resistant to attacks by malicious actors.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/salting.png}{}
+	\caption{Salting Process} %figure name
+	\label{Salting} % for referencing
+\end{figure}
+
+
 \subsection*{Hashing}
 Hashing is a process of converting input data of any length into a fixed-size output, called a hash or message digest.
 The hash function takes the input data and applies a one-way mathematical algorithm to it to produce a unique hash value.
@@ -727,7 +735,12 @@ It involves the use of a public key algorithm, such as RSA, to create a digital 
 If the two hashes match, the message is authentic and has not been tampered with during transmission.
 Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with,
 and was sent by the claimed sender.
-\includegraphics[width=160mm]{images/proposedalgo2.png}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/proposedalgo2.png}{}
+	\caption{Proposed Algorithm} %figure name
+	\label{Proposed Algorithm} % for referencing
+\end{figure}
 
 \pagebreak
 \subsection{Security analysis}
@@ -865,13 +878,6 @@ testing of the project was done.
 At last, the final webapp was designed.
 \pagebreak
 
-\section{Block Diagram:}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=170mm, height=160mm]{images/block diag.png}
-	\caption{Block Diagram} %figure name
-	\label{figblockdiagram} % for referencing
-\end{figure}
 
 \section{Use Case Diagram:}
 \begin{figure}[H]

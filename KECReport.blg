@@ -17,45 +17,45 @@ Warning--entry type for "Sabah2017" isn't style-file defined
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 3 entries,
+You've used 4 entries,
             4087 wiz_defined-function locations,
-            839 strings with 7854 characters,
-and the built_in function-call counts, 1682 in all, are:
-= -- 134
-> -- 39
-< -- 5
-+ -- 18
-- -- 9
-* -- 91
-:= -- 292
-add.period$ -- 6
-call.type$ -- 3
-change.case$ -- 3
+            845 strings with 7969 characters,
+and the built_in function-call counts, 2122 in all, are:
+= -- 172
+> -- 48
+< -- 6
++ -- 22
+- -- 11
+* -- 111
+:= -- 373
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 135
-empty$ -- 129
-format.name$ -- 12
-if$ -- 363
+cite$ -- 4
+duplicate$ -- 174
+empty$ -- 167
+format.name$ -- 15
+if$ -- 461
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 28
-newline$ -- 32
-num.names$ -- 3
-pop$ -- 65
+int.to.str$ -- 4
+missing$ -- 35
+newline$ -- 35
+num.names$ -- 4
+pop$ -- 81
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 129
+skip$ -- 165
 stack$ -- 0
-substring$ -- 11
-swap$ -- 95
-text.length$ -- 5
+substring$ -- 12
+swap$ -- 119
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 3
+type$ -- 4
 warning$ -- 0
-while$ -- 4
-width$ -- 4
-write$ -- 50
+while$ -- 5
+width$ -- 5
+write$ -- 59
 (There was 1 warning)
