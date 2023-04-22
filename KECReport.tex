@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
-\newcommand{\projectTitle}{End-To-End Encryption Chatapp } %specify "Title" of Your Project
+\newcommand{\projectTitle}{End-To-End Encryption Chat app } %specify "Title" of Your Project
 \newcommand{\doc}{Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to submit "Final Report" for Pre-final defense as well.
 \newcommand{\subCode}{CT755} %specify Subject of Your Project
@@ -10,7 +10,7 @@
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
 {
 %Edit Member Names and Roll/Symbol No. and adjust width (\makebox[width]) if necessary 
-\makebox[7cm]{Anup chaudhary \hfill [38659]}\\
+\makebox[7cm]{Anup Chaudhary \hfill [38659]}\\
 \makebox[7cm]{Chris Gurung \hfill [38672]}\\
 \makebox[7cm]{Himalaya Pal \hfill [38678]}\\
 \makebox[7cm]{Kundan Giri \hfill [38679]}
@@ -96,26 +96,26 @@ In this way we can maintain the data more securely.
 \par
 \textbf{\textit{Keywords$-$}} RSA
 
-\chapter*{Acknowledgment}
-\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
-helping us with different views of application, development and scalability as well as helped us in development of our project.
-His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
-We would like to express our notable thanks to Department of Computer and Electronics Engineering
-for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
-We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
-for presenting useful suggestions regarding the queries put forward regarding the project.\par
-Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
-and helping to better cope with the difficulties along with giving supportive hands. Without their
-valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
-Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
-withstand in our success in this project.
-%to display members name under Acknowledgement
-\begin{flushright}
-	\vskip -20pt
-	\setstretch{1.2}
-	\submittedBy
-\end{flushright}
+% \chapter*{Acknowledgment}
+% \addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+% We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
+% helping us with different views of application, development and scalability as well as helped us in development of our project.
+% His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
+% We would like to express our notable thanks to Department of Computer and Electronics Engineering
+% for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
+% We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
+% for presenting useful suggestions regarding the queries put forward regarding the project.\par
+% Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
+% and helping to better cope with the difficulties along with giving supportive hands. Without their
+% valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
+% Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
+% withstand in our success in this project.
+% %to display members name under Acknowledgement
+% \begin{flushright}
+% 	\vskip -20pt
+% 	\setstretch{1.2}
+% 	\submittedBy
+% \end{flushright}
 
 
 
@@ -340,7 +340,7 @@ used in most network systems and in this study specially.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=160mm]{images/clientserver.png}
-	\caption{A CLient/Server architecture}
+	\caption{A Client/Server architecture}
 	\label{figclientserver} % for referencing
 \end{figure}
 
@@ -685,6 +685,22 @@ passwords to a database of stolen password hashes and quickly find matches, allo
 However, with a unique salt for each password, the precomputed hash tables become useless, as the attacker would need to generate a new hash table for each salt used.
 In summary, salting is an important security measure that helps to protect user passwords and other sensitive information by making
 them more resistant to attacks by malicious actors.\\
+\begin{itemize}
+	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm. 
+	The public key is shared with the receiver, while the private key is kept secret.
+	\item Add Salt value in the public key: Sender adds salt value of length 6-10 to their key before sending it. 
+	The location and value of the salt is stored in the database and is retrieved during desaltification of the key
+	\item Verify the received public key: The receiver desalts the received key using the salt information in the database and 
+	checks if the received key is correct
+	\item Hash the message: The sender hashes the message using a hashing algorithm SHA256
+	\item Digital Signature: The sender encrypts the hashed message using their private key. 
+	This creates a digital signature that can only he decrypted using the sender's public key.
+	\item Send the message and the digital signature: The sender sends the encrypted mes¬sage and the digital signature to the receiver.
+	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. 
+	This gives them the hashed message. The receiver also decrypts the message using the same hash function used by the sender. 
+	Then the two hash function is compared and if it matches the message hasn't been tampered with.
+\end{itemize}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=160mm]{images/salting.png}{}
@@ -704,6 +720,25 @@ This property of hashing is important for ensuring the integrity and security of
 When a user logs in with their password, the system hashes the password and compares the resulting hash value with the stored hash value. If they match, the password is correct.
 However, because the hash function is one-way, even if an attacker obtains the hash value, they cannot easily determine the original password.
 Using a hash function before applying RSA in digital signatures provides added security and efficiency, as it ensures that the signature only depends on the message's content and not on the message's size or format.
+Hash functions used in cryptographic mechanisms, must – depending on the application – meet
+the following three conditions:
+\begin{itemize}
+	\item One-Way Property: For given h ∈ {0, 1}^n, it is practically impossible to find a value m ∈ {0, 1}∗
+	with H(m) = h. 
+	\item 2nd-Preimage-Property: For given m ∈ {0, 1}^∗, it is practically impossible to find a value m ∈
+	{0, 1}^∗\{m} with H(m) = H(m′)
+	\item Collision Resistance: It is practically impossible to find two values m, m ∈ {0, 1}∗ with m ̸= m
+	and H(m) = H(m′).
+\end{itemize}
+A hash function H satisfying all of the above conditions is called cryptographically strong.
+these three terms can each be described mathematically more precisely by comparing the best
+known attacks against these properties with optimal generic attacks. The length of the hash output
+is a security parameter of crucial importance, as it determines the effort of generic attacks. For the
+minimum security level required in this Technical Guideline of 120 bits, at least the requirement
+n ≥ 240 must be imposed on hash function H : {0, 1}∗ → {0, 1}n because of the birthday problem.
+At this point, it is not necessary to distinguish different cases depending on the period of use of
+a system, since the hash mechanisms recommended in this Technical Guideline all already have a
+digest length of ≥ 256 bits. \cite{bsi2020}
 
 \subsection*{Digital Signature}
 A digital signature is a cryptographic technique used to verify the authenticity and integrity of a digital message or document.
@@ -721,16 +756,19 @@ It involves the use of a public key algorithm, such as RSA, to create a digital 
 \subsection*{Proposed Algorithm}
 \begin{itemize}
 	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm.
-	      The public key is shared with the receiver, while the private key is kept secret.
-	\item Hash the message using a salt value: The sender hashes the message using a secure hashing algorithm: SHA-256.
-	      To add an extra layer of security, a salt value is added to the message before hashing.
-	      The salt value is a random value that is different for each message and is used to prevent dictionary attacks.
-	\item Encrypt the hashed message using the private key: The sender encrypts the hashed message using their private key.
-	      This creates a digital signature that can only be decrypted using the sender's public key.
-	\item Send the message and the digital signature: The sender sends the original message and the digital signature to the receiver.
-	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. This gives them the hashed message.
-	\item Hash the received message using the same salt value: The receiver hashes the received message using the same salt value that was used by the sender.
-	\item Compare the two hashes: The receiver compares the hashed message they computed with the one that was received from the sender.
+	 The public key is shared with the receiver, while the private key is kept secret.
+	\item Add Salt value in the public key: Sender adds salt value of length 6-10 to their key before sending it. 
+	The position and value of the salt is stored in the database and is retrieved during desaltification of the key
+	\item Verify the received public key: The receiver desalts the received key using the salt information (salt value & position) in the database 
+	and checks if the received key is correct
+	\item Hash the message: The sender hashes the message using a hashing algorithm SHA256
+	\item Digital Signature: The sender encrypts the hashed message using their private key. This creates a digital signature 
+	that can only he decrypted using the sender's public key.
+	\item Send the message and the digital signature: The sender sends the encrypted mes¬sage and the digital signature to the receiver.
+	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. 
+	This gives them the hashed message. The receiver also decrypts the message using the same hash function used by the sender. 
+	Then the two hash function is compared and if it matches the message hasn't been tampered with.
+	
 \end{itemize}
 If the two hashes match, the message is authentic and has not been tampered with during transmission.
 Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with,
@@ -741,79 +779,6 @@ and was sent by the claimed sender.
 	\caption{Proposed Algorithm} %figure name
 	\label{Proposed Algorithm} % for referencing
 \end{figure}
-
-\pagebreak
-\subsection{Security analysis}
-Man in the Middle attack and Discrete Logarithm attacks
-are the most damaging attacks in key-exchanging process.
-Furthermore, Cycle attack, Brute Force attack, and Timing
-attack are the most important attacks during the encryption
-and decryption process. The following step evaluates the
-algorithm against these attacks.
-\subsubsection{Man in the Middle Attack}
-Man in the Middle is an attack that the attacker is able to
-read and modify all the messages between Alice and Bob [16].
-To protect the suggested model from Man in the Middle
-attack, encrypted replies $(R_{1},R_{2})$ and mutual
-authentication between Alice  and Bob  is
-required. For this purpose Bob computes
-$K_{Bob} = R_{1}^{x_{2}} mod p$
-and $E_{1}=Encrypt(R_{2},K_{Bob})$ and sends $ R_{2},E_{1}$ to Alice.
-After that, Alice computes $K_{Alice} = R_{2}^{x_{1}} mod p$
-and $R^{'}_{2}=Decrypt(E_{1},K_{Alice}).$
-These processes prevented the Man in the Middle attack and by comparing $R_{2}$ and $R^{'}_{2}$ the attack will be identified. The following figure shows the Man in the Middle attack prevention in the proposed model.
-
-\vspace{-10pt}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/maninmiddle.png}{}
-	\caption{ Man in the Middle Attack Prevention by Proposed Algorithm} %figure name
-	\label{figmaninmiddle} % for referencing
-\end{figure}
-
-According to the figure, $R_{m}$ and $R^{'}_{m}$ are not same for
-Alice because the keys between users and attackers are
-different.\\
-{$K_{Alice} = g^{x_{1}{x_{m}}}$ mod p}\\
-{$K_{Bob} = g^{x_{2}{x_{m}}}$ mod p}\\
-{$K_{Eve} = g^{x_{2}{x_{m}}}$ mod p}\\
-It means $K_{Alice}$ $\neq$ $K_{Bob}$ = $K_{Eve}$  and because of that, the
-Man in the Middle attack was noticed by Alice and the attack
-was prevented.
-
-\subsubsection{Cycle Attack }
-Cycle Attack is an attack where the attacker encrypts the
-cipher text alternately, until the original text appears. This
-number of encrypting will decrypt any cipher text. In large key
-RSA, this attack could not be practical even when a
-generalisation of the attack allows the modulus to be factored
-and most of the time it works faster. Moreover, in the
-proposed model, the attacker will not have access to the public
-key to re-encrypt the cipher text because the public key has
-been encrypted by the secret key that was generated in
-Modified Diffie-Hellman process.
-
-\subsubsection{Brute Force Attack}
-All possible combinations to guess the private key have
-been tried by the attacker during Brute Force attack. In
-original RSA, the probability of failure against this attack can
-be decreased considerably by choosing exponents larger than
-2048 bits but with the combination of the proposed model, this
-algorithm has significant resistance towards brute force attack
-even with 1024 bits exponents because of the encryption of
-the public key before sending it.
-
-\subsubsection{Timing Attack}
-Timing attack is a side channel attack in which the attacker
-determines private exponent by calculating the time by
-exploiting the timing variation of the modular exponentiation
-	[18]. Timing attack in original RSA might be prevented by
-including a random delay to the exponentiation algorithm or
-multiplying the cipher-text with a random number [19] while
-the dual encryption (public key encryption by secret key and
-the message encryption by RSA ) in the suggested model
-will protect the transferred message from the timing attack and
-it is not necessary to multiply the cipher-text.
 
 \pagebreak
 \subsection{CIA triad}
@@ -969,10 +934,11 @@ phases as shown in gantt chart.
 \end{figure}
 
 \section{Conclusion}
-In this great era of technology data is more crucial than ever. The use of online messaging has resulted in more and more data to be shared between people from simple
-messages to sensitive messages. As such need for some method to hide such confidential information is needed. Thus our project tries to do just that.
 
-
+With the increasing importance of privacy and security in the digital age, it is imperative that we offer users a secure means of 
+communication. Our proposal offers a reliable and effective solution that can help individuals and organizations protect sensitive 
+information and communicate with confidence. We believe that our proposed end-to-end chat application will be a valuable addition 
+to the landscape of secure communication tools, and we look forward to further development and implementation of this technology.
 
 
 
