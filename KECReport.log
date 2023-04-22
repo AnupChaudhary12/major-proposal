@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.26) (preloaded format=pdflatex 2022.7.29)  22 APR 2023 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.26) (preloaded format=pdflatex 2022.7.29)  22 APR 2023 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,7 +512,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--328
 [7
 
 ]
-<images/clientserver.png, id=372, 502.87875pt x 388.45125pt>
+<images/clientserver.png, id=376, 502.87875pt x 388.45125pt>
 File: images/clientserver.png Graphic file (type png)
 <use images/clientserver.png>
 Package pdftex.def Info: images/clientserver.png  used on input line 342.
@@ -548,14 +548,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--524
  []
 
 [13] [14] [15]
-<images/Http_request-response_cycle.png, id=421, 2006.49625pt x 1183.42125pt>
+<images/Http_request-response_cycle.png, id=425, 2006.49625pt x 1183.42125pt>
 File: images/Http_request-response_cycle.png Graphic file (type png)
 <use images/Http_request-response_cycle.png>
 Package pdftex.def Info: images/Http_request-response_cycle.png  used on input line 619.
 (pdftex.def)             Requested size: 398.32233pt x 455.24841pt.
  [16] [17 <./images/Http_request-response_cycle.png>] [18]
 Chapter 3.
-<images/rsa algo.png, id=436, 456.5055pt x 266.1945pt>
+<images/rsa algo.png, id=440, 456.5055pt x 266.1945pt>
 File: images/rsa algo.png Graphic file (type png)
 <use images/rsa algo.png>
 Package pdftex.def Info: images/rsa algo.png  used on input line 652.
@@ -568,7 +568,7 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 652--653
 [19
 
  <./images/rsa algo.png>]
-<images/salting.png, id=442, 703.62875pt x 480.79625pt>
+<images/salting.png, id=446, 703.62875pt x 480.79625pt>
 File: images/salting.png Graphic file (type png)
 <use images/salting.png>
 Package pdftex.def Info: images/salting.png  used on input line 690.
@@ -584,7 +584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 680--693
  []
 
 [20] [21 <./images/salting.png>] [22]
-<images/proposedalgo2.png, id=458, 921.4425pt x 805.0075pt>
+<images/proposedalgo2.png, id=462, 921.4425pt x 805.0075pt>
 File: images/proposedalgo2.png Graphic file (type png)
 <use images/proposedalgo2.png>
 Package pdftex.def Info: images/proposedalgo2.png  used on input line 740.
@@ -595,7 +595,7 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 740--741
  []
 
 [23] [24 <./images/proposedalgo2.png>]
-<images/maninmiddle.png, id=468, 486.01575pt x 264.38776pt>
+<images/maninmiddle.png, id=472, 486.01575pt x 264.38776pt>
 File: images/maninmiddle.png Graphic file (type png)
 <use images/maninmiddle.png>
 Package pdftex.def Info: images/maninmiddle.png  used on input line 769.
@@ -611,7 +611,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 837--839
  []
 
 [28]
-<images/incremental model.png, id=491, 690.58pt x 457.71pt>
+<images/incremental model.png, id=495, 690.58pt x 457.71pt>
 File: images/incremental model.png Graphic file (type png)
 <use images/incremental model.png>
 Package pdftex.def Info: images/incremental model.png  used on input line 853.
@@ -622,7 +622,7 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 853--854
  []
 
 [29 <./images/incremental model.png>] [30]
-<images/UseCaseDiagram1.png, id=501, 1155.31625pt x 915.42pt>
+<images/UseCaseDiagram1.png, id=505, 1155.31625pt x 915.42pt>
 File: images/UseCaseDiagram1.png Graphic file (type png)
 <use images/UseCaseDiagram1.png>
 Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 885.
@@ -634,7 +634,7 @@ Overfull \hbox (95.31564pt too wide) in paragraph at lines 885--886
 
 [31 <./images/UseCaseDiagram1.png>]
 Chapter 4.
-<images/signin.png, id=507, 631.60968pt x 538.26094pt>
+<images/signin.png, id=511, 631.60968pt x 538.26094pt>
 File: images/signin.png Graphic file (type png)
 <use images/signin.png>
 Package pdftex.def Info: images/signin.png  used on input line 912.
@@ -644,7 +644,7 @@ Overfull \hbox (38.41725pt too wide) in paragraph at lines 912--913
  [][] 
  []
 
-<images/chat1.png, id=508, 1927.2pt x 1084.05pt>
+<images/chat1.png, id=512, 1927.2pt x 1084.05pt>
 File: images/chat1.png Graphic file (type png)
 <use images/chat1.png>
 Package pdftex.def Info: images/chat1.png  used on input line 918.
@@ -656,22 +656,44 @@ Overfull \hbox (38.41171pt too wide) in paragraph at lines 918--919
 
 [32
 
-] [33 <./images/signin.png>] [34 <./images/chat1.png>]
-Overfull \hbox (10.68619pt too wide) in paragraph at lines 945--950
-\OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
- []
+] [33 <./images/signin.png>]
+<images/chat3.png, id=522, 1925.1925pt x 897.3525pt>
+File: images/chat3.png Graphic file (type png)
+<use images/chat3.png>
+Package pdftex.def Info: images/chat3.png  used on input line 925.
+(pdftex.def)             Requested size: 455.24408pt x 212.19234pt.
 
-<images/ganttchart.png.jpg, id=524, 551.81157pt x 292.84406pt>
-File: images/ganttchart.png.jpg Graphic file (type jpg)
-<use images/ganttchart.png.jpg>
-Package pdftex.def Info: images/ganttchart.png.jpg  used on input line 953.
-(pdftex.def)             Requested size: 455.24408pt x 241.60826pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 953--954
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 925--926
  [][] 
  []
 
-[35 <./images/ganttchart.png.jpg>] (KECReport.bbl [36]) [37
+[34 <./images/chat1.png>]
+<images/msg.png, id=529, 960.58875pt x 882.29625pt>
+File: images/msg.png Graphic file (type png)
+<use images/msg.png>
+Package pdftex.def Info: images/msg.png  used on input line 932.
+(pdftex.def)             Requested size: 455.24408pt x 418.13922pt.
+
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 932--933
+ [][] 
+ []
+
+[35 <./images/chat3.png> <./images/msg.png>]
+Overfull \hbox (10.68619pt too wide) in paragraph at lines 958--963
+\OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
+ []
+
+<images/ganttchart.png.jpg, id=536, 551.81157pt x 292.84406pt>
+File: images/ganttchart.png.jpg Graphic file (type jpg)
+<use images/ganttchart.png.jpg>
+Package pdftex.def Info: images/ganttchart.png.jpg  used on input line 966.
+(pdftex.def)             Requested size: 455.24408pt x 241.60826pt.
+
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 966--967
+ [][] 
+ []
+
+[36] (KECReport.bbl [37 <./images/ganttchart.png.jpg>]) [38
 
 ] (KECReport.aux)
 
@@ -681,17 +703,17 @@ Package rerunfilecheck Info: File `KECReport.out' has not changed.
 (rerunfilecheck)             Checksum: 5AF23E4961D402425DDEEC9CD4FDF610;7835.
  ) 
 Here is how much of TeX's memory you used:
- 16738 strings out of 478337
- 318391 string characters out of 2853081
- 609805 words of memory out of 3000000
- 34837 multiletter control sequences out of 15000+600000
- 493055 words of font info for 74 fonts, out of 8000000 for 9000
+ 16757 strings out of 478337
+ 318716 string characters out of 2853081
+ 609920 words of memory out of 3000000
+ 34851 multiletter control sequences out of 15000+600000
+ 493056 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,9n,82p,1393b,596s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Miktex/fonts/enc/dvips/base/8r.enc}<C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/Miktex/fonts/type1/urw/times/utmbi8a.pfb><C:/Miktex/fonts/type1/urw/times/utmr8a.pfb><C:/Miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on KECReport.pdf (46 pages, 1762121 bytes).
+Output written on KECReport.pdf (47 pages, 1926575 bytes).
 PDF statistics:
- 619 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 493 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 503 words of extra memory for PDF output out of 10000 (max. 10000000)
 

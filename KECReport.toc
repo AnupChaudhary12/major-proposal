@@ -59,8 +59,8 @@
 \contentsline {chapter}{\numberline {4}Epilogue}{32}{chapter.4}%
 \contentsline {section}{\numberline {4.1}User Application}{32}{section.4.1}%
 \contentsline {section}{\numberline {4.2} Output:}{32}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Limitation}{34}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Future Enhancement}{35}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Work Schedule}{35}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Conclusion}{35}{section.4.6}%
-\contentsline {chapter}{References}{36}{section.4.6}%
+\contentsline {section}{\numberline {4.3}Limitation}{36}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Future Enhancement}{36}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Work Schedule}{36}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Conclusion}{37}{section.4.6}%
+\contentsline {chapter}{References}{37}{section.4.6}%
