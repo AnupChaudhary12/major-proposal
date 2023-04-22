@@ -2,16 +2,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
-\newcommand{\projectTitle}{End-To-End Encryption and Decryption Using Cryptography } %specify "Title" of Your Project
+\newcommand{\projectTitle}{End-To-End Encryption Chatapp } %specify "Title" of Your Project
 \newcommand{\doc}{Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to submit "Final Report" for Pre-final defense as well.
-\newcommand{\subCode}{CT707} %specify Subject of Your Project
+\newcommand{\subCode}{CT755} %specify Subject of Your Project
 \newcommand{\degree}{Bachelor in Computer Engineering} %specify your degree
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
 {
 %Edit Member Names and Roll/Symbol No. and adjust width (\makebox[width]) if necessary 
-\makebox[7cm]{Anup chaudhary \hfill [KAN075BCT009]}\\
-\makebox[7cm]{Chris Gurung \hfill [KAN075BCT023]}\\
+\makebox[7cm]{Anup chaudhary \hfill [38659]}\\
+\makebox[7cm]{Chris Gurung \hfill [38672]}\\
 \makebox[7cm]{Himalaya Pal \hfill [KAN075BCT029]}\\
 \makebox[7cm]{Kundan Giri \hfill [KAN075BCT030]}
 %\makebox[9cm]{Member Name \hfill [Roll/Symbol No.]}\\
@@ -19,9 +19,9 @@
 
 \newcommand{\submittedTo}{Department of Computer and Electronics Engineering} %specify your department
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
-\newcommand{\defYear}{2022} %Defense Year
-\newcommand{\defMonth}{June} %Defense Month- January, February, ...
-\newcommand{\defDay}{12} %specify Defense Day- 1, 2, ...
+\newcommand{\defYear}{2023} %Defense Year
+\newcommand{\defMonth}{March} %Defense Month- January, February, ...
+\newcommand{\defDay}{29} %specify Defense Day- 1, 2, ...
 
 \newcommand{\supervisor}{none} % Specify Name of Supervisor for Major Project (write "none" if no Supervisor is assigned)
 \newcommand{\degSup}{Supervisor's Designation\\Second Line of Designation (if required)} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
@@ -73,7 +73,9 @@
 \pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
 
 %Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
+\KECcopyright
 % defined in KECReportFormat.tex
+\KECapproval
 
 %Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
 % defined in KECReportFormat.tex
@@ -86,40 +88,60 @@ provides privacy, integrity, confidentiality, and authentication.
 
 In the current world where communication has been made easy such that you could talk to a person on the other side of the world with a press of the button. With the increase in availability of internet service you can send texts, photos ,files through the internet in a matter of seconds and for far less cheaper. This is achieved through different chat applications. With the increased usage of such chat applications the contents of such messages contains more that just simple messages to friends and families but also very important information and files which on the wrong hands could cause a huge catastrophe. As such End-to-End security is needed to safely exchange private information with each other without worrying about data. With this project we aim to provide an End-to-End encrypted chat apps.
 
-This project approach End-to-end encryption method to provide  secure communication that prevents third parties from accessing data while it's transferred from one end system or device to another.
-The end-to-end encryption method is implemented using the Asymmetric key encryption algorithm (RSA). We compressed the message using huffman Encoding algorithm. Then used RSA to encrypt that encoded data. The login system is also secured because we used AES library to secure the password.
-
+This project approach End-to-End encryption method to provide  secure communication that prevents third parties from accessing data while it's transferred from one end system or device to another.
+The End-to-End encryption method is implemented using the Asymmetric key encryption algorithm (RSA). We used RSA to encrypt that encoded data.
 In this way we can maintain the data more securely.
-Since we used modified Deffie-Hellman the data and RSA algorithm for securing the data.\cite{sa}
+
 
 \par
-\textbf{\textit{Keywords$-$}} RSA, Huffman
+\textbf{\textit{Keywords$-$}} RSA
+
+\chapter*{Acknowledgment}
+\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
+helping us with different views of application, development and scalability as well as helped us in development of our project.
+His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
+We would like to express our notable thanks to Department of Computer and Electronics Engineering
+for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
+We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
+for presenting useful suggestions regarding the queries put forward regarding the project.\par
+Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
+and helping to better cope with the difficulties along with giving supportive hands. Without their
+valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
+Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
+withstand in our success in this project.
+%to display members name under Acknowledgement
+\begin{flushright}
+	\vskip -20pt
+	\setstretch{1.2}
+	\submittedBy
+\end{flushright}
 
 
 
-	%to adjust spacings for TOC, LOF, LOT
-	{
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		%TOC, LOF and LOT
-		\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
-		\makeatletter
-		% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
-		\def\@makeschapterhead#1{%
-			%\vspace*{50\p@}% Remove the vertical space
-			{\newpage \parindent \z@ \raggedright
-					\normalfont
-					\interlinepenalty\@M
-					\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
-					\vskip 18\p@ % adjust space after heading 18pt
-				}}
-		\makeatother
+%to adjust spacings for TOC, LOF, LOT
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TOC, LOF and LOT
+\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
+\makeatletter
+% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
+\def\@makeschapterhead#1{%
+	%\vspace*{50\p@}% Remove the vertical space
+	{\newpage \parindent \z@ \raggedright
+			\normalfont
+			\interlinepenalty\@M
+			\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
+			\vskip 18\p@ % adjust space after heading 18pt
+		}}
+\makeatother
 
-		\tableofcontents % prints table of contents
-		\listoffigures % prints list of figures
-		\addcontentsline{toc}{chapter}{List of Figures}
-		%\listoftables % prints list of table
-		%\addcontentsline{toc}{chapter}{List of Tables}
-	}
+\tableofcontents % prints table of contents
+\listoffigures % prints list of figures
+\addcontentsline{toc}{chapter}{List of Figures}
+%\listoftables % prints list of table
+%\addcontentsline{toc}{chapter}{List of Tables}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %comment this chapter if you don't have List of Abbreviations
@@ -132,45 +154,74 @@ Since we used modified Deffie-Hellman the data and RSA algorithm for securing th
 
 \chapter{Introduction}
 \section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in your document.
-With the rapid development of mobile devices, computers and accessibility to the internet there is growing users of different chat applications. The attracting or more so important features of any social media has become the chat feature. Such chat features provide real time messaging, file sharing which may include different photos, videos, documents, etc. Chatting has been such an important aspect of the modern world that it is expected the no. of active users currently is in billions with this number expected to increase more in the coming years. Among some of the popular chat applications Whatsapp’s monthly active users(in millions) are 2000, messenger 988, snapchat 557 to name a few.\cite{Barakat2018}
+Digital communications surveillance is a major
+security concern in the world at large. End-to-End (E2E)
+encryption in mobile communication applications delivers
+confidentiality between users, defending messages against
+snooping. Several widespread communication tools
+(WhatsApp, Signal, Telegram, iMessage) have implemented
+end-to-end encryption, as a major selling point. Yet, the
+understand of the security goals (confidentiality, integrity,
+authentication) remain vague to users, such as how the
+security goals offer protection, and if they value that
+protection.\par
+With the growing use of the internet as a medium for
+communication, it becomes imperative to secure personal
+and business’ online communications. Consequently, the
+motivation to execute attacks increases and preventing
+against these attacks using technology that is almost
+unbreakable was considered. This technology, if employed
+accurately, could avert large-scale attacks. End-To-End
+Encryption suggests a maintainable answer to the continuing
+challenges of internet security . End-to-end encryption
+describes the process of secure exchange of data from
+sender to recipient; preventing third-parties from accessing
+the data during transmission. All information is encrypted by
+the sender and the recipient decrypts it. During
+transmission, the content is completely encrypted, which
+means that no third parties can access or tamper with it
+during transmission . Several cryptographic algorithms
+are used alone or combined for the encryption purposes.\par
+The components of End-To-End Encryption includes :
+The identity component authenticates users. The protocols
+component handles the key exchange and the algorithm. The
+algorithm uses scientific process to encrypt the data, and it
+cannot be decrypted without the predetermined key. Secure
+implementation and operation ensure the End-To-End
+Encryption process is not vulnerable to attacks on the
+hardware side. These components work together to deliver a
+system that operates efficiently to offer the best security to
+end users.\par
+Internet security is an extremely vital issue in computer
+science, due to the increasing acceptance of online
+communication. Since e-mailing services became public,
+questions arose about how secure they are. Furthermore, the
+need to secure the internet was made popular by shopping,
+banking, and other financial transactions via the internet .
+Is End-To-End Encryption the best technology to ensuring
+data security? In recent times, most of the communications
+between clients and servers are secured using Transport
+Layer Security. However, communications between clients
+are not yet secured . With plaintext communication
+vulnerable to hackers . Consequently, security
+researchers have proffered the usage of End-To-End
+Encryption.\par
+This research focused on providing a performance
+evaluation experiment on RSA algorithm and its usage in end to end encrypted
+chat app. RSA is based
+on number theory, using two prime numbers or
+mathematical operation to randomly produce the public and
+private keys. The public key (which is public) is used for
+encryption, and the private key (which is private) is used for
+decryption. Sender encrypts the communication using public
+key of the recipient and when the communication is
+received, the recipient can decrypt it with its private key.\cite{paley}
 
-The importance of such apps was never more clearly presented as when Facebook experienced outage in 2021. In what was just a 6 hour long outage the competing apps like telegram gained a record 70 million new users.
-As the dependence on chat systems grow day by day the vulnerability and assaults also increases. As such  there is increasing need to implement a secure communication
-
-Digital communication witnesses a noticeable and continuous development in
-many applications in the Internet. Hence, secure communication sessions must be
-provided. The security of data transmitted across a global network has turned into a
-key factor on the network performance measures. So, the confidentiality and the
-integrity of data are needed to prevent eavesdroppers from accessing and using
-transmitted data.
-
-One way of to secure the communication is using End-To-End encryption which use the Cryptographic algorithm. Cryptographic algorithms are divided
-into symmetric and asymmetric keys. The symmetric algorithms require a single key only for the
-encryption and decryption of data. Asymmetric algorithms on the other hand require both public
-and private keys for the encryption and decryption of data. The scrambling of the data is done
-using the public key while the private key is made known only to the receiver which is meant for
-the decryption of the data.
-A maiden asymmetric algorithm was proposed by Diffie-Hellman  which ensures secured
-communication as well as data security. A counter algorithm termed RSA which has lower time
-complexity based on prime number factorization was proposed in 1977 and is the patent of Ron
-Rivest, Adi Shamir, and Len Adleman (RSA), which was published in 1978 at the Massachusetts
-Institute of Technology . In this algorithm, two prime numbers are used to produce the public
-and the private key. When the keys are created, the prime numbers are no more considered and
-are or can be discarded.\cite{sa}
 
 \pagebreak
 \section{Problem statement}
 \vspace{-18pt}
-The purpose of this project is to provide the correct data with security to the users. For
-some of the users the data might be lost during the transmission process in the network
-and for some, the data might be changed by the unauthorized person in the network and
-there are some other security problems in the network. Our application will give you more
-Security to the data present in the network and there will be able to reduce the loss of data
-in the network which will be transmitted from the sender to the receiver using the latest
-technologies. Only the Authorized persons i.e., who are using our application will be
-there in the Network.
-
-The proposed algorithm is to compress the message at one end and ask the public key of another person and use that public key to encrypt the message and the person only decrypt the message using his private key.Using Huffman encoding the message compressed is loss less.
+Traditional messaging like SMS are very unsecure as it travels through the network in plain text. Since messages might contain very sensitive informations the messages shouldn't be accessible to any other person beside the actual people involved in the conversation. Furthermore in unsecure messaging any third party can pretend to be the intended person and gain access or send wrong information.
 
 
 \section{Objectives}
@@ -179,7 +230,7 @@ simplicity of design, having user-friendly interface and to be easily understood
 The main objectives of the application can be enumerated as follows:
 \vspace{-18pt}
 \begin{itemize}
-	\item To provide end-to-end data security.
+	\item To provide end-to-end text message security.
 	\item To provide platform for sending messages from one person to another.
 \end{itemize}
 
@@ -194,12 +245,16 @@ The application, is targeted towards the general population, so the core feature
 	\item We can send messages
 	\item It provides end-to-end data security in communication system.
 	\item Simple and ease for general population
-	\item It provides encryption, decryption and compression to messages.
 \end{itemize}
 
 \section{Feasibility Analysis}
+Feasibility is a measure of how benificial or practical the development of a system will be to an organization or enterprise.
+In other words, a feasibility study is an evaluation and analysis of the potential of the proposed project which is based on extensive investigation and reasearch to give
+full comfort to the decision masker. A system should have a responsible cost and should be technically and operationally feasible to be actually implemented.
+The two criteria to judge feasibilty are cost required and value to be attained. The feasibility of "End to End encryption Chatapp " is analyzed under the following four headings:
 
 \subsection{Economic Feasibility}
+Economic Feasibility is the measure of the cost effectiveness of the project or the solution. This is often called a cost benifit analysis. \par
 Based on our economic analysis for development and operational cost,
 the system is being developed and operated economically. For development,
 the required devices are readily available, so it is feasible. Also,
@@ -210,6 +265,7 @@ Based on the objectives and the time left for the development.
 The schedule is found to be feasible.
 
 \subsection{Technical Feasibility}
+Technical Feasibility is the measure of the practically of a specific technical solution and the availability of technical resources and expertise.\par
 Technically, the system is feasible enough and easy-to-use
 for both technical and non-technical groups of people. It provides
 a user-friendly environment along with features using the latest technologies.
@@ -217,13 +273,15 @@ The system provides a layout most of the applications people are used to anyway
 so it will be easy to use.
 
 \subsection{Operational Feasibility}
+Operational feasibility is the measure of how a well specific solution will work in the organization.
+It is also measure of how people feel about the system of the project. It also analyze the inside operation on how a deemed process
+will work, be implemented, and dealing with changes resistance and acceptance.\par
 For the operation of the system, the person does
 not need to excel in using a computer. Since, the event
 may not always be related to the technical fields, someone
 with minimum knowledge about computer and technology can also get
 benefit from the system. Similarly, one can get access to the system
 as a web-based application. There is no requirement of huge and expensive hardware.
-The system comprises only of farmer’s end.
 
 \section{System Requirements}
 
@@ -236,8 +294,8 @@ the software requirements for the development and operation of this system:
 \begin{itemize}
 	\item Operating System: Windows 8 or above
 	\item Browsers: Google Chrome, Firefox, etc
-	\item PostgreSQL Server
-	\item Python
+	\item Mongodb, Node.js Server
+	\item React js
 \end{itemize}
 
 \subsection{Hardware Requirement}
@@ -254,8 +312,9 @@ operation of this application are as follows:
 
 
 \chapter{Literature Review}
-\section{Related Paper}
-There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\cite{Sabah2017}\\
+
+\section{Research on End-to-End Encryption chat app}
+There are currently millions of monthly active users worldwide of different chat applications currently. There are two types of architecture in those applications, client-server and peer-to-peer networks. In a peer-to-peer network, there is no central server and each user has his/her own data storage. On the contrary, there are dedicated servers and clients in a client-server network and the data is stored on a central server. Security and privacy in chat applications have a paramount importance but few people take it seriously. In a test done by the Electronic Frontier Foundation, most of the popular messaging applications failed to meet most security standards. These applications might be using the conversations as an information for certain purposes. Moreover, reading the private conversations is certainly unacceptable in terms of privacy.  Most applications only used Transport Layer Security (TLS) for securing channel, the service provider has full access to every message exchanged through their infrastructure . Therefore, these messages can be accessed by attackers. Therefore to maintain protection and privacy, messages should be encrypted from sender to receiver and no one can read messages even the service provider, in addition to protecting the local storage of the device.\\
 There are different Encryption algorithms that can  be utilized  to  provide secure  messaging environment. Thus, messages will circulate as  encrypted form in transmission medium, not as clear text. Somebody who has seized encrypted data does not obtain original message from the encrypted  data  unless they  possess  the  necessary  method or  a  key.  Encryption  methods  are divided into the following categories: private key cryptography and public key cryptography.\\
 In a symmetric key algorithm, the sender and receiver must have a shared key set up in advance and keep secret from all other parties; the sender uses this key for encryption, and the receiver uses  the  same  key  for  decryption.  In  this  case,  except  for  transmitted  encrypted  message, encryption  key  must  also  be  submitted  confidentially,  which  is  one  of  the  disadvantages of private-key cryptography.
 If a third person who has managed to enter the system operator or listen to transmission medium
@@ -264,32 +323,280 @@ in this method: public key and private key. The public key of the user can be vi
 The private key is kept secret by the user. When someone wants to send a message to user, they
 use the user's public key and create the encrypted message and then send the encrypted data to
 user. The user  decrypts the  encrypted data with  her/his private  key  and obtains  a meaningful
-message.\\
-The data which has been encrypted by the user’s public key is only solved with the user’s private key. When the user wants to send a message, s/he reaches the public key library. S/he takes the public key of somebody to which s/he wants to send a message and encrypts the message and then s/he sends the encrypted message to the receiver. The only thing that the receiver must do is to solve the message with his/her own private key. DH protocol is to enable two users to exchange a secret key securely that can be used for subsequent encryption of messages. The protocol itself is limited to the exchange of the keys. But because of having no entity authentication mechanism, DH protocol is easily attacked by the man-in-the-middle attack and impersonation attack in practice. The DH key exchange is a cryptographic protocol that allows two parties that have no prior knowledge of each other to establish together a shared secret key over an insecure communications channel. Then they use this key to encrypt subsequent communications using a symmetric-key cipher.
-\cite{Avestro2019}\\
-The Classic Diffie-Hellman (CDH) algorithm encounters several security problems. The algorithm security depends on the complexity of solving the discrete logarithm and the integer factorization problem. The security also depends on the length of bits keys used. In this paper, we proposed a hybrid algorithm, the combination of Modified Diffie Hellman (MDH) with the Rivest, Shamir, and Adelman (RSA) algorithm. The MDH will not use primitive root (g). Instead, it will use two prime numbers (P and Q) for key exchange. It reduces the possibility of a man-in-the-middle attack. Furthermore, the MDH has an authentication mechanism. If both shared keys are equal, the communication will continue. Otherwise, it will stop because it is compromised. Also, the RSA algorithm will use the two prime numbers generated by MDH (P and Q). RSA algorithm, which is one of the public-key encryption methods and more reliable than the private key encryption algorithms, is used for secure messaging.\cite{Bodur2015}\\
-RSA algorithm is asymmetric cryptography algorithm. The RSA algorithm will perform the encryption and decryption message. The Diffie Hellman (DH) and the RSA Algorithms are the basis of several security standards and services on the internet, especially TLS and SSL. If the security of both algorithms is compromised, such systems will collapse. In this proposal, the combined cryptography system aims to achieve secret message exchange; it uses random prime numbers after multiplication and eventually shared with the other end of a communication. The proposed algorithm secretly generate a value so that the security level increases .\cite{Avestro2019} \\
-Security of RSA depends on the prime factorization of N. The proposed algorithm authenticates a user as shown is the first part of the algorithm by exchange value of random P and Q. Another strength of the hybrid algorithm, it will not generate primitive root (g). Then generate secret keys at both sides. Secret keys not known or not sent over a communication channel, so eavesdropper has no chance to get the value of the secret key. The secret key is multiplied to P, and hence new P will be not identifiable to attacker though the value of P gets compromised. This value of P and Q is generated secretly at the user side, and this valued is not shared through the communication channel, so we claim that the proposed method is more secure than the original RSA. The disadvantage of the proposed algorithm has extra steps that mix symmetric key and asymmetric key cryptography. The time required for this integration steps is disadvantageous of this proposed method. But we can achieve better security\cite{Avestro2019}
+message.\cite{Sabah2017}\\
+\section{Research on Client / Server Cryptography-Based Secure Messaging
+  System Using RSA Algorithm }
+In today’s world, computer networking has become an
+integral part of life. There are many different networks
+available to share information between groups of devices
+through a shared communication medium . They are
+mainly differentiated by the physical medium and protocol
+standards. Ethernet is a prime wired networking standard
+which is an obvious choice for many network applications
+due to reliability, efficiency, and speed. Ethernet standard is
+used in various application segments . Figure below
+shows the Client/Server model architecture that has been
+used in most network systems and in this study specially.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/clientserver.png}
+	\caption{A CLient/Server architecture}
+	\label{figclientserver} % for referencing
+\end{figure}
+
+The client side could be any type of smart devices
+(desktop, laptop, smart phone, etc.). The server part is one
+device that control and pass messages and opining the
+connections among clients and/or between clients and server
+. The Internet part could be one device to isolate the
+network overall into two main parts: client(s) and server, it
+could be a switch or hub or router or just a cable.\\
+A very important aspect in the world of software
+development is the security of data that flows through open
+communication channels. In our web applications,
+there is an intensive exchange of data via different
+protocols, like http, between client applications which
+presented as browser applications and
+server side applications. The importance and confidentiality
+of data may be different depending on the specifics of the
+web application, and the possibility of interception by a third
+party increases with perfection of hacking techniques in the
+world of IT. What can be done to prevent access to the
+data by your traffic listener? If we exchange with data
+between the client applications and server we don’t want the
+information to be stored as open text on the server, which will
+be accessible in case of server crack.\\
+Every day people used chat area, through the users
+(clients) scan chat or send messages to selected users.
+However, the security components in chat area application
+are to make sure all information from clients is protected
+from hackers. The chat messages from users can easily
+transform by expert hackers, without a good enough security
+components. In this way, a chat area interface (CAI) is
+required technique to secure a chat message from hackers.
+The cryptography is significant to keep private data secure
+and to avoid unauthorized access.\\
+Basically, the proposed messaging/chat system is
+expected to provide a communication channel between
+clients via a server using encryption based on RSA in a
+Client/Server environment. The goal for this study is
+to use client/server architecture to accomplish secure chat
+between clients. All the used encryption
+processes based on RSA algorithm.\\
+The very term client-server was initially applied to the
+software architecture, which described the distribution of the
+execution process by the principle of interaction of two
+software processes, one of which in this model was called the
+client and the other the server. The client process requested
+some services, and the server process ensured their execution.
+It was assumed that one server process can serve a lot of
+client processes. One of the client/server application is that
+“chatting”. Chatting alludes to one kind of correspondence
+over the Internet that offers a continuous transmission of
+instant messages from sender to beneficiary or over a server
+that is control and deal with the gatherings (customers) to
+convey.\cite{sonmez2017development}\\
+\subsection{Client/Server}
+The used client/server model describes how
+a server provides resources and services to one or
+more clients. Examples of servers including web servers, chat
+servers, and file servers. Each of these servers provide
+resources to client devices. Most servers have a one-to-many
+relationship with clients, meaning a single server can provide
+resources to m Computers. In order to meet the main
+requirements of businesses, networks themselves are
+becoming quite complex multiple clients at one time .\cite{sonmez2017development}\\
+
+\subsection{Chat Service}
+A secure chat service provides the ability to have real time
+secure discussions among users electronically, one-to-one or
+in groups session . A public network accumulates
+information slightly, rather than on a user’s individual
+computer that is used to keep in touch with people.\cite{sonmez2017development} A secure
+chatting between client and server to make a safe and reliable
+communication, the benefits are :
+\vspace{-18pt}
+\begin{itemize}
+	\item Allows for instant communications between users
+	\item Uses real time chat over the network that can
+	      eliminate costly long distance charges.
+	\item Allows for rapid query and rapid responses.
+\end{itemize}
+While the negative points of chat service can be listed as
+following:
+\vspace{-18pt}
+\begin{itemize}
+	\item Security problems of instant messaging program
+	\item Secure chats in most cases are routed through a
+	      server system, where the service is provided and that is a
+	      single point where all messages can be intercepted.
+	\item Chat programs can provide an open avenue of
+	      attack for hackers, crackers, spies and thieves.
+\end{itemize}
+
+\subsection{RSA Encryption}
+In this, an encrypted chat program designed to
+ensure a safe mode of communication between two users. It
+uses RSA encryption to encode and decode messages in a
+terminal window. RSA is widely used public-key
+cryptograph and authentication system for data encryption of
+digital messaging transactions such as e-mail over the
+intranet, extranet and Internet. Clients exchange public keys
+and encrypt outgoing text with the intended recipient’s public
+key. Each user connects to a central server which
+forwards messages to the intended recipient. On the receiving
+end, the program utilizes a client’s private key to decrypt
+received messages. In 1977, Ron Rivest, Adi Shamir and
+Leonard Adleman introduced a cryptographic algorithm,
+RSA, which is named for the first letter in each of its
+inventors’ last name. RSA’s motivation is DiffieHellman Algorithm which describes the idea of such an
+algorithm that enables public-key cryptosystem.\\
+Encryption algorithm is deployed to encrypt messages
+exchanged with the proposed chat gateway. The chat messaging
+environment showed a great potential to host realtime
+interactive interaction system which is supported by RSA
+encryption methodology to preserve the security of the
+message stream. \\
+Choosing the key size in RSA encryption is of great
+importance. As the size of the key increases, the security level
+of the system, the complexity and the resistance of encrypted
+text increases . These advantages make it difficult to
+decrypt ciphertexts and break passwords. However, in
+addition to these advantages, the encryption key creation
+time, text encryption time, and mobile device RAM
+consumption increase . These disadvantages are
+factors that will influence the effective use of the application.
+For this reason, the advantages and disadvantages of key
+dimensions should be determined and the most suitable key
+size should be preferred. \cite{sonmez2017development}\\
+Currently, RSA is secure using 2048 and 4096-bit key lengths.
+Larger keys will be required in a near future.Theoretically, RSA keys that are 2048 bits long should be good until 2030. If so, isn't it a bit early to start using the 4096-bit keys that have become increasingly available in encryption-enabled applications?
+According to " NIST Special Publication 800-57 Part1"2048-bit RSA keys are roughly equivalent to a Security Strength of 112. Security strength is simply a number associated with the amount of work required to break a cryptographic algorithm. Basically, the higher that number, the greater the amount of work required.
+It implies longer keys are more difficult to break and are hence more secure.\\
+
+\begin{tabular}{ |p{3cm}||p{3cm}|  }
+
+	\hline
+	Security Strength & RSA Key length \\
+	\hline
+	$<=80 $           & 1024           \\
+	112               & 2048           \\
+	128               & 3072           \\
+	192               & 7680           \\
+	256               & 15360          \\
+	\hline
+\end{tabular}
+\\
+According to that publication, 112 security strength (which corresponds to 2048-bit keys) is considered to be acceptable until 2030. Again, here's a portion of that table for reference.\\
+
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|  }
+
+	\hline
+	Security Strength & Through 2030 & 2030 and beyond \\
+	\hline
+	$<112 $           & Disallowed   & Disallowed      \\
+	112               & Acceptable   & Disallowed      \\
+	128               & Acceptable   & Acceptable      \\
+	192               & Acceptable   & Acceptable      \\
+	256               & Acceptable   & Acceptable      \\
+	\hline
+\end{tabular}
+\\
+\\
+So now we know 2048 bit keys are indeed acceptable until 2030 as per NIST.
+So where does that put our 4096 bit keys? Incidentally, the document is
+silent about this particular key length. However, because the two tables
+indicate that 3072-bit keys (whose security strength is 128) and 7680-bit
+keys (whose security strength is 192) are good beyond 2030, we can safely
+say 4096 bit keys (which are somewhere in between)
+should likewise be considered secure enough then.\\
+In fact, since 2048-bit keys are supposed to be disallowed after 2030, we
+know for certain that 4096 bit keys are going to be more suitable in
+production environments than 2048 keys when that time comes. But since
+we're still at least a decade away from 2030, it's probably not yet
+necessary to migrate from 2048 to 4096, right?
+So why then are we already seeing options for 4096-bit keys in some security applications?\\
+Well, there is  couple of reasons. One is simply to make the application
+future proof. A future proof security solution can mitigate the risk of
+cyber threats. We know that cyber criminals are always one step ahead of
+security professionals, so we're not 100percent sure 2048-bit keys are going to
+remain unbreakable before 2030. \cite{barker2016nist}
+
+In RSA, a sender encrypts a message using the recipient's public key, and
+the recipient decrypts the message using their private key.
+sWhen transferring an RSA public key, it is important to ensure that the
+key cannot be easily intercepted and replaced by an attacker. One common
+technique for protecting the key during transfer
+is to use salting, also known as padding or randomization.
+
+Salting involves adding random data to the beginning or end of the
+public key before transferring it. This random data, or salt, makes
+it more difficult for an attacker to intercept and replace the key
+with their own. The recipient of the key can then strip off the salt
+before using the key for encryption or decryption.
+
+In summary, salting is a simple and effective technique for protecting
+RSA public keys during transfer. It adds an extra layer of security to
+the key exchange process and makes it more difficult for attackers to
+intercept and replace the key.
 
 
 \section{Existing system:}
 In this section we briefly introduce many of the popular chat applications. Some of these applications are not public or open source so it is difficult for these to get evaluated by the developer’s community, security experts or research academic.
 
 \subsection{Viber}
-Viber is an instant messaging and Voice over IP (VoIP) application for smartphones developed by Viber Media. In addition to instant messaging, users can exchange images,
-video and audio media messages. Viber recently supported the end-to-end encryption to their service, but only for one-to-one and group conversations in which all
-participants are using the latest Viber version 6.0 for Android, iOS or Windows 10. At this time, in the Viber iOS application for iPhone and iPad, attachments such as images and videos which are sent via the iOS Share Extension does not support end-to-end encryption .\cite{shyam} Viber has privacy issues such as adding a friend without his knowledge or adding him to a group without his permission. Plus that, local storage is not secured. It is not
-open source making it difficult to evaluation.
+Viber is an instant messaging and Voice over IP (VoIP) application for
+smartphones developed by Viber Media. In addition to instant messaging,
+users can exchange images,
+video and audio media messages. Viber recently supported the end-to-end
+encryption to their service, but only for one-to-one and group conversations
+in which all
+participants are using the latest Viber version 6.0 for Android, iOS or
+Windows 10. At this time, in the Viber iOS application for iPhone and iPad,
+attachments such as images and videos which are sent via the iOS Share
+Extension does not support end-to-end encryption.
+Viber has privacy issues such as adding a friend without his knowledge
+or adding him to a group without his permission. Plus that, local storage
+is not secured. It is not
+open source making it difficult to evaluation.\cite{Sabah2017}
 
 \subsection{Whatsapp}
-WhatsApp is one of the most popular messaging application, recently enabled end-to-end encryption for its 1 billion users across all platforms. WhatsApp uses part of a security protocol developed by Open Whisper System, so provides a security-verification code that can share with a contact to ensure that the conversation is encrypted. It is difficult to trust in WhatsApp application completely because the application is not open source, making it difficult to verify the functioning process and match them with the work of the encryption protocol which was announced. .\cite{e2echat}
+WhatsApp is one of the most popular messaging application, recently
+enabled end-to-end encryption for its 1 billion users across all platforms.
+WhatsApp uses part of a security protocol developed by Open Whisper System,
+so provides a security-verification code that can share with a contact to
+ensure
+that the conversation is encrypted. It is difficult to trust in
+WhatsApp application completely because the application is not open source,
+making it difficult to verify the functioning process and match them
+with the work of the encryption protocol which was announced. .\cite{Sabah2017}
 
 \subsection{Telegram}
-Telegram is an open source instant messaging service enables users to send messages, photos, videos, stickers and files. Telegram provides two modes of messaging
-is regular chat and secret chat. Regular chat is client-server based on cloud-based messaging, it does not provide end-to-end encryption, stores all messages on its
-servers and synchronizes with all user devices. More, local storage is not encrypted by default. Secret chat is client-client provides end-to-end encryption. Contrary to regular chat messages, messages that are sent in a secret chat can only be accessed on the device that has been initiated a secret chat and the device that has been accepted a secret chat they cannot be accessed on other devices. Messages sent within secret chats can be deleted.\cite{de}
-at any time and can optionally self-destruct. Telegram uses its own cryptographic protocol MTProto which is based on 256-bit symmetric AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key exchange, and has been criticized by a significant part of the cryptographic community about its security. The registration process of Telegram, Viber and WhatsApp depend on SMS. SMS is transported via Signaling System 7 (SS7) protocol. The vulnerability lies in SS7. Attackers exploited SS7 protocol to login into
-victim's account by intercepting SMS messages. Because of Telegram cloud-based, the attacker exploits it and makes full control of the victim account and can prevent him to enter into his account. To make the account more secure should activate two-factor authentication \cite{telegram}
+Telegram is an open source instant messaging service enables users
+to send messages, photos, videos, stickers and files. Telegram provides
+two modes of messaging
+is regular chat and secret chat. Regular chat is client-server based on
+cloud-based messaging, it does not provide end-to-end encryption, stores
+all messages on its
+servers and synchronizes with all user devices. More, local storage is
+not encrypted by default. Secret chat is client-client provides end-to-end
+encryption. Contrary to regular chat messages, messages that are sent in a
+secret chat can only be accessed on the device that has been initiated a
+secret chat and the device that has been accepted a secret chat they
+cannot be accessed on other devices. Messages sent within secret chats
+can be deleted.
+at any time and can optionally self-destruct. Telegram uses its
+own cryptographic protocol MTProto which is based on 256-bit symmetric
+AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key
+exchange, and has been criticized by a significant part of the cryptographic
+community about its security. The registration process of Telegram, Viber
+and WhatsApp depend on SMS. SMS is transported via Signaling System 7 (SS7)
+protocol. The vulnerability lies in SS7. Attackers exploited SS7 protocol
+to login into
+victim's account by intercepting SMS messages. Because of Telegram cloud-based,
+the attacker exploits it and makes full control of the victim account and can
+prevent him to enter into his account. To make the account more secure should
+activate two-factor authentication \cite{Sabah2017}
 
 \subsection{Facebook Messenger}
 Facebook Messenger is a popular messaging service
@@ -298,39 +605,45 @@ messaging one is regular chat and another is secret conversations.
 Regular chat does not provide end-to-end encryption only
 secure communication by using TLS,  and it stores all
 messages on its servers. Secret conversations have  the
-same idea of Telegram secret chat . .\cite{fb}
+same idea of Telegram secret chat . \cite{Sabah2017}
+
+\section{The Challenge- Making it real-time}
+For any app to feel real-time, the user needs to be kept updated with any activity happening as soon as possible. The challenge arises in selecting and implementing a suitable development technique. With the traditional request-response model, we have few options:
+\subsection{Refresh Webpage}
+The user might refresh the web page time-to-time to check for message updates. But that is not an optimal solution. This may result in bad UX.
+
+\subsection{HTTP Protocol}
+The concept of HTTP request-response is widely used. But this requires establishing a TCP connection every time data is sent to the server. Being a one-way synchronous communication protocol, this may result in a lot of overheads while creating and destroying a TCP connection every time a message is sent in real-time chat applications.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=140mm, height=160mm]{images/Http_request-response_cycle.png}
+	\caption{Http Request-Response Cycle} %figure name
+	\label{figusecase} % for referencing
+\end{figure}
 
 
 
+\section{Web Sockets}
+This concept resolves most of the issues we just discussed. It implements instant two-way communication of messages with a persistent connection just as required for developing a real-time system. NodeJS offers several libraries to implement this technology. What we will be utilizing for our application is the Web Socket API with ‘Socket.io’ library.
+\subsection{Socket.io Api}
+Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server. It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection.
+
+\subsection{Socket.io Handshake}
+The handshake in Socket.IO is like any other information technology related handshake. It is the process of negotiation, which in Socket. IO's case, decides whether a client may connect, and if not, denies the connection.
+
+\subsection{Exchanging Messages}
+\vspace{-18pt}
+\begin{itemize}
+	\item The messages are exchanged in the form of data frames rather than a stream of data
+	\item It is a bi-directional flow of data
+	\item The event listeners of the ws object are used for message exchange
+	\item The closing handshake can take place either by the client or the server. Reconnection has to be done manually.
+\end{itemize}
 
 \chapter{Methodology}
 
 \section{Required Algorithm:}
 
-\subsection{Overview of  Diffie Hellman Algorithm}
-The algorithm is based on Elliptic Curve Cryptography, a method of doing public-key cryptography based on the algebra structure of elliptic curves over finite fields. The DH also uses the trapdoor function, just like many other ways to do public-key cryptography. The simple idea of understanding to the DH Algorithm is the following.
-
-\subsection{Diffie Hellman Algorithm Steps:}
-\vspace{-18pt}
-\begin{itemize}
-	\item The first party picks two prime numbers, g and p and tells them to the second party.
-	\item The second party then picks a secret number (let’s call it a), and then it computes $g^a$ mod p and sends the result back to the first party; let’s call the result A. Keep in mind that the secret number is not sent to anyone, only the result is.
-	\item Then the first party does the same; it selects a secret number b and calculates the result B=$g^b$ mod p similar to the step 2.
-	\item Then, this result is sent to the second party.
-	\item  The second party takes the received number B and calculates $K_{a}$= $B^a$ mod p
-	\item The first party takes the received number A and calculates $K_{b}$ = $A^b$ mod p.
-	\item The  $K_{a}$ and $K_{b}$ are the shared secret keys and  $K_{a}$ = $K_{b}$ .
-\end{itemize}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{images/Diffie-Hellman_Key_Exchange.png}
-	\caption{Diffie Hellman working mechanism}
-	\label{figDeffie Hellman Algorithm} % for referencing
-\end{figure}
-\pagebreak
-
-
-\pagebreak
 \subsection{Overview of RSA Algorithm}
 RSA encryption algorithm, which is based on the idea of ensuring the secure transfer of data in the digital environment and the algorithmic difficulty of separating the integer factorization, is a type of public-key encryption method. Nowadays, it is also known as both the most commonly used encryption method and the method that allows digital signatures. It was created by Ron Rivest, Adi Shamir and Leonard Adleman  in 1978. Prime numbers are used for key generation process in RSA encryption method.This makes it possible to create a safer structure. How the encryption and decryption processes
 are done with RSA algorithm is shown in below figure,
@@ -348,7 +661,7 @@ are done with RSA algorithm is shown in below figure,
 \begin{itemize}
 	\item Choose two very large random prime integers: p and q
 	\item Calculate n = p*q and z = (p-1)(q-1)
-	\item Choose a number e where 1 $<$ e $<$ z
+	\item Choose a number e as public key where 1 $<$ e $<$ z which is co-prime with z
 	\item Calculate d = e-1mod(p-1)(q-1)
 	\item You can bundle private key pair as (n,d)
 	\item You can bundle public key pair as (n,e)
@@ -363,60 +676,73 @@ public key.
 	\item The message M can be found from the cypher text C by the equation M = C$^d$ mod n
 	\item A text encrypted with the public key can only be solved with the private key
 \end{itemize}
-\pagebreak
-\subsection{Proposed algorithm}
-\subsubsection{Steps:}
-\vspace{-18pt}
-\begin{itemize}
-	\item Alice(User A) and Bob (User B) Choose two very large random prime integers: s and r
-	\item Calculate n = s*r and z = (s-1)(r-1)
-	\item Choose a small exponent say e :
-	      \subitem But e Must be
-	      \subitem An integer.
-	      \subitem Not be a factor of n.
-	      \subitem 1 $<$ e $<$ z
-
-	\item Calculate d = e$^{-1}$ mod(p-1)(q-1) or d = (k*z + 1) / e
-
-	\item Public key will contain (n , e) and private key will contain
-	      (n , d).
-	\item Alice needs to identify Bob. For the authentication
-	      process Alice and Bob use Modified Diffie-Hellman
-	      algorithm
-	\item Alice and Bob choose two large prime p,g such as g$<$p.
-	\item Alice chooses a large random number x$_{1} (0<x_{1}<p)$ and computes $R_{1} = g^{x_{1}} mod p.$
-	\item Alice sends $R_{1}$ to Bob
-	\item Bob chooses a large random number x$_{2} (0<x_{2}<p)$ and computes $R_{2} = g^{x_{2}} mod p.$
-	\item  Bob computes $K_{Bob} = R_{1}^{x_{2}} mod p$
-	      and $E_{1}=Encrypt(R_{2},K_{Bob}).$
-	\item Bob sends $R_{2},E_{1}$ to Alice.
-	\item Alice computes $K_{Alice} = R_{2}^{x_{1}} mod p$
-	      and $R^{'}_{2}=Decrypt(E_{1},K_{Alice}).$
-	\item If $R_{2}=R^{'}_{2}$ she proceeds; otherwise the verifier is
-	      dishonest.
-	\item Alice lets Bob send his public key.
-	\item Bob encrypts his public key via the secret key $(K_{Bob})$ and
-	      sends it to Alice.
-	\item Alice decrypts Bob's public key via the secret key $(K_{Alice})$
-	\item Alice encrypt message with Bob’s public key and sends
-	      it to Bob.
-	\item Bob decrypts the message via the secret key $(K_{Bob})$
-	\item Now Bob has the original message.
-
-
-
-\end{itemize}
-\pagebreak
-There are two main steps in the suggested algorithm: user
-authentication and encryption. These steps have been shown in figure below:
-\vspace{-10pt}
+\subsection*{Salting}
+Salting is the process of adding random data to a password or other sensitive information before it is hashed.
+The salt is a random string of characters that is unique to each user and is added to the password before it is hashed.
+The purpose of salting is to make it much more difficult for attackers to use precomputed hash tables to reverse-engineer
+a password from its hash value. Without the salt, an attacker could use a precomputed hash table to compare a list of hashed
+passwords to a database of stolen password hashes and quickly find matches, allowing them to gain unauthorized access to user accounts.
+However, with a unique salt for each password, the precomputed hash tables become useless, as the attacker would need to generate a new hash table for each salt used.
+In summary, salting is an important security measure that helps to protect user passwords and other sensitive information by making
+them more resistant to attacks by malicious actors.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=160mm]{images/Userauth.png}{}
-	\caption{User authentication and encryption of public key} %figure name
-	\label{figauthentication} % for referencing
+	\includegraphics[width=160mm]{images/salting.png}{}
+	\caption{Salting Process} %figure name
+	\label{Salting} % for referencing
 \end{figure}
 
+
+\subsection*{Hashing}
+Hashing is a process of converting input data of any length into a fixed-size output, called a hash or message digest.
+The hash function takes the input data and applies a one-way mathematical algorithm to it to produce a unique hash value.
+Hashing is used in many applications such as password storage, data integrity verification, and digital signatures.
+Hashing and RSA are two separate cryptographic concepts that are often used together in digital signatures. RSA is a public key encryption algorithm,
+while hashing is a one-way function used to create a unique fixed-size output (hash) from an input of any size.When we say that hashing is a one-way function,
+it means that it is easy to compute the hash value from the input data, but it is computationally infeasible to recover the original input data from the hash value.
+This property of hashing is important for ensuring the integrity and security of data. For example, in password storage, instead of storing the actual password, the password is hashed and the hash value is stored.
+When a user logs in with their password, the system hashes the password and compares the resulting hash value with the stored hash value. If they match, the password is correct.
+However, because the hash function is one-way, even if an attacker obtains the hash value, they cannot easily determine the original password.
+Using a hash function before applying RSA in digital signatures provides added security and efficiency, as it ensures that the signature only depends on the message's content and not on the message's size or format.
+
+\subsection*{Digital Signature}
+A digital signature is a cryptographic technique used to verify the authenticity and integrity of a digital message or document.
+It involves the use of a public key algorithm, such as RSA, to create a digital signature that is unique to the sender and the message being signed.
+\subsubsection{Steps:}
+\begin{itemize}
+	\item Creation of Hash Message: The sender of a message generates a digital signature by generating hash of the message.
+	\item Sign Hash with private key: This hash value is signed using the priate key, resulting digital signature which is appended to the message and sent to the
+	      recipient.
+	\item Send the message and the digital signature: The message and the digital signature are sent together to the recipient.
+	\item Verify the signature: The recipient can verify the authenticity and integrity of the message by applying the same
+	      mathematical function to the message using the sender's public key, and comparing the resulting signature to the one that was sent with the message.
+	      If the two signatures match, it indicates that the message was sent by the sender and has not been modified in transit.
+\end{itemize}
+\subsection*{Proposed Algorithm}
+\begin{itemize}
+	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm.
+	      The public key is shared with the receiver, while the private key is kept secret.
+	\item Hash the message using a salt value: The sender hashes the message using a secure hashing algorithm: SHA-256.
+	      To add an extra layer of security, a salt value is added to the message before hashing.
+	      The salt value is a random value that is different for each message and is used to prevent dictionary attacks.
+	\item Encrypt the hashed message using the private key: The sender encrypts the hashed message using their private key.
+	      This creates a digital signature that can only be decrypted using the sender's public key.
+	\item Send the message and the digital signature: The sender sends the original message and the digital signature to the receiver.
+	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. This gives them the hashed message.
+	\item Hash the received message using the same salt value: The receiver hashes the received message using the same salt value that was used by the sender.
+	\item Compare the two hashes: The receiver compares the hashed message they computed with the one that was received from the sender.
+\end{itemize}
+If the two hashes match, the message is authentic and has not been tampered with during transmission.
+Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with,
+and was sent by the claimed sender.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm]{images/proposedalgo2.png}{}
+	\caption{Proposed Algorithm} %figure name
+	\label{Proposed Algorithm} % for referencing
+\end{figure}
+
+\pagebreak
 \subsection{Security analysis}
 Man in the Middle attack and Discrete Logarithm attacks
 are the most damaging attacks in key-exchanging process.
@@ -492,15 +818,30 @@ it is not necessary to multiply the cipher-text.
 \pagebreak
 \subsection{CIA triad}
 CIA triad is one of the most important models which is designed to guide policies
-for information security within an organization.
-CIA stands for :\\
+for information security within an organization.\\
+CIA stands for :
 Confidentiality,
 Integrity,
 Availability.\\
-In this project, we only focuses on two models Confidentiality and 	integrity.\\
-Confidentiality means that only authorized individuals/systems can view sensitive or classified information. The data being sent over the network should not be accessed by unauthorized individuals.We used Encryption to protect the data.\\
+RSA with hashing, digital signature, and salting can provide confidentiality, integrity, and authenticity (CIA) for a message or data. \\
+Here's how each component contributes to CIA protection:
+\begin{itemize}
+	\item Hashing: A secure hash function is used to produce a fixed-length hash value from the message or data.
+	      This ensures the integrity of the message, as any changes to the original message will result in a different hash value.
+	\item Salting: Salting is the process of adding random data to the input before hashing.
+	      This makes it harder for an attacker to precompute hash values for commonly used inputs, such as passwords.
+	      Salting increases the security of the hash value, as it makes it more difficult to guess the original input.
+	\item RSA Encryption: The hash value is encrypted using the sender's private key, which creates a digital signature.
+	      The recipient can verify the authenticity of the message by decrypting the digital signature using the sender's public key.
+	      This ensures the authenticity of the message, as only the sender's private key can create the digital signature.
+	\item Confidentiality: RSA encryption can also provide confidentiality by encrypting the original message with the recipient's public key.
+	      This ensures that only the intended recipient can decrypt and read the message.\\
 
-The next is integrity, data cannot be modified by third party. Corruption of data is a failure to maintain data integrity. We verified that we are sending message to a genuine person so no tampering of message will happen. To check if our data has been modified or not, we make use of a hash function.
+	      Overall, RSA with hashing, digital signature, and salting can provide CIA protection for messages or data, making it a useful tool in secure communication and data protection.
+\end{itemize}
+
+
+
 
 
 
@@ -537,13 +878,6 @@ testing of the project was done.
 At last, the final webapp was designed.
 \pagebreak
 
-\section{Block Diagram:}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=170mm, height=160mm]{images/block diag.png}
-	\caption{Block Diagram} %figure name
-	\label{figblockdiagram} % for referencing
-\end{figure}
 
 \section{Use Case Diagram:}
 \begin{figure}[H]
@@ -556,16 +890,22 @@ At last, the final webapp was designed.
 
 
 
-\chapter{RESULT AND DISCUSSION}
+\chapter{Epilogue}
 
-\section{ Expected Output:}
+\section{User Application}
+Based on the observation of the system, we came to the following observation:
+\vspace{-18pt}
+\begin{itemize}
+	\item The user application works well through all phase: signup and login, message sending and receiving. This make user experiene smooth.
+	\item It is suitable for users who prioritize privacy in their communication. They allow users to have private conversations without fear of eavesdropping or surveillance from third parties.
+\end{itemize}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm, height=180mm]{images/signup.png}
-	\caption{Sign up interface} %figure name
-	\label{figusecase} % for referencing
-\end{figure}
+\section{ Output:}
+In the project hour, we researched on cryptography, chat app using cryptography, their advantages
+disadvantages and probelms occured in chatapp etc. We developed chat app using react js, nodeJs, socket.io’
+and RSA algorithm and Mongodb as database where we can send end to end encrypted text message between clients.
+
+
 
 \begin{figure}[H]
 	\centering
@@ -573,23 +913,52 @@ At last, the final webapp was designed.
 	\caption{Sign in interface} %figure name
 	\label{figusecase} % for referencing
 \end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=160mm, height=160mm]{images/chat1.png}
+	\caption{Chat interface} %figure name
+	\label{figusecase} % for referencing
+\end{figure}
+
+%\section{Work on Progress:}
+%%The ultimate goal of this project is to develop a working model of secure end to end chat web-app. This will include a working web client for user login and chat in real time using socket.io . We have finished creating login and signup system. Our program allows to search and add contacts; create a group chat. Our program also allows Users to send enrypted messages to each other.
+
+%\section {Work Remaining:}
+%We are still working on the backend and frontend  of the chat system. We are yet to integrate the DH algorithm to our current program. So far our program only allows encrypted chat between single users. We are yet to have encrypted group chat.
 
 
-\section{Work on Progress:}
-The ultimate goal of this project is to develop a working model of secure end to end chat web-app. This will include a working web client for user login and chat in real time using socket.io . We have finished creating login and signup system with a working frontend and backend.
-
-\section {Work Remaining:}
-We are still working on the backend and frontend  of the chat system. We also have to implement working algorithm of end to end encryption. We also have designing of UI, coding, testing and documentation and report of the project remaining.
+\section{Limitation}
+The limitation of our system are listed below:
+\vspace{-18pt}
+\begin{itemize}
+	\item Our chat application can send text message with 4000 character  at max. It is not available for audio, video, images messaging.
+	\item The security measures taken can be complicated and require a lot of computing resources to implement, which can make the chat application bit slower to use.
+	\item The system required the first internet connectivity for smooth operation.
+\end{itemize}
+\section{Future Enhancement}
+This project can be further enhanced. Currently, we are able to send text message only but it can be developed to
+send audio, video , images messaging chat app. We can add group chats options. As well as this project can be made more
+secure with updates. Extra new trending features can be added in our system. We can also made this application compatible to all kind
+of platforms and devices.
 
 \section{Work Schedule}
-Scheduling establishes the timelines, delivery and availability of project resources whether they be personnel, inventory or capital. For this reason, any project without a schedule is a project doomed to issue down the road.
+Scheduling establishes the timelines, delivery and availability of project
+resources whether they be personnel, inventory or capital. For this reason,
+any project without a schedule is a project doomed to issue down the road.
+The estimated time period of this project is 30 weeks. The work is divided into several
+phases as shown in gantt chart.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=160mm]{images/ganttchart.png}
+	\includegraphics[width=160mm]{images/ganttchart.png.jpg}
 	\caption{Gantt Chart} %figure name
 	\label{figganttchart} % for referencing
 \end{figure}
+
+\section{Conclusion}
+In this great era of technology data is more crucial than ever. The use of online messaging has resulted in more and more data to be shared between people from simple
+messages to sensitive messages. As such need for some method to hide such confidential information is needed. Thus our project tries to do just that.
+
 
 
 
