@@ -2,17 +2,17 @@
 \noaddvspace 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A Client/Server architecture\relax }}{9}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Http Request-Response Cycle\relax }}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A Client/Server architecture\relax }}{9}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Http Request-Response Cycle\relax }}{17}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces RSA algorithm working mechanism\relax }}{19}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Salting Process\relax }}{22}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Proposed Algorithm\relax }}{25}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Incremental Model Block Diagram\relax }}{27}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Use Case Diagram\relax }}{29}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces RSA algorithm working mechanism\relax }}{19}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Salting Process\relax }}{22}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Proposed Algorithm\relax }}{25}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Incremental Model Block Diagram\relax }}{27}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Use Case Diagram\relax }}{29}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Sign in interface\relax }}{31}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Chat interface\relax }}{32}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces chats\relax }}{33}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Received encrypted message and signature\relax }}{33}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Gantt Chart\relax }}{35}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Sign in interface\relax }}{31}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Chat interface\relax }}{32}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces chats\relax }}{33}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Received encrypted message and signature\relax }}{33}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gantt Chart\relax }}{35}{figure.caption.17}%

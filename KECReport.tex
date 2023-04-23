@@ -20,11 +20,11 @@
 \newcommand{\submittedTo}{Department of Computer and Electronics Engineering} %specify your department
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
 \newcommand{\defYear}{2023} %Defense Year
-\newcommand{\defMonth}{March} %Defense Month- January, February, ...
-\newcommand{\defDay}{29} %specify Defense Day- 1, 2, ...
+\newcommand{\defMonth}{April} %Defense Month- January, February, ...
+\newcommand{\defDay}{23} %specify Defense Day- 1, 2, ...
 
-\newcommand{\supervisor}{none} % Specify Name of Supervisor for Major Project (write "none" if no Supervisor is assigned)
-\newcommand{\degSup}{Supervisor's Designation\\Second Line of Designation (if required)} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
+\newcommand{\supervisor}{Er. Bikash Shrestha} % Specify Name of Supervisor for Major Project (write "none" if no Supervisor is assigned)
+\newcommand{\degSup}{Sr. Telecom Engineer, Nepal Telecom\\Second Line of Designation (if required)} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
 \newcommand{\external}{External's Name} %Specify Name of External for Major Project (Required for Black Book)
 \newcommand{\degExternal}{External's Designation\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,7 +73,7 @@
 \pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
 
 %Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
-\KECcopyright
+%\KECcopyright
 % defined in KECReportFormat.tex
 \KECapproval
 
@@ -96,52 +96,52 @@ In this way we can maintain the data more securely.
 \par
 \textbf{\textit{Keywords$-$}} RSA
 
-% \chapter*{Acknowledgment}
-% \addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-% We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
-% helping us with different views of application, development and scalability as well as helped us in development of our project.
-% His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
-% We would like to express our notable thanks to Department of Computer and Electronics Engineering
-% for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
-% We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
-% for presenting useful suggestions regarding the queries put forward regarding the project.\par
-% Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
-% and helping to better cope with the difficulties along with giving supportive hands. Without their
-% valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
-% Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
-% withstand in our success in this project.
-% %to display members name under Acknowledgement
-% \begin{flushright}
-% 	\vskip -20pt
-% 	\setstretch{1.2}
-% 	\submittedBy
-% \end{flushright}
+	% \chapter*{Acknowledgment}
+	% \addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+	% We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
+	% helping us with different views of application, development and scalability as well as helped us in development of our project.
+	% His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
+	% We would like to express our notable thanks to Department of Computer and Electronics Engineering
+	% for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
+	% We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
+	% for presenting useful suggestions regarding the queries put forward regarding the project.\par
+	% Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
+	% and helping to better cope with the difficulties along with giving supportive hands. Without their
+	% valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
+	% Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
+	% withstand in our success in this project.
+	% %to display members name under Acknowledgement
+	% \begin{flushright}
+	% 	\vskip -20pt
+	% 	\setstretch{1.2}
+	% 	\submittedBy
+	% \end{flushright}
 
 
 
-%to adjust spacings for TOC, LOF, LOT
-{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%TOC, LOF and LOT
-\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
-\makeatletter
-% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
-\def\@makeschapterhead#1{%
-	%\vspace*{50\p@}% Remove the vertical space
-	{\newpage \parindent \z@ \raggedright
-			\normalfont
-			\interlinepenalty\@M
-			\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
-			\vskip 18\p@ % adjust space after heading 18pt
-		}}
-\makeatother
+	%to adjust spacings for TOC, LOF, LOT
+	{
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%TOC, LOF and LOT
+		\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
+		\makeatletter
+		% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
+		\def\@makeschapterhead#1{%
+			%\vspace*{50\p@}% Remove the vertical space
+			{\newpage \parindent \z@ \raggedright
+					\normalfont
+					\interlinepenalty\@M
+					\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
+					\vskip 18\p@ % adjust space after heading 18pt
+				}}
+		\makeatother
 
-\tableofcontents % prints table of contents
-\listoffigures % prints list of figures
-\addcontentsline{toc}{chapter}{List of Figures}
-%\listoftables % prints list of table
-%\addcontentsline{toc}{chapter}{List of Tables}
-}
+		\tableofcontents % prints table of contents
+		\listoffigures % prints list of figures
+		\addcontentsline{toc}{chapter}{List of Figures}
+		%\listoftables % prints list of table
+		%\addcontentsline{toc}{chapter}{List of Tables}
+	}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %comment this chapter if you don't have List of Abbreviations
@@ -686,19 +686,19 @@ However, with a unique salt for each password, the precomputed hash tables becom
 In summary, salting is an important security measure that helps to protect user passwords and other sensitive information by making
 them more resistant to attacks by malicious actors.\\
 \begin{itemize}
-	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm. 
-	The public key is shared with the receiver, while the private key is kept secret.
-	\item Add Salt value in the public key: Sender adds salt value of length 6-10 to their key before sending it. 
-	The location and value of the salt is stored in the database and is retrieved during desaltification of the key
-	\item Verify the received public key: The receiver desalts the received key using the salt information in the database and 
-	checks if the received key is correct
+	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm.
+	      The public key is shared with the receiver, while the private key is kept secret.
+	\item Add Salt value in the public key: Sender adds salt value of length 6-10 to their key before sending it.
+	      The location and value of the salt is stored in the database and is retrieved during desaltification of the key
+	\item Verify the received public key: The receiver desalts the received key using the salt information in the database and
+	      checks if the received key is correct
 	\item Hash the message: The sender hashes the message using a hashing algorithm SHA256
-	\item Digital Signature: The sender encrypts the hashed message using their private key. 
-	This creates a digital signature that can only he decrypted using the sender's public key.
-	\item Send the message and the digital signature: The sender sends the encrypted mes¬sage and the digital signature to the receiver.
-	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. 
-	This gives them the hashed message. The receiver also decrypts the message using the same hash function used by the sender. 
-	Then the two hash function is compared and if it matches the message hasn't been tampered with.
+	\item Digital Signature: The sender encrypts the hashed message using their private key.
+	      This creates a digital signature that can only he decrypted using the sender's public key.
+	\item Send the message and the digital signature: The sender sends the encrypted message and the digital signature to the receiver.
+	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key.
+	      This gives them the hashed message. The receiver also decrypts the message using the same hash function used by the sender.
+	      Then the two hash function is compared and if it matches the message hasn't been tampered with.
 \end{itemize}
 
 \begin{figure}[H]
@@ -722,23 +722,22 @@ However, because the hash function is one-way, even if an attacker obtains the h
 Using a hash function before applying RSA in digital signatures provides added security and efficiency, as it ensures that the signature only depends on the message's content and not on the message's size or format.
 Hash functions used in cryptographic mechanisms, must – depending on the application – meet
 the following three conditions:
+\vspace{-18pt}
 \begin{itemize}
-	\item One-Way Property: For given h ∈ {0, 1}^n, it is practically impossible to find a value m ∈ {0, 1}∗
-	with H(m) = h. 
-	\item 2nd-Preimage-Property: For given m ∈ {0, 1}^∗, it is practically impossible to find a value m ∈
-	{0, 1}^∗\{m} with H(m) = H(m′)
-	\item Collision Resistance: It is practically impossible to find two values m, m ∈ {0, 1}∗ with m ̸= m
-	and H(m) = H(m′).
+	\item One-Way Property: For given $h\epsilon \{0,1\}^n$, it is practically impossible to find a value $m \epsilon \{\{0, 1\}^*$ with $H(m) = h$.
+	\item 2nd-Preimage-Property: For given $m \epsilon \{0, 1\}^*$, it is practically impossible to find a value $m' \epsilon \{0, 1\}^*\backslash\{m\}$ with $H(m) = H(m')$.
+	\item Collision Resistance: It is practically impossible to find two values $m, m' \epsilon \{0, 1\}^*$ with $m \neq  m'$ and $H(m) = H(m')$.
 \end{itemize}
-A hash function H satisfying all of the above conditions is called cryptographically strong.
+A hash function H satisfying all of the above sconditions is called cryptographically strong.
 these three terms can each be described mathematically more precisely by comparing the best
 known attacks against these properties with optimal generic attacks. The length of the hash output
 is a security parameter of crucial importance, as it determines the effort of generic attacks. For the
 minimum security level required in this Technical Guideline of 120 bits, at least the requirement
-n ≥ 240 must be imposed on hash function H : {0, 1}∗ → {0, 1}n because of the birthday problem.
+$n\ge240$ must be imposed on hash function $H:\{0,1\}*\to \{0,1\}^n$  because of the birthday problem.
 At this point, it is not necessary to distinguish different cases depending on the period of use of
 a system, since the hash mechanisms recommended in this Technical Guideline all already have a
-digest length of ≥ 256 bits. \cite{bsi2020}
+digest length of $ \ge 256 $ bits. \cite{bsi2020}
+
 
 \subsection*{Digital Signature}
 A digital signature is a cryptographic technique used to verify the authenticity and integrity of a digital message or document.
@@ -754,21 +753,22 @@ It involves the use of a public key algorithm, such as RSA, to create a digital 
 	      If the two signatures match, it indicates that the message was sent by the sender and has not been modified in transit.
 \end{itemize}
 \subsection*{Proposed Algorithm}
+\vspace{-18pt}
 \begin{itemize}
 	\item Generate a public-private key pair using the RSA algorithm: The sender generates a public-private key pair using the RSA algorithm.
-	 The public key is shared with the receiver, while the private key is kept secret.
-	\item Add Salt value in the public key: Sender adds salt value of length 6-10 to their key before sending it. 
-	The position and value of the salt is stored in the database and is retrieved during desaltification of the key
-	\item Verify the received public key: The receiver desalts the received key using the salt information (salt value & position) in the database 
-	and checks if the received key is correct
+	      The public key is shared with the receiver, while the private key is kept secret.
+	\item Add Salt value in the public key: Sender adds salt value of length 6-10 to their key before sending it.
+	      The position and value of the salt is stored in the database and is retrieved during desaltification of the key
+	\item Verify the received public key: The receiver desalts the received key using the salt information (salt value and position) in the database
+	      and checks if the received key is correct
 	\item Hash the message: The sender hashes the message using a hashing algorithm SHA256
-	\item Digital Signature: The sender encrypts the hashed message using their private key. This creates a digital signature 
-	that can only he decrypted using the sender's public key.
+	\item Digital Signature: The sender encrypts the hashed message using their private key. This creates a digital signature
+	      that can only he decrypted using the sender's public key.
 	\item Send the message and the digital signature: The sender sends the encrypted mes¬sage and the digital signature to the receiver.
-	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key. 
-	This gives them the hashed message. The receiver also decrypts the message using the same hash function used by the sender. 
-	Then the two hash function is compared and if it matches the message hasn't been tampered with.
-	
+	\item Verify the digital signature: The receiver decrypts the digital signature using the sender's public key.
+	      This gives them the hashed message. The receiver also decrypts the message using the same hash function used by the sender.
+	      Then the two hash function is compared and if it matches the message hasn't been tampered with.
+
 \end{itemize}
 If the two hashes match, the message is authentic and has not been tampered with during transmission.
 Using RSA with salting hashing and digital signatures ensures that the message is authentic, has not been tampered with,
@@ -935,9 +935,9 @@ phases as shown in gantt chart.
 
 \section{Conclusion}
 
-With the increasing importance of privacy and security in the digital age, it is imperative that we offer users a secure means of 
-communication. Our proposal offers a reliable and effective solution that can help individuals and organizations protect sensitive 
-information and communicate with confidence. We believe that our proposed end-to-end chat application will be a valuable addition 
+With the increasing importance of privacy and security in the digital age, it is imperative that we offer users a secure means of
+communication. Our proposal offers a reliable and effective solution that can help individuals and organizations protect sensitive
+information and communicate with confidence. We believe that our proposed end-to-end chat application will be a valuable addition
 to the landscape of secure communication tools, and we look forward to further development and implementation of this technology.
 
 

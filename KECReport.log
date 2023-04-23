@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.23)  23 APR 2023 08:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.23)  23 APR 2023 10:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,7 +352,17 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 69.
  (C:\Miktex\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (KECReport.aux)
+) (KECReport.aux
+
+LaTeX Warning: Label `figusecase' multiply defined.
+
+
+LaTeX Warning: Label `figusecase' multiply defined.
+
+
+LaTeX Warning: Label `figusecase' multiply defined.
+
+)
 \openout1 = `KECReport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -431,6 +441,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 69.
+ (KECReport.out) (KECReport.out)
 \@outlinefile=\write3
 \openout3 = `KECReport.out'.
 
@@ -438,7 +449,7 @@ Package hyperref Info: Link coloring OFF on input line 69.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 69.
-<images/logo.png, id=3, 102.3825pt x 102.3825pt>
+<images/logo.png, id=206, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 70.
@@ -452,8 +463,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.71 \KECtitlepage
                    % command defined in KECReportFormat [1] [1
 
-] [2
-
 ]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
  (C:\Miktex\tex/latex/amsfonts\umsa.fd
@@ -462,21 +471,19 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
  (C:\Miktex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
+) [2
 
-]
-No file KECReport.toc.
+] (KECReport.toc [3
+
+])
 \tf@toc=\write4
 \openout4 = `KECReport.toc'.
 
-[4
-
-]
-No file KECReport.lof.
+ [4] (KECReport.lof)
 \tf@lof=\write5
 \openout5 = `KECReport.lof'.
 
-[5
+ [5
 
 ]
 Chapter 1.
@@ -487,19 +494,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.208 Encryption.\par
                       [1
 
-]
-
-LaTeX Warning: Citation `paley' on page 2 undefined on input line 218.
-
-[2]
+] [2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 233.
  (C:\Miktex\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3] [4] [5] [6]
 Chapter 2.
-
-LaTeX Warning: Citation `Sabah2017' on page 7 undefined on input line 326.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 317--328
 
@@ -508,7 +508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--328
 [7
 
 ]
-<images/clientserver.png, id=89, 502.87875pt x 388.45125pt>
+<images/clientserver.png, id=351, 502.87875pt x 388.45125pt>
 File: images/clientserver.png Graphic file (type png)
 <use images/clientserver.png>
 Package pdftex.def Info: images/clientserver.png  used on input line 342.
@@ -519,31 +519,16 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 342--343
  []
 
 [8]
-
-LaTeX Warning: Citation `sonmez2017development' on page 9 undefined on input line 398.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 347--399
 
  []
 
 [9 <./images/clientserver.png>]
-
-LaTeX Warning: Citation `sonmez2017development' on page 10 undefined on input line 408.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 400--409
 
  []
 
 [10]
-
-LaTeX Warning: Citation `sonmez2017development' on page 11 undefined on input line 415.
-
-
-LaTeX Warning: Citation `sonmez2017development' on page 11 undefined on input line 471.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 438--476
 
  []
@@ -554,37 +539,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 477--491
  []
 
 [12]
-
-LaTeX Warning: Citation `barker2016nist' on page 13 undefined on input line 523.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 492--524
 
  []
 
-[13]
-
-LaTeX Warning: Citation `Sabah2017' on page 14 undefined on input line 561.
-
-
-LaTeX Warning: Citation `Sabah2017' on page 14 undefined on input line 572.
-
-[14]
-
-LaTeX Warning: Citation `Sabah2017' on page 15 undefined on input line 599.
-
-
-LaTeX Warning: Citation `Sabah2017' on page 15 undefined on input line 608.
-
-[15]
-<images/Http_request-response_cycle.png, id=137, 2006.49625pt x 1183.42125pt>
+[13] [14] [15]
+<images/Http_request-response_cycle.png, id=400, 2006.49625pt x 1183.42125pt>
 File: images/Http_request-response_cycle.png Graphic file (type png)
 <use images/Http_request-response_cycle.png>
 Package pdftex.def Info: images/Http_request-response_cycle.png  used on input line 619.
 (pdftex.def)             Requested size: 398.32233pt x 455.24841pt.
  [16] [17 <./images/Http_request-response_cycle.png>] [18]
 Chapter 3.
-<images/rsa algo.png, id=159, 456.5055pt x 266.1945pt>
+<images/rsa algo.png, id=415, 456.5055pt x 266.1945pt>
 File: images/rsa algo.png Graphic file (type png)
 <use images/rsa algo.png>
 Package pdftex.def Info: images/rsa algo.png  used on input line 652.
@@ -602,7 +569,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 680--689
  []
 
 [20]
-<images/salting.png, id=175, 703.62875pt x 480.79625pt>
+<images/salting.png, id=426, 703.62875pt x 480.79625pt>
 File: images/salting.png Graphic file (type png)
 <use images/salting.png>
 Package pdftex.def Info: images/salting.png  used on input line 706.
@@ -612,348 +579,8 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 706--707
  [][] 
  []
 
-[21] [22 <./images/salting.png>]
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:726: LaTeX Error: Unicode character ∈ (U+2208)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.726 	\item One-Way Property: For given h ∈
-                                               {0, 1}^n, it is practically i...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:726: Missing $ inserted.
-<inserted text> 
-                $
-l.726 ...One-Way Property: For given h ∈ {0, 1}^
-                                                  n, it is practically impos...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:726: LaTeX Error: Unicode character ∈ (U+2208)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.726 ...ctically impossible to find a value m ∈
-                                                   {0, 1}∗
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:726: LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.726 ...mpossible to find a value m ∈ {0, 1}∗
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:728: LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 	\item
-             2nd-Preimage-Property: For given m ∈ {0, 1}^∗, it is practi...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:728: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 	\item 2
-              nd-Preimage-Property: For given m ∈ {0, 1}^∗, it is practi...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:728: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 	\item 2
-              nd-Preimage-Property: For given m ∈ {0, 1}^∗, it is practi...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:728: LaTeX Error: Unicode character ∈ (U+2208)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 ...em 2nd-Preimage-Property: For given m ∈
-                                                   {0, 1}^∗, it is practic...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:728: Missing { inserted.
-<to be read again> 
-                   \begingroup 
-l.728 ...mage-Property: For given m ∈ {0, 1}^∗
-                                                  , it is practically imposs...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:728: LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 ...mage-Property: For given m ∈ {0, 1}^∗
-                                                  , it is practically imposs...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:728: LaTeX Error: Unicode character ∈ (U+2208)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 ...ctically impossible to find a value m ∈
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:729: Missing { inserted.
-<to be read again> 
-                   \begingroup 
-l.729 	{0, 1}^∗
-                 \{m} with H(m) = H(m′)
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:729: LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.729 	{0, 1}^∗
-                 \{m} with H(m) = H(m′)
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:729: LaTeX Error: Unicode character ′ (U+2032)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.729 	{0, 1}^∗\{m} with H(m) = H(m′
-                                        )
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.730 	\item
-             Collision Resistance: It is practically impossible to find two ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: Missing $ inserted.
-<inserted text> 
-                $
-l.730 	\item C
-              ollision Resistance: It is practically impossible to find two ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: Missing } inserted.
-<inserted text> 
-                }
-l.730 	\item C
-              ollision Resistance: It is practically impossible to find two ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: Missing } inserted.
-<inserted text> 
-                }
-l.730 	\item C
-              ollision Resistance: It is practically impossible to find two ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (85.499pt too wide) in paragraph at lines 726--730
-[]\OT1/ptm/m/n/12 One-Way Prop-erty: For given h  0, 1$[]\OML/cmm/m/it/12 ; itispracticallyimpossibletofindavaluem[]withH\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m\OT1/cmr/m/n/12 ) =
- []
-
-
-Overfull \hbox (88.58376pt too wide) in paragraph at lines 726--730
-\OML/cmm/m/it/12 h:\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 nd \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 Preimage \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 Property \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 Forgivenm[][]$ 
- []
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.730 	\item C
-              ollision Resistance: It is practically impossible to find two ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: LaTeX Error: Unicode character ∈ (U+2208)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.730 ...ly impossible to find two values m, m ∈
-                                                   {0, 1}∗ with m ̸= m
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.730 ...ble to find two values m, m ∈ {0, 1}∗
-                                                   with m ̸= m
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:730: LaTeX Error: Unicode character ̸ (U+0338)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.730 ...d two values m, m ∈ {0, 1}∗ with m ̸
-                                                  = m
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:731: LaTeX Error: Unicode character ′ (U+2032)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.731 	and H(m) = H(m′
-                        ).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:738: LaTeX Error: Unicode character ≥ (U+2265)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.738 n ≥
-            240 must be imposed on hash function H : {0, 1}∗ → {0, 1}n b...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:738: LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.738 ...be imposed on hash function H : {0, 1}∗
-                                                   → {0, 1}n because of th...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 738.
-
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:741: LaTeX Error: Unicode character ≥ (U+2265)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.741 digest length of ≥
-                           256 bits. \cite{bsi2020}
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-LaTeX Warning: Citation `bsi2020' on page 23 undefined on input line 741.
-
-[23]
-c:/Users/dpray/Desktop/New folder (2)/major-proposal/KECReport.tex:762: Misplaced alignment tab character &.
-l.762 ... using the salt information (salt value &
-                                                   position) in the database
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[24]
-<images/proposedalgo2.png, id=199, 921.4425pt x 805.0075pt>
+[21] [22 <./images/salting.png>] [23] [24]
+<images/proposedalgo2.png, id=448, 921.4425pt x 805.0075pt>
 File: images/proposedalgo2.png Graphic file (type png)
 <use images/proposedalgo2.png>
 Package pdftex.def Info: images/proposedalgo2.png  used on input line 778.
@@ -969,7 +596,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 802--804
  []
 
 [26]
-<images/incremental model.png, id=211, 690.58pt x 457.71pt>
+<images/incremental model.png, id=458, 690.58pt x 457.71pt>
 File: images/incremental model.png Graphic file (type png)
 <use images/incremental model.png>
 Package pdftex.def Info: images/incremental model.png  used on input line 818.
@@ -980,7 +607,7 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 818--819
  []
 
 [27 <./images/incremental model.png>] [28]
-<images/UseCaseDiagram1.png, id=224, 1155.31625pt x 915.42pt>
+<images/UseCaseDiagram1.png, id=468, 1155.31625pt x 915.42pt>
 File: images/UseCaseDiagram1.png Graphic file (type png)
 <use images/UseCaseDiagram1.png>
 Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 850.
@@ -992,7 +619,7 @@ Overfull \hbox (95.31564pt too wide) in paragraph at lines 850--851
 
 [29 <./images/UseCaseDiagram1.png>]
 Chapter 4.
-<images/signin.png, id=232, 631.60968pt x 538.26094pt>
+<images/signin.png, id=474, 631.60968pt x 538.26094pt>
 File: images/signin.png Graphic file (type png)
 <use images/signin.png>
 Package pdftex.def Info: images/signin.png  used on input line 877.
@@ -1002,7 +629,7 @@ Overfull \hbox (38.41725pt too wide) in paragraph at lines 877--878
  [][] 
  []
 
-<images/chat1.png, id=233, 1927.2pt x 1084.05pt>
+<images/chat1.png, id=475, 1927.2pt x 1084.05pt>
 File: images/chat1.png Graphic file (type png)
 <use images/chat1.png>
 Package pdftex.def Info: images/chat1.png  used on input line 883.
@@ -1015,7 +642,7 @@ Overfull \hbox (38.41171pt too wide) in paragraph at lines 883--884
 [30
 
 ] [31 <./images/signin.png>]
-<images/chat3.png, id=248, 1925.1925pt x 897.3525pt>
+<images/chat3.png, id=486, 1925.1925pt x 897.3525pt>
 File: images/chat3.png Graphic file (type png)
 <use images/chat3.png>
 Package pdftex.def Info: images/chat3.png  used on input line 890.
@@ -1026,7 +653,7 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 890--891
  []
 
 [32 <./images/chat1.png>]
-<images/msg.png, id=255, 960.58875pt x 882.29625pt>
+<images/msg.png, id=492, 960.58875pt x 882.29625pt>
 File: images/msg.png Graphic file (type png)
 <use images/msg.png>
 Package pdftex.def Info: images/msg.png  used on input line 897.
@@ -1041,7 +668,7 @@ Overfull \hbox (10.68619pt too wide) in paragraph at lines 923--928
 \OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
  []
 
-<images/ganttchart.png.jpg, id=265, 551.81157pt x 292.84406pt>
+<images/ganttchart.png.jpg, id=499, 551.81157pt x 292.84406pt>
 File: images/ganttchart.png.jpg Graphic file (type jpg)
 <use images/ganttchart.png.jpg>
 Package pdftex.def Info: images/ganttchart.png.jpg  used on input line 931.
@@ -1051,36 +678,27 @@ Overfull \hbox (38.4112pt too wide) in paragraph at lines 931--932
  [][] 
  []
 
-[34]
-No file KECReport.bbl.
-[35 <./images/ganttchart.png.jpg>] (KECReport.aux)
+[34] (KECReport.bbl [35 <./images/ganttchart.png.jpg>]) [36
 
-LaTeX Warning: There were undefined references.
+] (KECReport.aux)
 
+LaTeX Warning: There were multiply-defined labels.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `KECReport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `KECReport.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  35020FBD7EE837605EE16FE00F785BB8;7570.
+Package rerunfilecheck Info: File `KECReport.out' has not changed.
+(rerunfilecheck)             Checksum: A2F30D51F5F14A60AD7EFA16AE8C5CE2;7480.
  ) 
 Here is how much of TeX's memory you used:
- 16703 strings out of 476331
- 317857 string characters out of 5804180
- 1859660 words of memory out of 5000000
- 36828 multiletter control sequences out of 15000+600000
- 534698 words of font info for 77 fonts, out of 8000000 for 9000
+ 16777 strings out of 476331
+ 319244 string characters out of 5804180
+ 1861660 words of memory out of 5000000
+ 36885 multiletter control sequences out of 15000+600000
+ 536080 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,9n,82p,1393b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\dpray\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/Miktex/fonts/type1/urw/times/utmbi8a.pfb><C:/Miktex/fonts/type1/urw/times/utmr8a.pfb>
-Output written on KECReport.pdf (42 pages, 1816678 bytes).
+ 82i,9n,82p,1393b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/Miktex/fonts/type1/urw/times/utmbi8a.pfb><C:/Miktex/fonts/type1/urw/times/utmr8a.pfb><C:/Miktex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on KECReport.pdf (43 pages, 1838083 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 474 words of extra memory for PDF output out of 10000 (max. 10000000)
 
