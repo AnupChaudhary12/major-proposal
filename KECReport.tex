@@ -24,7 +24,7 @@
 \newcommand{\defDay}{23} %specify Defense Day- 1, 2, ...
 
 \newcommand{\supervisor}{Er. Bikash Shrestha} % Specify Name of Supervisor for Major Project (write "none" if no Supervisor is assigned)
-\newcommand{\degSup}{Sr. Telecom Engineer, Nepal Telecom\\Second Line of Designation (if required)} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
+\newcommand{\degSup}{Sr. Telecom Engineer,\\Nepal Telecom} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
 \newcommand{\external}{External's Name} %Specify Name of External for Major Project (Required for Black Book)
 \newcommand{\degExternal}{External's Designation\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,7 +73,7 @@
 \pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
 
 %Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
-%\KECcopyright
+\KECcopyright
 % defined in KECReportFormat.tex
 \KECapproval
 
@@ -96,52 +96,52 @@ In this way we can maintain the data more securely.
 \par
 \textbf{\textit{Keywords$-$}} RSA
 
-	% \chapter*{Acknowledgment}
-	% \addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-	% We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
-	% helping us with different views of application, development and scalability as well as helped us in development of our project.
-	% His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
-	% We would like to express our notable thanks to Department of Computer and Electronics Engineering
-	% for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
-	% We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
-	% for presenting useful suggestions regarding the queries put forward regarding the project.\par
-	% Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
-	% and helping to better cope with the difficulties along with giving supportive hands. Without their
-	% valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
-	% Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
-	% withstand in our success in this project.
-	% %to display members name under Acknowledgement
-	% \begin{flushright}
-	% 	\vskip -20pt
-	% 	\setstretch{1.2}
-	% 	\submittedBy
-	% \end{flushright}
+\chapter*{Acknowledgment}
+\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+We would like to acknowledge Er. Bikash Shrestha, our project supervisor who is providing us guidence and
+helping us with different views of application, development and scalability as well as helped us in development of our project.
+His guidence has been corner stone in developing chat app. We are able to accomplish this project with his valuable direction and suggestions.\par
+We would like to express our notable thanks to Department of Computer and Electronics Engineering
+for providing us environment to dig the latest technology, investigate it and do research on those areas as Major project.
+We are also grateful to Er. Rabindra Khati, HOD, Department of Computer and Electronics Engineering
+for presenting useful suggestions regarding the queries put forward regarding the project.\par
+Our special appreciation goes to Lecturers of Kantipur Engineering College for guiding us in this project
+and helping to better cope with the difficulties along with giving supportive hands. Without their
+valuable guidence it would have been difficult for us to come to a conclusion to work with this technology.\par
+Last but not least, we would appreciate all our seniors and friends for their support and constant inspiration which helped us to
+withstand in our success in this project.
+to display members name under Acknowledgement
+\begin{flushright}
+	\vskip -20pt
+	\setstretch{1.2}
+	\submittedBy
+\end{flushright}
 
 
 
-	%to adjust spacings for TOC, LOF, LOT
-	{
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		%TOC, LOF and LOT
-		\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
-		\makeatletter
-		% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
-		\def\@makeschapterhead#1{%
-			%\vspace*{50\p@}% Remove the vertical space
-			{\newpage \parindent \z@ \raggedright
-					\normalfont
-					\interlinepenalty\@M
-					\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
-					\vskip 18\p@ % adjust space after heading 18pt
-				}}
-		\makeatother
+%to adjust spacings for TOC, LOF, LOT
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TOC, LOF and LOT
+\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
+\makeatletter
+% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
+\def\@makeschapterhead#1{%
+	%\vspace*{50\p@}% Remove the vertical space
+	{\newpage \parindent \z@ \raggedright
+			\normalfont
+			\interlinepenalty\@M
+			\center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
+			\vskip 18\p@ % adjust space after heading 18pt
+		}}
+\makeatother
 
-		\tableofcontents % prints table of contents
-		\listoffigures % prints list of figures
-		\addcontentsline{toc}{chapter}{List of Figures}
-		%\listoftables % prints list of table
-		%\addcontentsline{toc}{chapter}{List of Tables}
-	}
+\tableofcontents % prints table of contents
+\listoffigures % prints list of figures
+\addcontentsline{toc}{chapter}{List of Figures}
+%\listoftables % prints list of table
+%\addcontentsline{toc}{chapter}{List of Tables}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %comment this chapter if you don't have List of Abbreviations

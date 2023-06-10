@@ -734,13 +734,13 @@ INPUT C:\Miktex\fonts\enc\dvips\base\8r.enc
 INPUT C:\Miktex\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT C:\Miktex\fonts\vf\adobe\times\ptmb7t.vf
-INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Miktex\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Miktex\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Miktex\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Miktex\fonts\tfm\adobe\times\ptmbi7t.tfm
 INPUT C:\Miktex\fonts\tfm\public\cm\cmr8.tfm
