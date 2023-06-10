@@ -247,41 +247,7 @@ The application, is targeted towards the general population, so the core feature
 	\item Simple and ease for general population
 \end{itemize}
 
-\section{Feasibility Analysis}
-Feasibility is a measure of how benificial or practical the development of a system will be to an organization or enterprise.
-In other words, a feasibility study is an evaluation and analysis of the potential of the proposed project which is based on extensive investigation and reasearch to give
-full comfort to the decision masker. A system should have a responsible cost and should be technically and operationally feasible to be actually implemented.
-The two criteria to judge feasibilty are cost required and value to be attained. The feasibility of "End to End encryption Chatapp " is analyzed under the following four headings:
 
-\subsection{Economic Feasibility}
-Economic Feasibility is the measure of the cost effectiveness of the project or the solution. This is often called a cost benifit analysis. \par
-Based on our economic analysis for development and operational cost,
-the system is being developed and operated economically. For development,
-the required devices are readily available, so it is feasible. Also,
-it is economically feasible to the consumers as it costs no charge to use the platform.
-
-\subsection{Schedule Feasibility}
-Based on the objectives and the time left for the development.
-The schedule is found to be feasible.
-
-\subsection{Technical Feasibility}
-Technical Feasibility is the measure of the practically of a specific technical solution and the availability of technical resources and expertise.\par
-Technically, the system is feasible enough and easy-to-use
-for both technical and non-technical groups of people. It provides
-a user-friendly environment along with features using the latest technologies.
-The system provides a layout most of the applications people are used to anyway
-so it will be easy to use.
-
-\subsection{Operational Feasibility}
-Operational feasibility is the measure of how a well specific solution will work in the organization.
-It is also measure of how people feel about the system of the project. It also analyze the inside operation on how a deemed process
-will work, be implemented, and dealing with changes resistance and acceptance.\par
-For the operation of the system, the person does
-not need to excel in using a computer. Since, the event
-may not always be related to the technical fields, someone
-with minimum knowledge about computer and technology can also get
-benefit from the system. Similarly, one can get access to the system
-as a web-based application. There is no requirement of huge and expensive hardware.
 
 \section{System Requirements}
 
@@ -640,6 +606,100 @@ The handshake in Socket.IO is like any other information technology related hand
 	\item The closing handshake can take place either by the client or the server. Reconnection has to be done manually.
 \end{itemize}
 
+
+\chapter{System Analysis and Design}
+\section{Functional Requirement}
+\vspace{-18pt}
+\begin{itemize}
+	\item User Registration and Authentication: The app should allow users to create accounts, log in, and maintain user profiles securely.
+	\item Chat Messaging: Users should be able to send and receive text messages in real-time or near real-time.
+	\item Group Chats: The app should support group conversations where multiple users can participate simultaneously.
+	\item Multimedia Messaging: Users should be able to send and receive various types of media, such as images, videos, and files.
+	\item Message Notifications: Users should receive notifications for new messages, either through push notifications or in-app alerts.
+	\item Message Status: Users should be able to see the status of their messages, such as delivered, read, or typing indicators.
+	\item Message History: The app should store and retrieve chat history, allowing users to view past conversations.
+	\item Search Functionality: Users should be able to search for specific messages or users within the app.
+	\item Integration with External Services: The app may need to integrate with external services like cloud storage or third-party authentication providers.
+\end{itemize}
+Till now we have developed user registration and authentication, messaging requirements, group chats, searching.
+
+\section{Non-Functional Requirements}
+\vspace{-18pt}
+\begin{itemize}
+	\item Performance: The app should be responsive and provide fast message delivery and retrieval, even under heavy load.
+	\item Scalability: The system should be able to handle a growing number of users and messages without significant performance degradation.
+	\item Reliability: The app should be highly reliable, ensuring message delivery and minimizing downtime or service disruptions.
+	\item Security: The app should implement strong security measures, including data encryption, secure authentication, and protection against common vulnerabilities.
+	\item Usability: The app should have a user-friendly interface, intuitive navigation, and support for multiple platforms (e.g., mobile and web).
+	\item Availability: The app should be available and accessible to users whenever they need it, with minimal planned maintenance periods.
+	\item Compatibility: The app should work seamlessly across different devices, operating systems, and web browsers.
+	\item Privacy: The app should respect user privacy by handling personal data appropriately, following relevant regulations and guidelines.
+	\item Backup and Recovery: The app should have mechanisms in place to back up data and enable recovery in case of data loss or system failures.
+\end{itemize}
+
+\section{Feasibility Analysis}
+Feasibility is a measure of how benificial or practical the development of a system will be to an organization or enterprise.
+In other words, a feasibility study is an evaluation and analysis of the potential of the proposed project which is based on extensive investigation and reasearch to give
+full comfort to the decision masker. A system should have a responsible cost and should be technically and operationally feasible to be actually implemented.
+The two criteria to judge feasibilty are cost required and value to be attained. The feasibility of "End to End encryption Chatapp " is analyzed under the following four headings:
+
+\subsection{Economic Feasibility}
+Economic Feasibility is the measure of the cost effectiveness of the project or the solution. This is often called a cost benifit analysis. \par
+Based on our economic analysis for development and operational cost,
+the system is being developed and operated economically. For development,
+the required devices are readily available, so it is feasible. Also,
+it is economically feasible to the consumers as it costs no charge to use the platform.
+
+\subsection{Schedule Feasibility}
+Based on the objectives and the time left for the development.
+The schedule is found to be feasible.
+
+\subsection{Technical Feasibility}
+Technical Feasibility is the measure of the practically of a specific technical solution and the availability of technical resources and expertise.\par
+Technically, the system is feasible enough and easy-to-use
+for both technical and non-technical groups of people. It provides
+a user-friendly environment along with features using the latest technologies.
+The system provides a layout most of the applications people are used to anyway
+so it will be easy to use.
+
+\subsection{Operational Feasibility}
+Operational feasibility is the measure of how a well specific solution will work in the organization.
+It is also measure of how people feel about the system of the project. It also analyze the inside operation on how a deemed process
+will work, be implemented, and dealing with changes resistance and acceptance.\par
+For the operation of the system, the person does
+not need to excel in using a computer. Since, the event
+may not always be related to the technical fields, someone
+with minimum knowledge about computer and technology can also get
+benefit from the system. Similarly, one can get access to the system
+as a web-based application. There is no requirement of huge and expensive hardware.
+
+\pagebreak
+\section{Use Case Diagram:}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=180mm, height=180mm]{images/UseCaseDiagram1.png}
+	\caption{Use Case Diagram} %figure name
+	\label{figusecase} % for referencing
+\end{figure}
+
+\pagebreak
+\section{Data FLow Diagram}
+\subsection{DFD level 0}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=130mm, height=160mm]{images/dfd0.png}
+	\caption{DFD level 0} %figure name
+	\label{figdfd0} % for referencing
+\end{figure}
+
+\subsection{DFD level 1}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=140mm, height=160mm]{images/dfd1.png}
+	\caption{DFD level 1} %figure name
+	\label{figdfd1} % for referencing
+\end{figure}
+
 \chapter{Methodology}
 
 \section{Required Algorithm:}
@@ -844,13 +904,7 @@ At last, the final webapp was designed.
 \pagebreak
 
 
-\section{Use Case Diagram:}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=180mm, height=180mm]{images/UseCaseDiagram1.png}
-	\caption{Use Case Diagram} %figure name
-	\label{figusecase} % for referencing
-\end{figure}
+
 
 
 

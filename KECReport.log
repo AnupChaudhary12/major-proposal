@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.23)  10 JUN 2023 08:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.23)  10 JUN 2023 09:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -449,7 +449,7 @@ Package hyperref Info: Link coloring OFF on input line 69.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 69.
-<images/logo.png, id=214, 102.3825pt x 102.3825pt>
+<images/logo.png, id=238, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 70.
@@ -502,207 +502,222 @@ l.208 Encryption.\par
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 233.
  (C:\Miktex\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3] [4] [5] [6]
+) [3] [4]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--328
+Underfull \hbox (badness 10000) in paragraph at lines 283--294
 
  []
 
-[7
+[5
 
 ]
-<images/clientserver.png, id=369, 502.87875pt x 388.45125pt>
+<images/clientserver.png, id=395, 502.87875pt x 388.45125pt>
 File: images/clientserver.png Graphic file (type png)
 <use images/clientserver.png>
-Package pdftex.def Info: images/clientserver.png  used on input line 342.
+Package pdftex.def Info: images/clientserver.png  used on input line 308.
 (pdftex.def)             Requested size: 455.24408pt x 351.65372pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 342--343
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 308--309
  [][] 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 347--399
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 313--365
 
  []
 
-[9 <./images/clientserver.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 400--409
+[7 <./images/clientserver.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 366--375
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 404--442
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 443--457
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 438--476
+Underfull \hbox (badness 10000) in paragraph at lines 458--490
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 477--491
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 492--524
-
- []
-
-[13] [14] [15]
-<images/Http_request-response_cycle.png, id=418, 2006.49625pt x 1183.42125pt>
+[11] [12] [13]
+<images/Http_request-response_cycle.png, id=444, 2006.49625pt x 1183.42125pt>
 File: images/Http_request-response_cycle.png Graphic file (type png)
 <use images/Http_request-response_cycle.png>
-Package pdftex.def Info: images/Http_request-response_cycle.png  used on input line 619.
+Package pdftex.def Info: images/Http_request-response_cycle.png  used on input line 585.
 (pdftex.def)             Requested size: 398.32233pt x 455.24841pt.
- [16] [17 <./images/Http_request-response_cycle.png>] [18]
+ [14] [15 <./images/Http_request-response_cycle.png>] [16]
 Chapter 3.
-<images/rsa algo.png, id=433, 456.5055pt x 266.1945pt>
-File: images/rsa algo.png Graphic file (type png)
-<use images/rsa algo.png>
-Package pdftex.def Info: images/rsa algo.png  used on input line 652.
-(pdftex.def)             Requested size: 455.24408pt x 265.45865pt.
+[17
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 652--653
- [][] 
- []
-
-[19
-
- <./images/rsa algo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 680--689
-
- []
-
-[20]
-<images/salting.png, id=444, 703.62875pt x 480.79625pt>
-File: images/salting.png Graphic file (type png)
-<use images/salting.png>
-Package pdftex.def Info: images/salting.png  used on input line 706.
-(pdftex.def)             Requested size: 455.24408pt x 311.06859pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 706--707
- [][] 
- []
-
-[21] [22 <./images/salting.png>] [23] [24]
-<images/proposedalgo2.png, id=466, 921.4425pt x 805.0075pt>
-File: images/proposedalgo2.png Graphic file (type png)
-<use images/proposedalgo2.png>
-Package pdftex.def Info: images/proposedalgo2.png  used on input line 778.
-(pdftex.def)             Requested size: 455.24408pt x 397.71223pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 778--779
- [][] 
- []
-
-[25 <./images/proposedalgo2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 802--804
-
- []
-
-[26]
-<images/incremental model.png, id=476, 690.58pt x 457.71pt>
-File: images/incremental model.png Graphic file (type png)
-<use images/incremental model.png>
-Package pdftex.def Info: images/incremental model.png  used on input line 818.
-(pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
-
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 818--819
- [][] 
- []
-
-[27 <./images/incremental model.png>] [28]
-<images/UseCaseDiagram1.png, id=487, 1155.31625pt x 915.42pt>
+] [18] [19]
+<images/UseCaseDiagram1.png, id=471, 1155.31625pt x 915.42pt>
 File: images/UseCaseDiagram1.png Graphic file (type png)
 <use images/UseCaseDiagram1.png>
-Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 850.
+Package pdftex.def Info: images/UseCaseDiagram1.png  used on input line 680.
 (pdftex.def)             Requested size: 512.14853pt x 512.17076pt.
 
-Overfull \hbox (95.31564pt too wide) in paragraph at lines 850--851
+Overfull \hbox (95.31564pt too wide) in paragraph at lines 680--681
  [][] 
  []
 
-[29 <./images/UseCaseDiagram1.png>]
+[20 <./images/UseCaseDiagram1.png>]
+<images/dfd0.png, id=477, 563.10374pt x 312.16624pt>
+File: images/dfd0.png Graphic file (type png)
+<use images/dfd0.png>
+Package pdftex.def Info: images/dfd0.png  used on input line 690.
+(pdftex.def)             Requested size: 369.8882pt x 455.25403pt.
+<images/dfd1.png, id=478, 728.7225pt x 623.32875pt>
+File: images/dfd1.png Graphic file (type png)
+<use images/dfd1.png>
+Package pdftex.def Info: images/dfd1.png  used on input line 698.
+(pdftex.def)             Requested size: 398.33011pt x 455.25447pt.
+ [21 <./images/dfd0.png>] [22 <./images/dfd1.png>]
 Chapter 4.
-<images/signin.png, id=493, 631.60968pt x 538.26094pt>
+<images/rsa algo.png, id=490, 456.5055pt x 266.1945pt>
+File: images/rsa algo.png Graphic file (type png)
+<use images/rsa algo.png>
+Package pdftex.def Info: images/rsa algo.png  used on input line 712.
+(pdftex.def)             Requested size: 455.24408pt x 265.45865pt.
+
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 712--713
+ [][] 
+ []
+
+[23
+
+ <./images/rsa algo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 740--749
+
+ []
+
+[24]
+<images/salting.png, id=501, 703.62875pt x 480.79625pt>
+File: images/salting.png Graphic file (type png)
+<use images/salting.png>
+Package pdftex.def Info: images/salting.png  used on input line 766.
+(pdftex.def)             Requested size: 455.24408pt x 311.06859pt.
+
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 766--767
+ [][] 
+ []
+
+[25] [26 <./images/salting.png>] [27] [28]
+<images/proposedalgo2.png, id=523, 921.4425pt x 805.0075pt>
+File: images/proposedalgo2.png Graphic file (type png)
+<use images/proposedalgo2.png>
+Package pdftex.def Info: images/proposedalgo2.png  used on input line 838.
+(pdftex.def)             Requested size: 455.24408pt x 397.71223pt.
+
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 838--839
+ [][] 
+ []
+
+[29 <./images/proposedalgo2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 862--864
+
+ []
+
+[30]
+<images/incremental model.png, id=533, 690.58pt x 457.71pt>
+File: images/incremental model.png Graphic file (type png)
+<use images/incremental model.png>
+Package pdftex.def Info: images/incremental model.png  used on input line 878.
+(pdftex.def)             Requested size: 455.24408pt x 301.73335pt.
+
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 878--879
+ [][] 
+ []
+
+[31 <./images/incremental model.png>] [32]
+Chapter 5.
+<images/signin.png, id=543, 631.60968pt x 538.26094pt>
 File: images/signin.png Graphic file (type png)
 <use images/signin.png>
-Package pdftex.def Info: images/signin.png  used on input line 877.
+Package pdftex.def Info: images/signin.png  used on input line 931.
 (pdftex.def)             Requested size: 455.25014pt x 512.1581pt.
 
-Overfull \hbox (38.41725pt too wide) in paragraph at lines 877--878
+Overfull \hbox (38.41725pt too wide) in paragraph at lines 931--932
  [][] 
  []
 
-<images/chat1.png, id=494, 1927.2pt x 1084.05pt>
+<images/chat1.png, id=544, 1927.2pt x 1084.05pt>
 File: images/chat1.png Graphic file (type png)
 <use images/chat1.png>
-Package pdftex.def Info: images/chat1.png  used on input line 883.
+Package pdftex.def Info: images/chat1.png  used on input line 937.
 (pdftex.def)             Requested size: 455.2446pt x 455.24828pt.
 
-Overfull \hbox (38.41171pt too wide) in paragraph at lines 883--884
+Overfull \hbox (38.41171pt too wide) in paragraph at lines 937--938
  [][] 
  []
 
-[30
+[33
 
-] [31 <./images/signin.png>]
-<images/chat3.png, id=504, 1925.1925pt x 897.3525pt>
+] [34 <./images/signin.png>]
+<images/chat3.png, id=555, 1925.1925pt x 897.3525pt>
 File: images/chat3.png Graphic file (type png)
 <use images/chat3.png>
-Package pdftex.def Info: images/chat3.png  used on input line 890.
+Package pdftex.def Info: images/chat3.png  used on input line 944.
 (pdftex.def)             Requested size: 455.24408pt x 212.19234pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 890--891
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 944--945
  [][] 
  []
 
-[32 <./images/chat1.png>]
-<images/msg.png, id=510, 960.58875pt x 882.29625pt>
+[35 <./images/chat1.png>]
+<images/msg.png, id=561, 960.58875pt x 882.29625pt>
 File: images/msg.png Graphic file (type png)
 <use images/msg.png>
-Package pdftex.def Info: images/msg.png  used on input line 897.
+Package pdftex.def Info: images/msg.png  used on input line 951.
 (pdftex.def)             Requested size: 455.24408pt x 418.13922pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 897--898
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 951--952
  [][] 
  []
 
-[33 <./images/chat3.png> <./images/msg.png>]
-Overfull \hbox (10.68619pt too wide) in paragraph at lines 923--928
+[36 <./images/chat3.png> <./images/msg.png>]
+Overfull \hbox (10.68619pt too wide) in paragraph at lines 977--982
 \OT1/ptm/m/n/12 Scheduling es-tab-lishes the time-lines, de-liv-ery and avail-abil-ity of project re-sources whether
  []
 
-<images/ganttchart.png.jpg, id=517, 551.81157pt x 292.84406pt>
+<images/ganttchart.png.jpg, id=568, 551.81157pt x 292.84406pt>
 File: images/ganttchart.png.jpg Graphic file (type jpg)
 <use images/ganttchart.png.jpg>
-Package pdftex.def Info: images/ganttchart.png.jpg  used on input line 931.
+Package pdftex.def Info: images/ganttchart.png.jpg  used on input line 985.
 (pdftex.def)             Requested size: 455.24408pt x 241.60826pt.
 
-Overfull \hbox (38.4112pt too wide) in paragraph at lines 931--932
+Overfull \hbox (38.4112pt too wide) in paragraph at lines 985--986
  [][] 
  []
 
-[34] (KECReport.bbl [35 <./images/ganttchart.png.jpg>]) [36
+[37] (KECReport.bbl [38 <./images/ganttchart.png.jpg>]) [39
 
 ] (KECReport.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `KECReport.out' has not changed.
-(rerunfilecheck)             Checksum: 7CF7C5F31EF4704B05562AC2AA20D07F;7685.
+(rerunfilecheck)             Checksum: 4DB77D098BECC3A8EB06EB0F48371C27;8621.
  ) 
 Here is how much of TeX's memory you used:
- 16783 strings out of 476331
- 319305 string characters out of 5804180
+ 16816 strings out of 476331
+ 319796 string characters out of 5804180
  1861660 words of memory out of 5000000
- 36887 multiletter control sequences out of 15000+600000
- 536082 words of font info for 78 fonts, out of 8000000 for 9000
+ 36907 multiletter control sequences out of 15000+600000
+ 536085 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,9n,82p,1393b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 82i,9n,82p,1393b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/Miktex/fonts/type1/urw/times/utmbi8a.pfb><C:/Miktex/fonts/type1/urw/times/utmr8a.pfb><C:/Miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on KECReport.pdf (45 pages, 1842504 bytes).
+Output written on KECReport.pdf (48 pages, 1892843 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 490 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 653 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 500000)
+ 548 words of extra memory for PDF output out of 10000 (max. 10000000)
 

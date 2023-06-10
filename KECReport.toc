@@ -10,52 +10,58 @@
 \contentsline {section}{\numberline {1.3}Objectives}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Applications}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Project features}{3}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Feasibility Analysis}{4}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Economic Feasibility}{4}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Schedule Feasibility}{4}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}Technical Feasibility}{4}{subsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.6.4}Operational Feasibility}{5}{subsection.1.6.4}%
-\contentsline {section}{\numberline {1.7}System Requirements}{5}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Software Requirement}{5}{subsection.1.7.1}%
-\contentsline {subsection}{\numberline {1.7.2}Hardware Requirement}{5}{subsection.1.7.2}%
-\contentsline {chapter}{\numberline {2}Literature Review}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Research on End-to-End Encryption chat app}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Research on Client / Server Cryptography-Based Secure Messaging System Using RSA Algorithm }{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Client/Server}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Chat Service}{11}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}RSA Encryption}{11}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Existing system:}{14}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Viber}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Whatsapp}{14}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Telegram}{15}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Facebook Messenger}{15}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}The Challenge- Making it real-time}{16}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Refresh Webpage}{16}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}HTTP Protocol}{16}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Web Sockets}{17}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Socket.io Api}{18}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Socket.io Handshake}{18}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Exchanging Messages}{18}{subsection.2.5.3}%
-\contentsline {chapter}{\numberline {3}Methodology}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Required Algorithm:}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Overview of RSA Algorithm}{19}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}RSA algorithm structure}{20}{subsection.3.1.2}%
-\contentsline {subsubsection}{Steps:}{20}{subsection.3.1.2}%
-\contentsline {subsubsection}{Encryption and decryption processes are done as follows:}{20}{subsection.3.1.2}%
-\contentsline {subsubsection}{Steps:}{24}{figure.caption.11}%
-\contentsline {subsection}{\numberline {3.1.3}CIA triad}{26}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Software development model}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Incremental Model}{27}{subsection.3.2.1}%
-\contentsline {subsubsection}{First Increment:}{27}{figure.caption.13}%
-\contentsline {subsubsection}{Second Increment:}{27}{figure.caption.13}%
-\contentsline {subsubsection}{Third Increment:}{28}{figure.caption.13}%
-\contentsline {subsubsection}{Fourth Increment:}{28}{figure.caption.13}%
-\contentsline {section}{\numberline {3.3}Use Case Diagram:}{29}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Epilogue}{30}{chapter.4}%
-\contentsline {section}{\numberline {4.1}User Application}{30}{section.4.1}%
-\contentsline {section}{\numberline {4.2} Output:}{30}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Limitation}{34}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Future Enhancement}{34}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Work Schedule}{34}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Conclusion}{35}{section.4.6}%
-\contentsline {chapter}{References}{35}{section.4.6}%
+\contentsline {section}{\numberline {1.6}System Requirements}{4}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Software Requirement}{4}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Hardware Requirement}{4}{subsection.1.6.2}%
+\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Research on End-to-End Encryption chat app}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Research on Client / Server Cryptography-Based Secure Messaging System Using RSA Algorithm }{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Client/Server}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Chat Service}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}RSA Encryption}{9}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Existing system:}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Viber}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Whatsapp}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Telegram}{13}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Facebook Messenger}{13}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}The Challenge- Making it real-time}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Refresh Webpage}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}HTTP Protocol}{14}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Web Sockets}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Socket.io Api}{16}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Socket.io Handshake}{16}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Exchanging Messages}{16}{subsection.2.5.3}%
+\contentsline {chapter}{\numberline {3}System Analysis and Design}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Functional Requirement}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Non-Functional Requirements}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Feasibility Analysis}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Economic Feasibility}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Schedule Feasibility}{19}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Technical Feasibility}{19}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Operational Feasibility}{19}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Use Case Diagram:}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Data FLow Diagram}{21}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}DFD level 0}{21}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}DFD level 1}{22}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Methodology}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Required Algorithm:}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Overview of RSA Algorithm}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}RSA algorithm structure}{24}{subsection.4.1.2}%
+\contentsline {subsubsection}{Steps:}{24}{subsection.4.1.2}%
+\contentsline {subsubsection}{Encryption and decryption processes are done as follows:}{24}{subsection.4.1.2}%
+\contentsline {subsubsection}{Steps:}{28}{figure.caption.14}%
+\contentsline {subsection}{\numberline {4.1.3}CIA triad}{30}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Software development model}{31}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Incremental Model}{31}{subsection.4.2.1}%
+\contentsline {subsubsection}{First Increment:}{31}{figure.caption.16}%
+\contentsline {subsubsection}{Second Increment:}{31}{figure.caption.16}%
+\contentsline {subsubsection}{Third Increment:}{32}{figure.caption.16}%
+\contentsline {subsubsection}{Fourth Increment:}{32}{figure.caption.16}%
+\contentsline {chapter}{\numberline {5}Epilogue}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}User Application}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2} Output:}{33}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Limitation}{37}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Future Enhancement}{37}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Work Schedule}{37}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Conclusion}{38}{section.5.6}%
+\contentsline {chapter}{References}{38}{section.5.6}%
